@@ -23,6 +23,50 @@
 		9CB02F67187DE1D40063B78A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB02F43187DE1D40063B78A /* UIKit.framework */; };
 		9CB02F6F187DE1D40063B78A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CB02F6D187DE1D40063B78A /* InfoPlist.strings */; };
 		9CB02F71187DE1D40063B78A /* Widget_ZooTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02F70187DE1D40063B78A /* Widget_ZooTests.m */; };
+		9CB02F7D187DE2B70063B78A /* AEControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02F7C187DE2B70063B78A /* AEControl.m */; };
+		9CB02F7E187DE2B70063B78A /* AEControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02F7C187DE2B70063B78A /* AEControl.m */; };
+		9CB02F8B187DE2D10063B78A /* AEBarMeterInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02F80187DE2D10063B78A /* AEBarMeterInput.m */; };
+		9CB02F8C187DE2D10063B78A /* AEBarMeterInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02F80187DE2D10063B78A /* AEBarMeterInput.m */; };
+		9CB02F8D187DE2D10063B78A /* AECameraInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02F82187DE2D10063B78A /* AECameraInput.m */; };
+		9CB02F8E187DE2D10063B78A /* AECameraInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02F82187DE2D10063B78A /* AECameraInput.m */; };
+		9CB02F8F187DE2D10063B78A /* AEMusicInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02F84187DE2D10063B78A /* AEMusicInput.m */; };
+		9CB02F90187DE2D10063B78A /* AEMusicInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02F84187DE2D10063B78A /* AEMusicInput.m */; };
+		9CB02F91187DE2D10063B78A /* AEPitchInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02F86187DE2D10063B78A /* AEPitchInput.m */; };
+		9CB02F92187DE2D10063B78A /* AEPitchInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02F86187DE2D10063B78A /* AEPitchInput.m */; };
+		9CB02F93187DE2D10063B78A /* AEDialInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02F88187DE2D10063B78A /* AEDialInput.m */; };
+		9CB02F94187DE2D10063B78A /* AEDialInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02F88187DE2D10063B78A /* AEDialInput.m */; };
+		9CB02F95187DE2D10063B78A /* AEVolumeInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02F8A187DE2D10063B78A /* AEVolumeInput.m */; };
+		9CB02F96187DE2D10063B78A /* AEVolumeInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02F8A187DE2D10063B78A /* AEVolumeInput.m */; };
+		9CB02FC3187DE31E0063B78A /* AE2DLeveler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FAD187DE31E0063B78A /* AE2DLeveler.m */; };
+		9CB02FC4187DE31E0063B78A /* AE2DLeveler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FAD187DE31E0063B78A /* AE2DLeveler.m */; };
+		9CB02FC5187DE31E0063B78A /* AEButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FAE187DE31E0063B78A /* AEButton.m */; };
+		9CB02FC6187DE31E0063B78A /* AEButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FAE187DE31E0063B78A /* AEButton.m */; };
+		9CB02FC7187DE31E0063B78A /* AEGamepad.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FAF187DE31E0063B78A /* AEGamepad.m */; };
+		9CB02FC8187DE31E0063B78A /* AEGamepad.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FAF187DE31E0063B78A /* AEGamepad.m */; };
+		9CB02FC9187DE31E0063B78A /* AEHorizontalLeveler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FB0187DE31E0063B78A /* AEHorizontalLeveler.m */; };
+		9CB02FCA187DE31E0063B78A /* AEHorizontalLeveler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FB0187DE31E0063B78A /* AEHorizontalLeveler.m */; };
+		9CB02FCB187DE31E0063B78A /* AEHorizontalSprungWeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FB1187DE31E0063B78A /* AEHorizontalSprungWeight.m */; };
+		9CB02FCC187DE31E0063B78A /* AEHorizontalSprungWeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FB1187DE31E0063B78A /* AEHorizontalSprungWeight.m */; };
+		9CB02FCD187DE31E0063B78A /* AELeveler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FB2187DE31E0063B78A /* AELeveler.m */; };
+		9CB02FCE187DE31E0063B78A /* AELeveler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FB2187DE31E0063B78A /* AELeveler.m */; };
+		9CB02FCF187DE31E0063B78A /* AENoiseMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FB3187DE31E0063B78A /* AENoiseMeter.m */; };
+		9CB02FD0187DE31E0063B78A /* AENoiseMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FB3187DE31E0063B78A /* AENoiseMeter.m */; };
+		9CB02FD1187DE31E0063B78A /* AESlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FB4187DE31E0063B78A /* AESlider.m */; };
+		9CB02FD2187DE31E0063B78A /* AESlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FB4187DE31E0063B78A /* AESlider.m */; };
+		9CB02FD3187DE31E0063B78A /* AESprungWeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FB5187DE31E0063B78A /* AESprungWeight.m */; };
+		9CB02FD4187DE31E0063B78A /* AESprungWeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FB5187DE31E0063B78A /* AESprungWeight.m */; };
+		9CB02FD5187DE31E0063B78A /* AEToggle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FB6187DE31E0063B78A /* AEToggle.m */; };
+		9CB02FD6187DE31E0063B78A /* AEToggle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FB6187DE31E0063B78A /* AEToggle.m */; };
+		9CB02FD7187DE31E0063B78A /* AEVerticalLeveler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FB7187DE31E0063B78A /* AEVerticalLeveler.m */; };
+		9CB02FD8187DE31E0063B78A /* AEVerticalLeveler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FB7187DE31E0063B78A /* AEVerticalLeveler.m */; };
+		9CB02FD9187DE31E0063B78A /* AEVerticalSprungWeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FB8187DE31E0063B78A /* AEVerticalSprungWeight.m */; };
+		9CB02FDA187DE31E0063B78A /* AEVerticalSprungWeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FB8187DE31E0063B78A /* AEVerticalSprungWeight.m */; };
+		9CB02FE1187DE51F0063B78A /* AEControlTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FDC187DE51F0063B78A /* AEControlTheme.m */; };
+		9CB02FE2187DE51F0063B78A /* AEControlTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FDC187DE51F0063B78A /* AEControlTheme.m */; };
+		9CB02FE3187DE51F0063B78A /* AEAtomsControlTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FDE187DE51F0063B78A /* AEAtomsControlTheme.m */; };
+		9CB02FE4187DE51F0063B78A /* AEAtomsControlTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FDE187DE51F0063B78A /* AEAtomsControlTheme.m */; };
+		9CB02FE5187DE51F0063B78A /* AEColorCodedControlTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FE0187DE51F0063B78A /* AEColorCodedControlTheme.m */; };
+		9CB02FE6187DE51F0063B78A /* AEColorCodedControlTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FE0187DE51F0063B78A /* AEColorCodedControlTheme.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +102,50 @@
 		9CB02F6C187DE1D40063B78A /* Widget ZooTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Widget ZooTests-Info.plist"; sourceTree = "<group>"; };
 		9CB02F6E187DE1D40063B78A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9CB02F70187DE1D40063B78A /* Widget_ZooTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Widget_ZooTests.m; sourceTree = "<group>"; };
+		9CB02F7B187DE2B70063B78A /* AEControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEControl.h; sourceTree = "<group>"; };
+		9CB02F7C187DE2B70063B78A /* AEControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEControl.m; sourceTree = "<group>"; };
+		9CB02F7F187DE2D10063B78A /* AEBarMeterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEBarMeterInput.h; sourceTree = "<group>"; };
+		9CB02F80187DE2D10063B78A /* AEBarMeterInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEBarMeterInput.m; sourceTree = "<group>"; };
+		9CB02F81187DE2D10063B78A /* AECameraInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AECameraInput.h; sourceTree = "<group>"; };
+		9CB02F82187DE2D10063B78A /* AECameraInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AECameraInput.m; sourceTree = "<group>"; };
+		9CB02F83187DE2D10063B78A /* AEMusicInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEMusicInput.h; sourceTree = "<group>"; };
+		9CB02F84187DE2D10063B78A /* AEMusicInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEMusicInput.m; sourceTree = "<group>"; };
+		9CB02F85187DE2D10063B78A /* AEPitchInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEPitchInput.h; sourceTree = "<group>"; };
+		9CB02F86187DE2D10063B78A /* AEPitchInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEPitchInput.m; sourceTree = "<group>"; };
+		9CB02F87187DE2D10063B78A /* AEDialInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEDialInput.h; sourceTree = "<group>"; };
+		9CB02F88187DE2D10063B78A /* AEDialInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEDialInput.m; sourceTree = "<group>"; };
+		9CB02F89187DE2D10063B78A /* AEVolumeInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEVolumeInput.h; sourceTree = "<group>"; };
+		9CB02F8A187DE2D10063B78A /* AEVolumeInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEVolumeInput.m; sourceTree = "<group>"; };
+		9CB02F97187DE31E0063B78A /* AE2DLeveler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AE2DLeveler.h; sourceTree = "<group>"; };
+		9CB02F98187DE31E0063B78A /* AEButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEButton.h; sourceTree = "<group>"; };
+		9CB02F99187DE31E0063B78A /* AEGamepad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEGamepad.h; sourceTree = "<group>"; };
+		9CB02F9A187DE31E0063B78A /* AEHorizontalLeveler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEHorizontalLeveler.h; sourceTree = "<group>"; };
+		9CB02F9B187DE31E0063B78A /* AEHorizontalSprungWeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEHorizontalSprungWeight.h; sourceTree = "<group>"; };
+		9CB02F9C187DE31E0063B78A /* AELeveler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AELeveler.h; sourceTree = "<group>"; };
+		9CB02F9D187DE31E0063B78A /* AENoiseMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AENoiseMeter.h; sourceTree = "<group>"; };
+		9CB02F9E187DE31E0063B78A /* AESlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESlider.h; sourceTree = "<group>"; };
+		9CB02F9F187DE31E0063B78A /* AESprungWeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESprungWeight.h; sourceTree = "<group>"; };
+		9CB02FA0187DE31E0063B78A /* AEToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEToggle.h; sourceTree = "<group>"; };
+		9CB02FA1187DE31E0063B78A /* AEVerticalLeveler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEVerticalLeveler.h; sourceTree = "<group>"; };
+		9CB02FA2187DE31E0063B78A /* AEVerticalSprungWeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEVerticalSprungWeight.h; sourceTree = "<group>"; };
+		9CB02FAD187DE31E0063B78A /* AE2DLeveler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AE2DLeveler.m; sourceTree = "<group>"; };
+		9CB02FAE187DE31E0063B78A /* AEButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEButton.m; sourceTree = "<group>"; };
+		9CB02FAF187DE31E0063B78A /* AEGamepad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEGamepad.m; sourceTree = "<group>"; };
+		9CB02FB0187DE31E0063B78A /* AEHorizontalLeveler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEHorizontalLeveler.m; sourceTree = "<group>"; };
+		9CB02FB1187DE31E0063B78A /* AEHorizontalSprungWeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEHorizontalSprungWeight.m; sourceTree = "<group>"; };
+		9CB02FB2187DE31E0063B78A /* AELeveler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AELeveler.m; sourceTree = "<group>"; };
+		9CB02FB3187DE31E0063B78A /* AENoiseMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AENoiseMeter.m; sourceTree = "<group>"; };
+		9CB02FB4187DE31E0063B78A /* AESlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESlider.m; sourceTree = "<group>"; };
+		9CB02FB5187DE31E0063B78A /* AESprungWeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESprungWeight.m; sourceTree = "<group>"; };
+		9CB02FB6187DE31E0063B78A /* AEToggle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEToggle.m; sourceTree = "<group>"; };
+		9CB02FB7187DE31E0063B78A /* AEVerticalLeveler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEVerticalLeveler.m; sourceTree = "<group>"; };
+		9CB02FB8187DE31E0063B78A /* AEVerticalSprungWeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEVerticalSprungWeight.m; sourceTree = "<group>"; };
+		9CB02FDB187DE51F0063B78A /* AEControlTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEControlTheme.h; sourceTree = "<group>"; };
+		9CB02FDC187DE51F0063B78A /* AEControlTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEControlTheme.m; sourceTree = "<group>"; };
+		9CB02FDD187DE51F0063B78A /* AEAtomsControlTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEAtomsControlTheme.h; sourceTree = "<group>"; };
+		9CB02FDE187DE51F0063B78A /* AEAtomsControlTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEAtomsControlTheme.m; sourceTree = "<group>"; };
+		9CB02FDF187DE51F0063B78A /* AEColorCodedControlTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEColorCodedControlTheme.h; sourceTree = "<group>"; };
+		9CB02FE0187DE51F0063B78A /* AEColorCodedControlTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEColorCodedControlTheme.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,12 +207,11 @@
 			children = (
 				9CB02F4E187DE1D40063B78A /* AEAppDelegate.h */,
 				9CB02F4F187DE1D40063B78A /* AEAppDelegate.m */,
-				9CB02F51187DE1D40063B78A /* Main_iPhone.storyboard */,
-				9CB02F54187DE1D40063B78A /* Main_iPad.storyboard */,
-				9CB02F57187DE1D40063B78A /* AEMasterViewController.h */,
-				9CB02F58187DE1D40063B78A /* AEMasterViewController.m */,
-				9CB02F5A187DE1D40063B78A /* AEDetailViewController.h */,
-				9CB02F5B187DE1D40063B78A /* AEDetailViewController.m */,
+				9CB02F7B187DE2B70063B78A /* AEControl.h */,
+				9CB02F7C187DE2B70063B78A /* AEControl.m */,
+				9CB02FE7187DE5260063B78A /* UI Themes */,
+				9CB02F7A187DE2A50063B78A /* Controls */,
+				9CB02FE8187DE5380063B78A /* View Controllers */,
 				9CB02F5D187DE1D40063B78A /* Images.xcassets */,
 				9CB02F46187DE1D40063B78A /* Supporting Files */,
 			);
@@ -158,6 +245,75 @@
 				9CB02F6D187DE1D40063B78A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CB02F7A187DE2A50063B78A /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				9CB02F97187DE31E0063B78A /* AE2DLeveler.h */,
+				9CB02F98187DE31E0063B78A /* AEButton.h */,
+				9CB02F99187DE31E0063B78A /* AEGamepad.h */,
+				9CB02F9A187DE31E0063B78A /* AEHorizontalLeveler.h */,
+				9CB02F9B187DE31E0063B78A /* AEHorizontalSprungWeight.h */,
+				9CB02F9C187DE31E0063B78A /* AELeveler.h */,
+				9CB02F9D187DE31E0063B78A /* AENoiseMeter.h */,
+				9CB02F9E187DE31E0063B78A /* AESlider.h */,
+				9CB02F9F187DE31E0063B78A /* AESprungWeight.h */,
+				9CB02FA0187DE31E0063B78A /* AEToggle.h */,
+				9CB02FA1187DE31E0063B78A /* AEVerticalLeveler.h */,
+				9CB02FA2187DE31E0063B78A /* AEVerticalSprungWeight.h */,
+				9CB02FAD187DE31E0063B78A /* AE2DLeveler.m */,
+				9CB02FAE187DE31E0063B78A /* AEButton.m */,
+				9CB02FAF187DE31E0063B78A /* AEGamepad.m */,
+				9CB02FB0187DE31E0063B78A /* AEHorizontalLeveler.m */,
+				9CB02FB1187DE31E0063B78A /* AEHorizontalSprungWeight.m */,
+				9CB02FB2187DE31E0063B78A /* AELeveler.m */,
+				9CB02FB3187DE31E0063B78A /* AENoiseMeter.m */,
+				9CB02FB4187DE31E0063B78A /* AESlider.m */,
+				9CB02FB5187DE31E0063B78A /* AESprungWeight.m */,
+				9CB02FB6187DE31E0063B78A /* AEToggle.m */,
+				9CB02FB7187DE31E0063B78A /* AEVerticalLeveler.m */,
+				9CB02FB8187DE31E0063B78A /* AEVerticalSprungWeight.m */,
+				9CB02F7F187DE2D10063B78A /* AEBarMeterInput.h */,
+				9CB02F80187DE2D10063B78A /* AEBarMeterInput.m */,
+				9CB02F81187DE2D10063B78A /* AECameraInput.h */,
+				9CB02F82187DE2D10063B78A /* AECameraInput.m */,
+				9CB02F83187DE2D10063B78A /* AEMusicInput.h */,
+				9CB02F84187DE2D10063B78A /* AEMusicInput.m */,
+				9CB02F85187DE2D10063B78A /* AEPitchInput.h */,
+				9CB02F86187DE2D10063B78A /* AEPitchInput.m */,
+				9CB02F87187DE2D10063B78A /* AEDialInput.h */,
+				9CB02F88187DE2D10063B78A /* AEDialInput.m */,
+				9CB02F89187DE2D10063B78A /* AEVolumeInput.h */,
+				9CB02F8A187DE2D10063B78A /* AEVolumeInput.m */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		9CB02FE7187DE5260063B78A /* UI Themes */ = {
+			isa = PBXGroup;
+			children = (
+				9CB02FDB187DE51F0063B78A /* AEControlTheme.h */,
+				9CB02FDC187DE51F0063B78A /* AEControlTheme.m */,
+				9CB02FDD187DE51F0063B78A /* AEAtomsControlTheme.h */,
+				9CB02FDE187DE51F0063B78A /* AEAtomsControlTheme.m */,
+				9CB02FDF187DE51F0063B78A /* AEColorCodedControlTheme.h */,
+				9CB02FE0187DE51F0063B78A /* AEColorCodedControlTheme.m */,
+			);
+			name = "UI Themes";
+			sourceTree = "<group>";
+		};
+		9CB02FE8187DE5380063B78A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9CB02F51187DE1D40063B78A /* Main_iPhone.storyboard */,
+				9CB02F54187DE1D40063B78A /* Main_iPad.storyboard */,
+				9CB02F57187DE1D40063B78A /* AEMasterViewController.h */,
+				9CB02F58187DE1D40063B78A /* AEMasterViewController.m */,
+				9CB02F5A187DE1D40063B78A /* AEDetailViewController.h */,
+				9CB02F5B187DE1D40063B78A /* AEDetailViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +415,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB02FCF187DE31E0063B78A /* AENoiseMeter.m in Sources */,
+				9CB02FD5187DE31E0063B78A /* AEToggle.m in Sources */,
+				9CB02F8F187DE2D10063B78A /* AEMusicInput.m in Sources */,
 				9CB02F50187DE1D40063B78A /* AEAppDelegate.m in Sources */,
+				9CB02FD9187DE31E0063B78A /* AEVerticalSprungWeight.m in Sources */,
+				9CB02FE1187DE51F0063B78A /* AEControlTheme.m in Sources */,
+				9CB02F95187DE2D10063B78A /* AEVolumeInput.m in Sources */,
+				9CB02FD3187DE31E0063B78A /* AESprungWeight.m in Sources */,
+				9CB02FC3187DE31E0063B78A /* AE2DLeveler.m in Sources */,
+				9CB02FC9187DE31E0063B78A /* AEHorizontalLeveler.m in Sources */,
+				9CB02F93187DE2D10063B78A /* AEDialInput.m in Sources */,
 				9CB02F59187DE1D40063B78A /* AEMasterViewController.m in Sources */,
+				9CB02F91187DE2D10063B78A /* AEPitchInput.m in Sources */,
+				9CB02FD7187DE31E0063B78A /* AEVerticalLeveler.m in Sources */,
 				9CB02F4C187DE1D40063B78A /* main.m in Sources */,
+				9CB02FC5187DE31E0063B78A /* AEButton.m in Sources */,
+				9CB02FC7187DE31E0063B78A /* AEGamepad.m in Sources */,
+				9CB02FE5187DE51F0063B78A /* AEColorCodedControlTheme.m in Sources */,
+				9CB02FE3187DE51F0063B78A /* AEAtomsControlTheme.m in Sources */,
+				9CB02F7D187DE2B70063B78A /* AEControl.m in Sources */,
+				9CB02FD1187DE31E0063B78A /* AESlider.m in Sources */,
+				9CB02FCB187DE31E0063B78A /* AEHorizontalSprungWeight.m in Sources */,
+				9CB02F8B187DE2D10063B78A /* AEBarMeterInput.m in Sources */,
+				9CB02FCD187DE31E0063B78A /* AELeveler.m in Sources */,
+				9CB02F8D187DE2D10063B78A /* AECameraInput.m in Sources */,
 				9CB02F5C187DE1D40063B78A /* AEDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +448,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB02FE4187DE51F0063B78A /* AEAtomsControlTheme.m in Sources */,
+				9CB02FC4187DE31E0063B78A /* AE2DLeveler.m in Sources */,
+				9CB02F96187DE2D10063B78A /* AEVolumeInput.m in Sources */,
+				9CB02FDA187DE31E0063B78A /* AEVerticalSprungWeight.m in Sources */,
+				9CB02FC8187DE31E0063B78A /* AEGamepad.m in Sources */,
+				9CB02FCE187DE31E0063B78A /* AELeveler.m in Sources */,
+				9CB02FCC187DE31E0063B78A /* AEHorizontalSprungWeight.m in Sources */,
 				9CB02F71187DE1D40063B78A /* Widget_ZooTests.m in Sources */,
+				9CB02FD4187DE31E0063B78A /* AESprungWeight.m in Sources */,
+				9CB02FE6187DE51F0063B78A /* AEColorCodedControlTheme.m in Sources */,
+				9CB02FD0187DE31E0063B78A /* AENoiseMeter.m in Sources */,
+				9CB02FD8187DE31E0063B78A /* AEVerticalLeveler.m in Sources */,
+				9CB02FC6187DE31E0063B78A /* AEButton.m in Sources */,
+				9CB02F8E187DE2D10063B78A /* AECameraInput.m in Sources */,
+				9CB02F94187DE2D10063B78A /* AEDialInput.m in Sources */,
+				9CB02FCA187DE31E0063B78A /* AEHorizontalLeveler.m in Sources */,
+				9CB02F8C187DE2D10063B78A /* AEBarMeterInput.m in Sources */,
+				9CB02FD6187DE31E0063B78A /* AEToggle.m in Sources */,
+				9CB02F92187DE2D10063B78A /* AEPitchInput.m in Sources */,
+				9CB02FE2187DE51F0063B78A /* AEControlTheme.m in Sources */,
+				9CB02F7E187DE2B70063B78A /* AEControl.m in Sources */,
+				9CB02FD2187DE31E0063B78A /* AESlider.m in Sources */,
+				9CB02F90187DE2D10063B78A /* AEMusicInput.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
