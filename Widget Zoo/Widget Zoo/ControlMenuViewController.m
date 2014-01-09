@@ -12,12 +12,16 @@
 #import "ButtonViewController.h"
 #import "CameraViewController.h"
 #import "DialViewController.h"
+#import "GamepadViewController.h"
 #import "HorizontalWeightViewController.h"
+#import "LevelerViewController.h"
 #import "NoiseMeterViewController.h"
 #import "PitchControlViewController.h"
 #import "PlayPauseViewController.h"
 #import "SliderViewController.h"
+#import "SmartSliderViewController.h"
 #import "ToggleSwitchViewController.h"
+#import "TwoDLevelerViewController.h"
 #import "VerticalWeightViewController.h"
 #import "VolumeViewController.h"
 
@@ -151,6 +155,18 @@
     }
     else if ([widgetName isEqual:@"V. Sprung Weights"]) {
         [self.navigationController pushViewController:[[VerticalWeightViewController alloc] init] animated:YES];
+    }
+    else if ([widgetName isEqual:@"Smart Slider"]) {
+        [self.navigationController pushViewController:[[SmartSliderViewController alloc] init] animated:YES];
+    }
+    else if ([widgetName isEqual:@"Levelers"]) {
+        [self.navigationController pushViewController:[[LevelerViewController alloc] init] animated:YES];
+    }
+    else if ([widgetName isEqual:@"Gamepad"]) {
+        [self.navigationController pushViewController:[[GamepadViewController alloc] init] animated:YES];
+    }
+    else if ([widgetName isEqual:@"2D Leveler"]) {
+        [self.navigationController pushViewController:[[TwoDLevelerViewController alloc] init] animated:YES];
     }
 }
 

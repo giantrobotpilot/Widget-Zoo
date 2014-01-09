@@ -140,7 +140,7 @@
     CGFloat angle = [self angleFromPoint:touchPoint];
     if (angle >= 22.5 && angle < 67.5) {
         self.gamepadImageView.image = self.downRightImage;
-        //self.dirValue = kDownRightSmartValue;
+        self.dirValue = kDownRightSmartValue;
     }
     else if (angle >= 67.5 && angle <112.5) {
         self.gamepadImageView.image = self.downImage;
@@ -149,7 +149,7 @@
     }
     else if (angle >= 112.5 && angle < 157.5) {
         self.gamepadImageView.image = self.downLeftImage;
-        //self.dirValue = kDownLeftSmartValue;
+        self.dirValue = kDownLeftSmartValue;
     }
     else if (angle >= 157.5 && angle < 202.5) {
         self.gamepadImageView.image = self.leftImage;

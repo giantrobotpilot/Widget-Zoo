@@ -10,6 +10,40 @@
 		9C0CBB74187F147900A81301 /* NoiseMeterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0CBB73187F147900A81301 /* NoiseMeterViewController.m */; };
 		9C0CBB77187F17EB00A81301 /* HorizontalWeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0CBB76187F17EB00A81301 /* HorizontalWeightViewController.m */; };
 		9C0CBB7A187F1ECA00A81301 /* VerticalWeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0CBB79187F1ECA00A81301 /* VerticalWeightViewController.m */; };
+		9C0CBB7D187F235600A81301 /* SmartSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0CBB7C187F235600A81301 /* SmartSliderViewController.m */; };
+		9C0CBB7E187F235600A81301 /* SmartSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0CBB7C187F235600A81301 /* SmartSliderViewController.m */; };
+		9C0CBB81187F253300A81301 /* LevelerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0CBB80187F253300A81301 /* LevelerViewController.m */; };
+		9C0CBB82187F253300A81301 /* LevelerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0CBB80187F253300A81301 /* LevelerViewController.m */; };
+		9C0CBB85187F2AF500A81301 /* GamepadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0CBB84187F2AF500A81301 /* GamepadViewController.m */; };
+		9C0CBB86187F2AF500A81301 /* GamepadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0CBB84187F2AF500A81301 /* GamepadViewController.m */; };
+		9C0CBB90187F2D0200A81301 /* Down-D-Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBB87187F2D0200A81301 /* Down-D-Pad.png */; };
+		9C0CBB91187F2D0200A81301 /* Down-D-Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBB87187F2D0200A81301 /* Down-D-Pad.png */; };
+		9C0CBB92187F2D0200A81301 /* DownLeft-D-Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBB88187F2D0200A81301 /* DownLeft-D-Pad.png */; };
+		9C0CBB93187F2D0200A81301 /* DownLeft-D-Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBB88187F2D0200A81301 /* DownLeft-D-Pad.png */; };
+		9C0CBB94187F2D0200A81301 /* DownRight-D-Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBB89187F2D0200A81301 /* DownRight-D-Pad.png */; };
+		9C0CBB95187F2D0200A81301 /* DownRight-D-Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBB89187F2D0200A81301 /* DownRight-D-Pad.png */; };
+		9C0CBB96187F2D0200A81301 /* Left-D-Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBB8A187F2D0200A81301 /* Left-D-Pad.png */; };
+		9C0CBB97187F2D0200A81301 /* Left-D-Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBB8A187F2D0200A81301 /* Left-D-Pad.png */; };
+		9C0CBB98187F2D0200A81301 /* Normal-D-Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBB8B187F2D0200A81301 /* Normal-D-Pad.png */; };
+		9C0CBB99187F2D0200A81301 /* Normal-D-Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBB8B187F2D0200A81301 /* Normal-D-Pad.png */; };
+		9C0CBB9A187F2D0200A81301 /* Right-D-Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBB8C187F2D0200A81301 /* Right-D-Pad.png */; };
+		9C0CBB9B187F2D0200A81301 /* Right-D-Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBB8C187F2D0200A81301 /* Right-D-Pad.png */; };
+		9C0CBB9C187F2D0200A81301 /* Up-D-Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBB8D187F2D0200A81301 /* Up-D-Pad.png */; };
+		9C0CBB9D187F2D0200A81301 /* Up-D-Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBB8D187F2D0200A81301 /* Up-D-Pad.png */; };
+		9C0CBB9E187F2D0200A81301 /* UpLeft-D-Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBB8E187F2D0200A81301 /* UpLeft-D-Pad.png */; };
+		9C0CBB9F187F2D0200A81301 /* UpLeft-D-Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBB8E187F2D0200A81301 /* UpLeft-D-Pad.png */; };
+		9C0CBBA0187F2D0200A81301 /* UpRight-D-Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBB8F187F2D0200A81301 /* UpRight-D-Pad.png */; };
+		9C0CBBA1187F2D0200A81301 /* UpRight-D-Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBB8F187F2D0200A81301 /* UpRight-D-Pad.png */; };
+		9C0CBBA4187F3A7200A81301 /* TwoDLevelerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0CBBA3187F3A7200A81301 /* TwoDLevelerViewController.m */; };
+		9C0CBBA5187F3A7200A81301 /* TwoDLevelerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0CBBA3187F3A7200A81301 /* TwoDLevelerViewController.m */; };
+		9C0CBBAA187F3BF900A81301 /* info_bttn.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBBA6187F3BF900A81301 /* info_bttn.png */; };
+		9C0CBBAB187F3BF900A81301 /* info_bttn.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBBA6187F3BF900A81301 /* info_bttn.png */; };
+		9C0CBBAC187F3BF900A81301 /* Leveler-Base.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBBA7187F3BF900A81301 /* Leveler-Base.png */; };
+		9C0CBBAD187F3BF900A81301 /* Leveler-Base.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBBA7187F3BF900A81301 /* Leveler-Base.png */; };
+		9C0CBBAE187F3BF900A81301 /* Leveler-Bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBBA8187F3BF900A81301 /* Leveler-Bubble.png */; };
+		9C0CBBAF187F3BF900A81301 /* Leveler-Bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBBA8187F3BF900A81301 /* Leveler-Bubble.png */; };
+		9C0CBBB0187F3BF900A81301 /* Leveler-Marks.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBBA9187F3BF900A81301 /* Leveler-Marks.png */; };
+		9C0CBBB1187F3BF900A81301 /* Leveler-Marks.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBBA9187F3BF900A81301 /* Leveler-Marks.png */; };
 		9CB02F40187DE1D40063B78A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB02F3F187DE1D40063B78A /* Foundation.framework */; };
 		9CB02F42187DE1D40063B78A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB02F41187DE1D40063B78A /* CoreGraphics.framework */; };
 		9CB02F44187DE1D40063B78A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB02F43187DE1D40063B78A /* UIKit.framework */; };
@@ -125,6 +159,27 @@
 		9C0CBB76187F17EB00A81301 /* HorizontalWeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalWeightViewController.m; sourceTree = "<group>"; };
 		9C0CBB78187F1ECA00A81301 /* VerticalWeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalWeightViewController.h; sourceTree = "<group>"; };
 		9C0CBB79187F1ECA00A81301 /* VerticalWeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalWeightViewController.m; sourceTree = "<group>"; };
+		9C0CBB7B187F235600A81301 /* SmartSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartSliderViewController.h; sourceTree = "<group>"; };
+		9C0CBB7C187F235600A81301 /* SmartSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartSliderViewController.m; sourceTree = "<group>"; };
+		9C0CBB7F187F253300A81301 /* LevelerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelerViewController.h; sourceTree = "<group>"; };
+		9C0CBB80187F253300A81301 /* LevelerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelerViewController.m; sourceTree = "<group>"; };
+		9C0CBB83187F2AF500A81301 /* GamepadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamepadViewController.h; sourceTree = "<group>"; };
+		9C0CBB84187F2AF500A81301 /* GamepadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamepadViewController.m; sourceTree = "<group>"; };
+		9C0CBB87187F2D0200A81301 /* Down-D-Pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Down-D-Pad.png"; sourceTree = "<group>"; };
+		9C0CBB88187F2D0200A81301 /* DownLeft-D-Pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DownLeft-D-Pad.png"; sourceTree = "<group>"; };
+		9C0CBB89187F2D0200A81301 /* DownRight-D-Pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DownRight-D-Pad.png"; sourceTree = "<group>"; };
+		9C0CBB8A187F2D0200A81301 /* Left-D-Pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Left-D-Pad.png"; sourceTree = "<group>"; };
+		9C0CBB8B187F2D0200A81301 /* Normal-D-Pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Normal-D-Pad.png"; sourceTree = "<group>"; };
+		9C0CBB8C187F2D0200A81301 /* Right-D-Pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Right-D-Pad.png"; sourceTree = "<group>"; };
+		9C0CBB8D187F2D0200A81301 /* Up-D-Pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Up-D-Pad.png"; sourceTree = "<group>"; };
+		9C0CBB8E187F2D0200A81301 /* UpLeft-D-Pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UpLeft-D-Pad.png"; sourceTree = "<group>"; };
+		9C0CBB8F187F2D0200A81301 /* UpRight-D-Pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UpRight-D-Pad.png"; sourceTree = "<group>"; };
+		9C0CBBA2187F3A7200A81301 /* TwoDLevelerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoDLevelerViewController.h; sourceTree = "<group>"; };
+		9C0CBBA3187F3A7200A81301 /* TwoDLevelerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoDLevelerViewController.m; sourceTree = "<group>"; };
+		9C0CBBA6187F3BF900A81301 /* info_bttn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info_bttn.png; sourceTree = "<group>"; };
+		9C0CBBA7187F3BF900A81301 /* Leveler-Base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leveler-Base.png"; sourceTree = "<group>"; };
+		9C0CBBA8187F3BF900A81301 /* Leveler-Bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leveler-Bubble.png"; sourceTree = "<group>"; };
+		9C0CBBA9187F3BF900A81301 /* Leveler-Marks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leveler-Marks.png"; sourceTree = "<group>"; };
 		9CB02F3C187DE1D40063B78A /* Widget Zoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Widget Zoo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB02F3F187DE1D40063B78A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9CB02F41187DE1D40063B78A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -304,6 +359,19 @@
 		9CB02F46187DE1D40063B78A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9C0CBBA6187F3BF900A81301 /* info_bttn.png */,
+				9C0CBBA7187F3BF900A81301 /* Leveler-Base.png */,
+				9C0CBBA8187F3BF900A81301 /* Leveler-Bubble.png */,
+				9C0CBBA9187F3BF900A81301 /* Leveler-Marks.png */,
+				9C0CBB87187F2D0200A81301 /* Down-D-Pad.png */,
+				9C0CBB88187F2D0200A81301 /* DownLeft-D-Pad.png */,
+				9C0CBB89187F2D0200A81301 /* DownRight-D-Pad.png */,
+				9C0CBB8A187F2D0200A81301 /* Left-D-Pad.png */,
+				9C0CBB8B187F2D0200A81301 /* Normal-D-Pad.png */,
+				9C0CBB8C187F2D0200A81301 /* Right-D-Pad.png */,
+				9C0CBB8D187F2D0200A81301 /* Up-D-Pad.png */,
+				9C0CBB8E187F2D0200A81301 /* UpLeft-D-Pad.png */,
+				9C0CBB8F187F2D0200A81301 /* UpRight-D-Pad.png */,
 				9CB02F47187DE1D40063B78A /* Widget Zoo-Info.plist */,
 				9CB02F48187DE1D40063B78A /* InfoPlist.strings */,
 				9CB02F4B187DE1D40063B78A /* main.m */,
@@ -388,6 +456,8 @@
 			children = (
 				9CB02F97187DE31E0063B78A /* AE2DLeveler.h */,
 				9CB02FAD187DE31E0063B78A /* AE2DLeveler.m */,
+				9C0CBBA2187F3A7200A81301 /* TwoDLevelerViewController.h */,
+				9C0CBBA3187F3A7200A81301 /* TwoDLevelerViewController.m */,
 			);
 			name = "2D Leveler";
 			sourceTree = "<group>";
@@ -408,6 +478,8 @@
 			children = (
 				9CB02F99187DE31E0063B78A /* AEGamepad.h */,
 				9CB02FAF187DE31E0063B78A /* AEGamepad.m */,
+				9C0CBB83187F2AF500A81301 /* GamepadViewController.h */,
+				9C0CBB84187F2AF500A81301 /* GamepadViewController.m */,
 			);
 			name = Gamepad;
 			sourceTree = "<group>";
@@ -421,6 +493,8 @@
 				9CB02FB7187DE31E0063B78A /* AEVerticalLeveler.m */,
 				9CB02F9A187DE31E0063B78A /* AEHorizontalLeveler.h */,
 				9CB02FB0187DE31E0063B78A /* AEHorizontalLeveler.m */,
+				9C0CBB7F187F253300A81301 /* LevelerViewController.h */,
+				9C0CBB80187F253300A81301 /* LevelerViewController.m */,
 			);
 			name = Levelers;
 			sourceTree = "<group>";
@@ -460,6 +534,8 @@
 				9CB02FB4187DE31E0063B78A /* AESlider.m */,
 				9CB03029187E13490063B78A /* SliderViewController.h */,
 				9CB0302A187E13490063B78A /* SliderViewController.m */,
+				9C0CBB7B187F235600A81301 /* SmartSliderViewController.h */,
+				9C0CBB7C187F235600A81301 /* SmartSliderViewController.m */,
 			);
 			name = Sliders;
 			sourceTree = "<group>";
@@ -618,14 +694,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C0CBBB0187F3BF900A81301 /* Leveler-Marks.png in Resources */,
 				9CB02F56187DE1D40063B78A /* Main_iPad.storyboard in Resources */,
+				9C0CBBAE187F3BF900A81301 /* Leveler-Bubble.png in Resources */,
 				9CB0300E187DF6AF0063B78A /* Control Panel Measurements in Resources */,
 				9CB02F5E187DE1D40063B78A /* Images.xcassets in Resources */,
+				9C0CBB92187F2D0200A81301 /* DownLeft-D-Pad.png in Resources */,
+				9C0CBBAC187F3BF900A81301 /* Leveler-Base.png in Resources */,
 				9CB03019187E02080063B78A /* ControlImages.xcassets in Resources */,
+				9C0CBBAA187F3BF900A81301 /* info_bttn.png in Resources */,
+				9C0CBB9A187F2D0200A81301 /* Right-D-Pad.png in Resources */,
+				9C0CBB9E187F2D0200A81301 /* UpLeft-D-Pad.png in Resources */,
+				9C0CBB94187F2D0200A81301 /* DownRight-D-Pad.png in Resources */,
 				9CB03027187E10870063B78A /* Back.png in Resources */,
+				9C0CBB98187F2D0200A81301 /* Normal-D-Pad.png in Resources */,
 				9CB0301C187E02280063B78A /* ColorCodedWidgets.xcassets in Resources */,
 				9CB02F53187DE1D40063B78A /* Main_iPhone.storyboard in Resources */,
+				9C0CBB90187F2D0200A81301 /* Down-D-Pad.png in Resources */,
 				9CB02F4A187DE1D40063B78A /* InfoPlist.strings in Resources */,
+				9C0CBB9C187F2D0200A81301 /* Up-D-Pad.png in Resources */,
+				9C0CBBA0187F2D0200A81301 /* UpRight-D-Pad.png in Resources */,
+				9C0CBB96187F2D0200A81301 /* Left-D-Pad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,11 +722,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C0CBBB1187F3BF900A81301 /* Leveler-Marks.png in Resources */,
 				9CB0301A187E02080063B78A /* ControlImages.xcassets in Resources */,
 				9CB0300F187DF6AF0063B78A /* Control Panel Measurements in Resources */,
+				9C0CBB9B187F2D0200A81301 /* Right-D-Pad.png in Resources */,
 				9CB03028187E10870063B78A /* Back.png in Resources */,
 				9CB02F6F187DE1D40063B78A /* InfoPlist.strings in Resources */,
+				9C0CBB91187F2D0200A81301 /* Down-D-Pad.png in Resources */,
+				9C0CBB99187F2D0200A81301 /* Normal-D-Pad.png in Resources */,
+				9C0CBB9D187F2D0200A81301 /* Up-D-Pad.png in Resources */,
+				9C0CBBAB187F3BF900A81301 /* info_bttn.png in Resources */,
+				9C0CBBA1187F2D0200A81301 /* UpRight-D-Pad.png in Resources */,
+				9C0CBBAF187F3BF900A81301 /* Leveler-Bubble.png in Resources */,
+				9C0CBBAD187F3BF900A81301 /* Leveler-Base.png in Resources */,
+				9C0CBB97187F2D0200A81301 /* Left-D-Pad.png in Resources */,
+				9C0CBB9F187F2D0200A81301 /* UpLeft-D-Pad.png in Resources */,
 				9CB0301D187E02280063B78A /* ColorCodedWidgets.xcassets in Resources */,
+				9C0CBB93187F2D0200A81301 /* DownLeft-D-Pad.png in Resources */,
+				9C0CBB95187F2D0200A81301 /* DownRight-D-Pad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,18 +757,22 @@
 				9CB02F50187DE1D40063B78A /* AEAppDelegate.m in Sources */,
 				9CB03020187E03EE0063B78A /* BarMeterViewController.m in Sources */,
 				9CB02FD9187DE31E0063B78A /* AEVerticalSprungWeight.m in Sources */,
+				9C0CBB7D187F235600A81301 /* SmartSliderViewController.m in Sources */,
 				9CB02FE1187DE51F0063B78A /* AEControlTheme.m in Sources */,
 				9CB02F95187DE2D10063B78A /* AEVolumeInput.m in Sources */,
 				9CB02FF9187DEA260063B78A /* ControlMenuViewController.m in Sources */,
 				9CB0303F187E25E50063B78A /* CameraViewController.m in Sources */,
 				9CB02FD3187DE31E0063B78A /* AESprungWeight.m in Sources */,
 				9CB02FC3187DE31E0063B78A /* AE2DLeveler.m in Sources */,
+				9C0CBBA4187F3A7200A81301 /* TwoDLevelerViewController.m in Sources */,
 				9CB02FC9187DE31E0063B78A /* AEHorizontalLeveler.m in Sources */,
 				9CB03012187DF83E0063B78A /* ControlDetailViewController.m in Sources */,
 				9CB02F93187DE2D10063B78A /* AEDialInput.m in Sources */,
+				9C0CBB85187F2AF500A81301 /* GamepadViewController.m in Sources */,
 				9CB02F91187DE2D10063B78A /* AEPitchInput.m in Sources */,
 				9CB02FEE187DE6A50063B78A /* AESharedAudioManager.m in Sources */,
 				9CB02FD7187DE31E0063B78A /* AEVerticalLeveler.m in Sources */,
+				9C0CBB81187F253300A81301 /* LevelerViewController.m in Sources */,
 				9CB0302B187E13490063B78A /* SliderViewController.m in Sources */,
 				9CB02FF0187DE6A50063B78A /* AEToneUnit.m in Sources */,
 				9CB02FF5187DE6DC0063B78A /* UIColor+Utilities.m in Sources */,
@@ -697,6 +803,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C0CBB86187F2AF500A81301 /* GamepadViewController.m in Sources */,
+				9C0CBB82187F253300A81301 /* LevelerViewController.m in Sources */,
+				9C0CBB7E187F235600A81301 /* SmartSliderViewController.m in Sources */,
 				9CB02FE4187DE51F0063B78A /* AEAtomsControlTheme.m in Sources */,
 				9CB03040187E25E50063B78A /* CameraViewController.m in Sources */,
 				9CB0303C187E1F940063B78A /* PlayPauseViewController.m in Sources */,
@@ -712,6 +821,7 @@
 				9CB02FCC187DE31E0063B78A /* AEHorizontalSprungWeight.m in Sources */,
 				9CB03025187E0CFC0063B78A /* ToggleSwitchViewController.m in Sources */,
 				9CB02F71187DE1D40063B78A /* Widget_ZooTests.m in Sources */,
+				9C0CBBA5187F3A7200A81301 /* TwoDLevelerViewController.m in Sources */,
 				9CB03021187E03EE0063B78A /* BarMeterViewController.m in Sources */,
 				9CB0302C187E13490063B78A /* SliderViewController.m in Sources */,
 				9CB02FD4187DE31E0063B78A /* AESprungWeight.m in Sources */,
