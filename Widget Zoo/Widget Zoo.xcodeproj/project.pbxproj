@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C0CBB74187F147900A81301 /* NoiseMeterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0CBB73187F147900A81301 /* NoiseMeterViewController.m */; };
+		9C0CBB77187F17EB00A81301 /* HorizontalWeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0CBB76187F17EB00A81301 /* HorizontalWeightViewController.m */; };
+		9C0CBB7A187F1ECA00A81301 /* VerticalWeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0CBB79187F1ECA00A81301 /* VerticalWeightViewController.m */; };
 		9CB02F40187DE1D40063B78A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB02F3F187DE1D40063B78A /* Foundation.framework */; };
 		9CB02F42187DE1D40063B78A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB02F41187DE1D40063B78A /* CoreGraphics.framework */; };
 		9CB02F44187DE1D40063B78A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB02F43187DE1D40063B78A /* UIKit.framework */; };
@@ -15,8 +18,6 @@
 		9CB02F50187DE1D40063B78A /* AEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02F4F187DE1D40063B78A /* AEAppDelegate.m */; };
 		9CB02F53187DE1D40063B78A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB02F51187DE1D40063B78A /* Main_iPhone.storyboard */; };
 		9CB02F56187DE1D40063B78A /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB02F54187DE1D40063B78A /* Main_iPad.storyboard */; };
-		9CB02F59187DE1D40063B78A /* AEMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02F58187DE1D40063B78A /* AEMasterViewController.m */; };
-		9CB02F5C187DE1D40063B78A /* AEDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02F5B187DE1D40063B78A /* AEDetailViewController.m */; };
 		9CB02F5E187DE1D40063B78A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB02F5D187DE1D40063B78A /* Images.xcassets */; };
 		9CB02F65187DE1D40063B78A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB02F64187DE1D40063B78A /* XCTest.framework */; };
 		9CB02F66187DE1D40063B78A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB02F3F187DE1D40063B78A /* Foundation.framework */; };
@@ -67,6 +68,44 @@
 		9CB02FE4187DE51F0063B78A /* AEAtomsControlTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FDE187DE51F0063B78A /* AEAtomsControlTheme.m */; };
 		9CB02FE5187DE51F0063B78A /* AEColorCodedControlTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FE0187DE51F0063B78A /* AEColorCodedControlTheme.m */; };
 		9CB02FE6187DE51F0063B78A /* AEColorCodedControlTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FE0187DE51F0063B78A /* AEColorCodedControlTheme.m */; };
+		9CB02FEE187DE6A50063B78A /* AESharedAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FEA187DE6A50063B78A /* AESharedAudioManager.m */; };
+		9CB02FEF187DE6A50063B78A /* AESharedAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FEA187DE6A50063B78A /* AESharedAudioManager.m */; };
+		9CB02FF0187DE6A50063B78A /* AEToneUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FEC187DE6A50063B78A /* AEToneUnit.m */; };
+		9CB02FF1187DE6A50063B78A /* AEToneUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FEC187DE6A50063B78A /* AEToneUnit.m */; };
+		9CB02FF5187DE6DC0063B78A /* UIColor+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FF4187DE6DC0063B78A /* UIColor+Utilities.m */; };
+		9CB02FF6187DE6DC0063B78A /* UIColor+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FF4187DE6DC0063B78A /* UIColor+Utilities.m */; };
+		9CB02FF9187DEA260063B78A /* ControlMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FF8187DEA260063B78A /* ControlMenuViewController.m */; };
+		9CB02FFA187DEA260063B78A /* ControlMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FF8187DEA260063B78A /* ControlMenuViewController.m */; };
+		9CB02FFD187DEB070063B78A /* PageDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FFC187DEB070063B78A /* PageDescriptor.m */; };
+		9CB02FFE187DEB070063B78A /* PageDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB02FFC187DEB070063B78A /* PageDescriptor.m */; };
+		9CB0300E187DF6AF0063B78A /* Control Panel Measurements in Resources */ = {isa = PBXBuildFile; fileRef = 9CB0300D187DF6AF0063B78A /* Control Panel Measurements */; };
+		9CB0300F187DF6AF0063B78A /* Control Panel Measurements in Resources */ = {isa = PBXBuildFile; fileRef = 9CB0300D187DF6AF0063B78A /* Control Panel Measurements */; };
+		9CB03012187DF83E0063B78A /* ControlDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB03011187DF83E0063B78A /* ControlDetailViewController.m */; };
+		9CB03013187DF83E0063B78A /* ControlDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB03011187DF83E0063B78A /* ControlDetailViewController.m */; };
+		9CB03016187DFEE10063B78A /* DialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB03015187DFEE10063B78A /* DialViewController.m */; };
+		9CB03017187DFEE10063B78A /* DialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB03015187DFEE10063B78A /* DialViewController.m */; };
+		9CB03019187E02080063B78A /* ControlImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB03018187E02080063B78A /* ControlImages.xcassets */; };
+		9CB0301A187E02080063B78A /* ControlImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB03018187E02080063B78A /* ControlImages.xcassets */; };
+		9CB0301C187E02280063B78A /* ColorCodedWidgets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB0301B187E02280063B78A /* ColorCodedWidgets.xcassets */; };
+		9CB0301D187E02280063B78A /* ColorCodedWidgets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB0301B187E02280063B78A /* ColorCodedWidgets.xcassets */; };
+		9CB03020187E03EE0063B78A /* BarMeterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB0301F187E03EE0063B78A /* BarMeterViewController.m */; };
+		9CB03021187E03EE0063B78A /* BarMeterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB0301F187E03EE0063B78A /* BarMeterViewController.m */; };
+		9CB03024187E0CFC0063B78A /* ToggleSwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB03023187E0CFC0063B78A /* ToggleSwitchViewController.m */; };
+		9CB03025187E0CFC0063B78A /* ToggleSwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB03023187E0CFC0063B78A /* ToggleSwitchViewController.m */; };
+		9CB03027187E10870063B78A /* Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CB03026187E10870063B78A /* Back.png */; };
+		9CB03028187E10870063B78A /* Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CB03026187E10870063B78A /* Back.png */; };
+		9CB0302B187E13490063B78A /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB0302A187E13490063B78A /* SliderViewController.m */; };
+		9CB0302C187E13490063B78A /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB0302A187E13490063B78A /* SliderViewController.m */; };
+		9CB0302F187E171B0063B78A /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB0302E187E171B0063B78A /* ButtonViewController.m */; };
+		9CB03030187E171B0063B78A /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB0302E187E171B0063B78A /* ButtonViewController.m */; };
+		9CB03033187E1B390063B78A /* VolumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB03032187E1B390063B78A /* VolumeViewController.m */; };
+		9CB03034187E1B390063B78A /* VolumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB03032187E1B390063B78A /* VolumeViewController.m */; };
+		9CB03037187E1D3F0063B78A /* PitchControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB03036187E1D3F0063B78A /* PitchControlViewController.m */; };
+		9CB03038187E1D3F0063B78A /* PitchControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB03036187E1D3F0063B78A /* PitchControlViewController.m */; };
+		9CB0303B187E1F940063B78A /* PlayPauseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB0303A187E1F940063B78A /* PlayPauseViewController.m */; };
+		9CB0303C187E1F940063B78A /* PlayPauseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB0303A187E1F940063B78A /* PlayPauseViewController.m */; };
+		9CB0303F187E25E50063B78A /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB0303E187E25E50063B78A /* CameraViewController.m */; };
+		9CB03040187E25E50063B78A /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB0303E187E25E50063B78A /* CameraViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +119,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C0CBB72187F147900A81301 /* NoiseMeterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoiseMeterViewController.h; sourceTree = "<group>"; };
+		9C0CBB73187F147900A81301 /* NoiseMeterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoiseMeterViewController.m; sourceTree = "<group>"; };
+		9C0CBB75187F17EB00A81301 /* HorizontalWeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalWeightViewController.h; sourceTree = "<group>"; };
+		9C0CBB76187F17EB00A81301 /* HorizontalWeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalWeightViewController.m; sourceTree = "<group>"; };
+		9C0CBB78187F1ECA00A81301 /* VerticalWeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalWeightViewController.h; sourceTree = "<group>"; };
+		9C0CBB79187F1ECA00A81301 /* VerticalWeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalWeightViewController.m; sourceTree = "<group>"; };
 		9CB02F3C187DE1D40063B78A /* Widget Zoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Widget Zoo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB02F3F187DE1D40063B78A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9CB02F41187DE1D40063B78A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -92,10 +137,6 @@
 		9CB02F4F187DE1D40063B78A /* AEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AEAppDelegate.m; sourceTree = "<group>"; };
 		9CB02F52187DE1D40063B78A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		9CB02F55187DE1D40063B78A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		9CB02F57187DE1D40063B78A /* AEMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEMasterViewController.h; sourceTree = "<group>"; };
-		9CB02F58187DE1D40063B78A /* AEMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AEMasterViewController.m; sourceTree = "<group>"; };
-		9CB02F5A187DE1D40063B78A /* AEDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEDetailViewController.h; sourceTree = "<group>"; };
-		9CB02F5B187DE1D40063B78A /* AEDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AEDetailViewController.m; sourceTree = "<group>"; };
 		9CB02F5D187DE1D40063B78A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9CB02F63187DE1D40063B78A /* Widget ZooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Widget ZooTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB02F64187DE1D40063B78A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -146,6 +187,41 @@
 		9CB02FDE187DE51F0063B78A /* AEAtomsControlTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEAtomsControlTheme.m; sourceTree = "<group>"; };
 		9CB02FDF187DE51F0063B78A /* AEColorCodedControlTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEColorCodedControlTheme.h; sourceTree = "<group>"; };
 		9CB02FE0187DE51F0063B78A /* AEColorCodedControlTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEColorCodedControlTheme.m; sourceTree = "<group>"; };
+		9CB02FE9187DE6A50063B78A /* AESharedAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESharedAudioManager.h; sourceTree = "<group>"; };
+		9CB02FEA187DE6A50063B78A /* AESharedAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESharedAudioManager.m; sourceTree = "<group>"; };
+		9CB02FEB187DE6A50063B78A /* AEToneUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEToneUnit.h; sourceTree = "<group>"; };
+		9CB02FEC187DE6A50063B78A /* AEToneUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEToneUnit.m; sourceTree = "<group>"; };
+		9CB02FED187DE6A50063B78A /* AEVolumeChangeListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEVolumeChangeListener.h; sourceTree = "<group>"; };
+		9CB02FF3187DE6DC0063B78A /* UIColor+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utilities.h"; sourceTree = "<group>"; };
+		9CB02FF4187DE6DC0063B78A /* UIColor+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utilities.m"; sourceTree = "<group>"; };
+		9CB02FF7187DEA260063B78A /* ControlMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlMenuViewController.h; sourceTree = "<group>"; };
+		9CB02FF8187DEA260063B78A /* ControlMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlMenuViewController.m; sourceTree = "<group>"; };
+		9CB02FFB187DEB070063B78A /* PageDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageDescriptor.h; sourceTree = "<group>"; };
+		9CB02FFC187DEB070063B78A /* PageDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageDescriptor.m; sourceTree = "<group>"; };
+		9CB0300D187DF6AF0063B78A /* Control Panel Measurements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Control Panel Measurements"; sourceTree = "<group>"; };
+		9CB03010187DF83E0063B78A /* ControlDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlDetailViewController.h; sourceTree = "<group>"; };
+		9CB03011187DF83E0063B78A /* ControlDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlDetailViewController.m; sourceTree = "<group>"; };
+		9CB03014187DFEE10063B78A /* DialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialViewController.h; sourceTree = "<group>"; };
+		9CB03015187DFEE10063B78A /* DialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialViewController.m; sourceTree = "<group>"; };
+		9CB03018187E02080063B78A /* ControlImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ControlImages.xcassets; sourceTree = "<group>"; };
+		9CB0301B187E02280063B78A /* ColorCodedWidgets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorCodedWidgets.xcassets; sourceTree = "<group>"; };
+		9CB0301E187E03EE0063B78A /* BarMeterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarMeterViewController.h; sourceTree = "<group>"; };
+		9CB0301F187E03EE0063B78A /* BarMeterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarMeterViewController.m; sourceTree = "<group>"; };
+		9CB03022187E0CFC0063B78A /* ToggleSwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToggleSwitchViewController.h; sourceTree = "<group>"; };
+		9CB03023187E0CFC0063B78A /* ToggleSwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToggleSwitchViewController.m; sourceTree = "<group>"; };
+		9CB03026187E10870063B78A /* Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Back.png; sourceTree = "<group>"; };
+		9CB03029187E13490063B78A /* SliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderViewController.h; sourceTree = "<group>"; };
+		9CB0302A187E13490063B78A /* SliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderViewController.m; sourceTree = "<group>"; };
+		9CB0302D187E171B0063B78A /* ButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonViewController.h; sourceTree = "<group>"; };
+		9CB0302E187E171B0063B78A /* ButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonViewController.m; sourceTree = "<group>"; };
+		9CB03031187E1B390063B78A /* VolumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeViewController.h; sourceTree = "<group>"; };
+		9CB03032187E1B390063B78A /* VolumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeViewController.m; sourceTree = "<group>"; };
+		9CB03035187E1D3F0063B78A /* PitchControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PitchControlViewController.h; sourceTree = "<group>"; };
+		9CB03036187E1D3F0063B78A /* PitchControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PitchControlViewController.m; sourceTree = "<group>"; };
+		9CB03039187E1F940063B78A /* PlayPauseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayPauseViewController.h; sourceTree = "<group>"; };
+		9CB0303A187E1F940063B78A /* PlayPauseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayPauseViewController.m; sourceTree = "<group>"; };
+		9CB0303D187E25E50063B78A /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		9CB0303E187E25E50063B78A /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,12 +281,19 @@
 		9CB02F45187DE1D40063B78A /* Widget Zoo */ = {
 			isa = PBXGroup;
 			children = (
+				9CB0301B187E02280063B78A /* ColorCodedWidgets.xcassets */,
+				9CB03018187E02080063B78A /* ControlImages.xcassets */,
 				9CB02F4E187DE1D40063B78A /* AEAppDelegate.h */,
 				9CB02F4F187DE1D40063B78A /* AEAppDelegate.m */,
 				9CB02F7B187DE2B70063B78A /* AEControl.h */,
 				9CB02F7C187DE2B70063B78A /* AEControl.m */,
+				9CB02FF3187DE6DC0063B78A /* UIColor+Utilities.h */,
+				9CB02FF4187DE6DC0063B78A /* UIColor+Utilities.m */,
+				9CB02FFB187DEB070063B78A /* PageDescriptor.h */,
+				9CB02FFC187DEB070063B78A /* PageDescriptor.m */,
+				9CB03026187E10870063B78A /* Back.png */,
+				9CB02FF2187DE6AB0063B78A /* Audio */,
 				9CB02FE7187DE5260063B78A /* UI Themes */,
-				9CB02F7A187DE2A50063B78A /* Controls */,
 				9CB02FE8187DE5380063B78A /* View Controllers */,
 				9CB02F5D187DE1D40063B78A /* Images.xcassets */,
 				9CB02F46187DE1D40063B78A /* Supporting Files */,
@@ -247,49 +330,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9CB02F7A187DE2A50063B78A /* Controls */ = {
-			isa = PBXGroup;
-			children = (
-				9CB02F97187DE31E0063B78A /* AE2DLeveler.h */,
-				9CB02F98187DE31E0063B78A /* AEButton.h */,
-				9CB02F99187DE31E0063B78A /* AEGamepad.h */,
-				9CB02F9A187DE31E0063B78A /* AEHorizontalLeveler.h */,
-				9CB02F9B187DE31E0063B78A /* AEHorizontalSprungWeight.h */,
-				9CB02F9C187DE31E0063B78A /* AELeveler.h */,
-				9CB02F9D187DE31E0063B78A /* AENoiseMeter.h */,
-				9CB02F9E187DE31E0063B78A /* AESlider.h */,
-				9CB02F9F187DE31E0063B78A /* AESprungWeight.h */,
-				9CB02FA0187DE31E0063B78A /* AEToggle.h */,
-				9CB02FA1187DE31E0063B78A /* AEVerticalLeveler.h */,
-				9CB02FA2187DE31E0063B78A /* AEVerticalSprungWeight.h */,
-				9CB02FAD187DE31E0063B78A /* AE2DLeveler.m */,
-				9CB02FAE187DE31E0063B78A /* AEButton.m */,
-				9CB02FAF187DE31E0063B78A /* AEGamepad.m */,
-				9CB02FB0187DE31E0063B78A /* AEHorizontalLeveler.m */,
-				9CB02FB1187DE31E0063B78A /* AEHorizontalSprungWeight.m */,
-				9CB02FB2187DE31E0063B78A /* AELeveler.m */,
-				9CB02FB3187DE31E0063B78A /* AENoiseMeter.m */,
-				9CB02FB4187DE31E0063B78A /* AESlider.m */,
-				9CB02FB5187DE31E0063B78A /* AESprungWeight.m */,
-				9CB02FB6187DE31E0063B78A /* AEToggle.m */,
-				9CB02FB7187DE31E0063B78A /* AEVerticalLeveler.m */,
-				9CB02FB8187DE31E0063B78A /* AEVerticalSprungWeight.m */,
-				9CB02F7F187DE2D10063B78A /* AEBarMeterInput.h */,
-				9CB02F80187DE2D10063B78A /* AEBarMeterInput.m */,
-				9CB02F81187DE2D10063B78A /* AECameraInput.h */,
-				9CB02F82187DE2D10063B78A /* AECameraInput.m */,
-				9CB02F83187DE2D10063B78A /* AEMusicInput.h */,
-				9CB02F84187DE2D10063B78A /* AEMusicInput.m */,
-				9CB02F85187DE2D10063B78A /* AEPitchInput.h */,
-				9CB02F86187DE2D10063B78A /* AEPitchInput.m */,
-				9CB02F87187DE2D10063B78A /* AEDialInput.h */,
-				9CB02F88187DE2D10063B78A /* AEDialInput.m */,
-				9CB02F89187DE2D10063B78A /* AEVolumeInput.h */,
-				9CB02F8A187DE2D10063B78A /* AEVolumeInput.m */,
-			);
-			name = Controls;
-			sourceTree = "<group>";
-		};
 		9CB02FE7187DE5260063B78A /* UI Themes */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,14 +346,199 @@
 		9CB02FE8187DE5380063B78A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9CB0300D187DF6AF0063B78A /* Control Panel Measurements */,
 				9CB02F51187DE1D40063B78A /* Main_iPhone.storyboard */,
 				9CB02F54187DE1D40063B78A /* Main_iPad.storyboard */,
-				9CB02F57187DE1D40063B78A /* AEMasterViewController.h */,
-				9CB02F58187DE1D40063B78A /* AEMasterViewController.m */,
-				9CB02F5A187DE1D40063B78A /* AEDetailViewController.h */,
-				9CB02F5B187DE1D40063B78A /* AEDetailViewController.m */,
+				9CB02FF7187DEA260063B78A /* ControlMenuViewController.h */,
+				9CB02FF8187DEA260063B78A /* ControlMenuViewController.m */,
+				9CB03010187DF83E0063B78A /* ControlDetailViewController.h */,
+				9CB03011187DF83E0063B78A /* ControlDetailViewController.m */,
+				9CB0300C187DF4CA0063B78A /* Volume Input */,
+				9CB0300B187DF4BF0063B78A /* Dial Input */,
+				9CB0300A187DF4B20063B78A /* Pitch Shift Input */,
+				9CB03009187DF4A20063B78A /* Play / Pause Input */,
+				9CB03008187DF4910063B78A /* Camera Input */,
+				9CB03007187DF4840063B78A /* Bar Meter Input */,
+				9CB03006187DF46D0063B78A /* Toggle Switch */,
+				9CB03005187DF4570063B78A /* Sliders */,
+				9CB03004187DF4460063B78A /* Noise Meter */,
+				9CB03003187DF4200063B78A /* Sprung Weights */,
+				9CB03002187DF4020063B78A /* Levelers */,
+				9CB03001187DF3E80063B78A /* Gamepad */,
+				9CB03000187DF3D10063B78A /* Button */,
+				9CB02FFF187DF3A20063B78A /* 2D Leveler */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9CB02FF2187DE6AB0063B78A /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				9CB02FE9187DE6A50063B78A /* AESharedAudioManager.h */,
+				9CB02FEA187DE6A50063B78A /* AESharedAudioManager.m */,
+				9CB02FEB187DE6A50063B78A /* AEToneUnit.h */,
+				9CB02FEC187DE6A50063B78A /* AEToneUnit.m */,
+				9CB02FED187DE6A50063B78A /* AEVolumeChangeListener.h */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		9CB02FFF187DF3A20063B78A /* 2D Leveler */ = {
+			isa = PBXGroup;
+			children = (
+				9CB02F97187DE31E0063B78A /* AE2DLeveler.h */,
+				9CB02FAD187DE31E0063B78A /* AE2DLeveler.m */,
+			);
+			name = "2D Leveler";
+			sourceTree = "<group>";
+		};
+		9CB03000187DF3D10063B78A /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				9CB02F98187DE31E0063B78A /* AEButton.h */,
+				9CB02FAE187DE31E0063B78A /* AEButton.m */,
+				9CB0302D187E171B0063B78A /* ButtonViewController.h */,
+				9CB0302E187E171B0063B78A /* ButtonViewController.m */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		9CB03001187DF3E80063B78A /* Gamepad */ = {
+			isa = PBXGroup;
+			children = (
+				9CB02F99187DE31E0063B78A /* AEGamepad.h */,
+				9CB02FAF187DE31E0063B78A /* AEGamepad.m */,
+			);
+			name = Gamepad;
+			sourceTree = "<group>";
+		};
+		9CB03002187DF4020063B78A /* Levelers */ = {
+			isa = PBXGroup;
+			children = (
+				9CB02F9C187DE31E0063B78A /* AELeveler.h */,
+				9CB02FB2187DE31E0063B78A /* AELeveler.m */,
+				9CB02FA1187DE31E0063B78A /* AEVerticalLeveler.h */,
+				9CB02FB7187DE31E0063B78A /* AEVerticalLeveler.m */,
+				9CB02F9A187DE31E0063B78A /* AEHorizontalLeveler.h */,
+				9CB02FB0187DE31E0063B78A /* AEHorizontalLeveler.m */,
+			);
+			name = Levelers;
+			sourceTree = "<group>";
+		};
+		9CB03003187DF4200063B78A /* Sprung Weights */ = {
+			isa = PBXGroup;
+			children = (
+				9CB02F9F187DE31E0063B78A /* AESprungWeight.h */,
+				9CB02FB5187DE31E0063B78A /* AESprungWeight.m */,
+				9CB02FA2187DE31E0063B78A /* AEVerticalSprungWeight.h */,
+				9CB02FB8187DE31E0063B78A /* AEVerticalSprungWeight.m */,
+				9CB02F9B187DE31E0063B78A /* AEHorizontalSprungWeight.h */,
+				9CB02FB1187DE31E0063B78A /* AEHorizontalSprungWeight.m */,
+				9C0CBB75187F17EB00A81301 /* HorizontalWeightViewController.h */,
+				9C0CBB76187F17EB00A81301 /* HorizontalWeightViewController.m */,
+				9C0CBB78187F1ECA00A81301 /* VerticalWeightViewController.h */,
+				9C0CBB79187F1ECA00A81301 /* VerticalWeightViewController.m */,
+			);
+			name = "Sprung Weights";
+			sourceTree = "<group>";
+		};
+		9CB03004187DF4460063B78A /* Noise Meter */ = {
+			isa = PBXGroup;
+			children = (
+				9CB02F9D187DE31E0063B78A /* AENoiseMeter.h */,
+				9CB02FB3187DE31E0063B78A /* AENoiseMeter.m */,
+				9C0CBB72187F147900A81301 /* NoiseMeterViewController.h */,
+				9C0CBB73187F147900A81301 /* NoiseMeterViewController.m */,
+			);
+			name = "Noise Meter";
+			sourceTree = "<group>";
+		};
+		9CB03005187DF4570063B78A /* Sliders */ = {
+			isa = PBXGroup;
+			children = (
+				9CB02F9E187DE31E0063B78A /* AESlider.h */,
+				9CB02FB4187DE31E0063B78A /* AESlider.m */,
+				9CB03029187E13490063B78A /* SliderViewController.h */,
+				9CB0302A187E13490063B78A /* SliderViewController.m */,
+			);
+			name = Sliders;
+			sourceTree = "<group>";
+		};
+		9CB03006187DF46D0063B78A /* Toggle Switch */ = {
+			isa = PBXGroup;
+			children = (
+				9CB02FA0187DE31E0063B78A /* AEToggle.h */,
+				9CB02FB6187DE31E0063B78A /* AEToggle.m */,
+				9CB03022187E0CFC0063B78A /* ToggleSwitchViewController.h */,
+				9CB03023187E0CFC0063B78A /* ToggleSwitchViewController.m */,
+			);
+			name = "Toggle Switch";
+			sourceTree = "<group>";
+		};
+		9CB03007187DF4840063B78A /* Bar Meter Input */ = {
+			isa = PBXGroup;
+			children = (
+				9CB02F7F187DE2D10063B78A /* AEBarMeterInput.h */,
+				9CB02F80187DE2D10063B78A /* AEBarMeterInput.m */,
+				9CB0301E187E03EE0063B78A /* BarMeterViewController.h */,
+				9CB0301F187E03EE0063B78A /* BarMeterViewController.m */,
+			);
+			name = "Bar Meter Input";
+			sourceTree = "<group>";
+		};
+		9CB03008187DF4910063B78A /* Camera Input */ = {
+			isa = PBXGroup;
+			children = (
+				9CB02F81187DE2D10063B78A /* AECameraInput.h */,
+				9CB02F82187DE2D10063B78A /* AECameraInput.m */,
+				9CB0303D187E25E50063B78A /* CameraViewController.h */,
+				9CB0303E187E25E50063B78A /* CameraViewController.m */,
+			);
+			name = "Camera Input";
+			sourceTree = "<group>";
+		};
+		9CB03009187DF4A20063B78A /* Play / Pause Input */ = {
+			isa = PBXGroup;
+			children = (
+				9CB02F83187DE2D10063B78A /* AEMusicInput.h */,
+				9CB02F84187DE2D10063B78A /* AEMusicInput.m */,
+				9CB03039187E1F940063B78A /* PlayPauseViewController.h */,
+				9CB0303A187E1F940063B78A /* PlayPauseViewController.m */,
+			);
+			name = "Play / Pause Input";
+			sourceTree = "<group>";
+		};
+		9CB0300A187DF4B20063B78A /* Pitch Shift Input */ = {
+			isa = PBXGroup;
+			children = (
+				9CB02F85187DE2D10063B78A /* AEPitchInput.h */,
+				9CB02F86187DE2D10063B78A /* AEPitchInput.m */,
+				9CB03035187E1D3F0063B78A /* PitchControlViewController.h */,
+				9CB03036187E1D3F0063B78A /* PitchControlViewController.m */,
+			);
+			name = "Pitch Shift Input";
+			sourceTree = "<group>";
+		};
+		9CB0300B187DF4BF0063B78A /* Dial Input */ = {
+			isa = PBXGroup;
+			children = (
+				9CB02F87187DE2D10063B78A /* AEDialInput.h */,
+				9CB02F88187DE2D10063B78A /* AEDialInput.m */,
+				9CB03014187DFEE10063B78A /* DialViewController.h */,
+				9CB03015187DFEE10063B78A /* DialViewController.m */,
+			);
+			name = "Dial Input";
+			sourceTree = "<group>";
+		};
+		9CB0300C187DF4CA0063B78A /* Volume Input */ = {
+			isa = PBXGroup;
+			children = (
+				9CB02F89187DE2D10063B78A /* AEVolumeInput.h */,
+				9CB02F8A187DE2D10063B78A /* AEVolumeInput.m */,
+				9CB03031187E1B390063B78A /* VolumeViewController.h */,
+				9CB03032187E1B390063B78A /* VolumeViewController.m */,
+			);
+			name = "Volume Input";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,7 +619,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CB02F56187DE1D40063B78A /* Main_iPad.storyboard in Resources */,
+				9CB0300E187DF6AF0063B78A /* Control Panel Measurements in Resources */,
 				9CB02F5E187DE1D40063B78A /* Images.xcassets in Resources */,
+				9CB03019187E02080063B78A /* ControlImages.xcassets in Resources */,
+				9CB03027187E10870063B78A /* Back.png in Resources */,
+				9CB0301C187E02280063B78A /* ColorCodedWidgets.xcassets in Resources */,
 				9CB02F53187DE1D40063B78A /* Main_iPhone.storyboard in Resources */,
 				9CB02F4A187DE1D40063B78A /* InfoPlist.strings in Resources */,
 			);
@@ -404,7 +633,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB0301A187E02080063B78A /* ControlImages.xcassets in Resources */,
+				9CB0300F187DF6AF0063B78A /* Control Panel Measurements in Resources */,
+				9CB03028187E10870063B78A /* Back.png in Resources */,
 				9CB02F6F187DE1D40063B78A /* InfoPlist.strings in Resources */,
+				9CB0301D187E02280063B78A /* ColorCodedWidgets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,30 +650,46 @@
 			files = (
 				9CB02FCF187DE31E0063B78A /* AENoiseMeter.m in Sources */,
 				9CB02FD5187DE31E0063B78A /* AEToggle.m in Sources */,
+				9C0CBB7A187F1ECA00A81301 /* VerticalWeightViewController.m in Sources */,
 				9CB02F8F187DE2D10063B78A /* AEMusicInput.m in Sources */,
 				9CB02F50187DE1D40063B78A /* AEAppDelegate.m in Sources */,
+				9CB03020187E03EE0063B78A /* BarMeterViewController.m in Sources */,
 				9CB02FD9187DE31E0063B78A /* AEVerticalSprungWeight.m in Sources */,
 				9CB02FE1187DE51F0063B78A /* AEControlTheme.m in Sources */,
 				9CB02F95187DE2D10063B78A /* AEVolumeInput.m in Sources */,
+				9CB02FF9187DEA260063B78A /* ControlMenuViewController.m in Sources */,
+				9CB0303F187E25E50063B78A /* CameraViewController.m in Sources */,
 				9CB02FD3187DE31E0063B78A /* AESprungWeight.m in Sources */,
 				9CB02FC3187DE31E0063B78A /* AE2DLeveler.m in Sources */,
 				9CB02FC9187DE31E0063B78A /* AEHorizontalLeveler.m in Sources */,
+				9CB03012187DF83E0063B78A /* ControlDetailViewController.m in Sources */,
 				9CB02F93187DE2D10063B78A /* AEDialInput.m in Sources */,
-				9CB02F59187DE1D40063B78A /* AEMasterViewController.m in Sources */,
 				9CB02F91187DE2D10063B78A /* AEPitchInput.m in Sources */,
+				9CB02FEE187DE6A50063B78A /* AESharedAudioManager.m in Sources */,
 				9CB02FD7187DE31E0063B78A /* AEVerticalLeveler.m in Sources */,
+				9CB0302B187E13490063B78A /* SliderViewController.m in Sources */,
+				9CB02FF0187DE6A50063B78A /* AEToneUnit.m in Sources */,
+				9CB02FF5187DE6DC0063B78A /* UIColor+Utilities.m in Sources */,
+				9CB03024187E0CFC0063B78A /* ToggleSwitchViewController.m in Sources */,
 				9CB02F4C187DE1D40063B78A /* main.m in Sources */,
+				9C0CBB74187F147900A81301 /* NoiseMeterViewController.m in Sources */,
 				9CB02FC5187DE31E0063B78A /* AEButton.m in Sources */,
+				9CB0302F187E171B0063B78A /* ButtonViewController.m in Sources */,
 				9CB02FC7187DE31E0063B78A /* AEGamepad.m in Sources */,
 				9CB02FE5187DE51F0063B78A /* AEColorCodedControlTheme.m in Sources */,
 				9CB02FE3187DE51F0063B78A /* AEAtomsControlTheme.m in Sources */,
+				9CB02FFD187DEB070063B78A /* PageDescriptor.m in Sources */,
 				9CB02F7D187DE2B70063B78A /* AEControl.m in Sources */,
 				9CB02FD1187DE31E0063B78A /* AESlider.m in Sources */,
 				9CB02FCB187DE31E0063B78A /* AEHorizontalSprungWeight.m in Sources */,
 				9CB02F8B187DE2D10063B78A /* AEBarMeterInput.m in Sources */,
+				9CB03033187E1B390063B78A /* VolumeViewController.m in Sources */,
 				9CB02FCD187DE31E0063B78A /* AELeveler.m in Sources */,
 				9CB02F8D187DE2D10063B78A /* AECameraInput.m in Sources */,
-				9CB02F5C187DE1D40063B78A /* AEDetailViewController.m in Sources */,
+				9C0CBB77187F17EB00A81301 /* HorizontalWeightViewController.m in Sources */,
+				9CB03037187E1D3F0063B78A /* PitchControlViewController.m in Sources */,
+				9CB03016187DFEE10063B78A /* DialViewController.m in Sources */,
+				9CB0303B187E1F940063B78A /* PlayPauseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,24 +698,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CB02FE4187DE51F0063B78A /* AEAtomsControlTheme.m in Sources */,
+				9CB03040187E25E50063B78A /* CameraViewController.m in Sources */,
+				9CB0303C187E1F940063B78A /* PlayPauseViewController.m in Sources */,
 				9CB02FC4187DE31E0063B78A /* AE2DLeveler.m in Sources */,
+				9CB02FF6187DE6DC0063B78A /* UIColor+Utilities.m in Sources */,
 				9CB02F96187DE2D10063B78A /* AEVolumeInput.m in Sources */,
 				9CB02FDA187DE31E0063B78A /* AEVerticalSprungWeight.m in Sources */,
 				9CB02FC8187DE31E0063B78A /* AEGamepad.m in Sources */,
+				9CB03017187DFEE10063B78A /* DialViewController.m in Sources */,
+				9CB03038187E1D3F0063B78A /* PitchControlViewController.m in Sources */,
 				9CB02FCE187DE31E0063B78A /* AELeveler.m in Sources */,
+				9CB02FFA187DEA260063B78A /* ControlMenuViewController.m in Sources */,
 				9CB02FCC187DE31E0063B78A /* AEHorizontalSprungWeight.m in Sources */,
+				9CB03025187E0CFC0063B78A /* ToggleSwitchViewController.m in Sources */,
 				9CB02F71187DE1D40063B78A /* Widget_ZooTests.m in Sources */,
+				9CB03021187E03EE0063B78A /* BarMeterViewController.m in Sources */,
+				9CB0302C187E13490063B78A /* SliderViewController.m in Sources */,
 				9CB02FD4187DE31E0063B78A /* AESprungWeight.m in Sources */,
 				9CB02FE6187DE51F0063B78A /* AEColorCodedControlTheme.m in Sources */,
+				9CB02FF1187DE6A50063B78A /* AEToneUnit.m in Sources */,
 				9CB02FD0187DE31E0063B78A /* AENoiseMeter.m in Sources */,
 				9CB02FD8187DE31E0063B78A /* AEVerticalLeveler.m in Sources */,
 				9CB02FC6187DE31E0063B78A /* AEButton.m in Sources */,
 				9CB02F8E187DE2D10063B78A /* AECameraInput.m in Sources */,
 				9CB02F94187DE2D10063B78A /* AEDialInput.m in Sources */,
+				9CB03013187DF83E0063B78A /* ControlDetailViewController.m in Sources */,
 				9CB02FCA187DE31E0063B78A /* AEHorizontalLeveler.m in Sources */,
+				9CB03034187E1B390063B78A /* VolumeViewController.m in Sources */,
+				9CB03030187E171B0063B78A /* ButtonViewController.m in Sources */,
+				9CB02FFE187DEB070063B78A /* PageDescriptor.m in Sources */,
 				9CB02F8C187DE2D10063B78A /* AEBarMeterInput.m in Sources */,
 				9CB02FD6187DE31E0063B78A /* AEToggle.m in Sources */,
 				9CB02F92187DE2D10063B78A /* AEPitchInput.m in Sources */,
+				9CB02FEF187DE6A50063B78A /* AESharedAudioManager.m in Sources */,
 				9CB02FE2187DE51F0063B78A /* AEControlTheme.m in Sources */,
 				9CB02F7E187DE2B70063B78A /* AEControl.m in Sources */,
 				9CB02FD2187DE31E0063B78A /* AESlider.m in Sources */,
@@ -603,6 +867,7 @@
 				GCC_PREFIX_HEADER = "Widget Zoo/Widget Zoo-Prefix.pch";
 				INFOPLIST_FILE = "Widget Zoo/Widget Zoo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9D770E2B-D769-4304-9D4A-FF326BE4DD42";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -616,6 +881,7 @@
 				GCC_PREFIX_HEADER = "Widget Zoo/Widget Zoo-Prefix.pch";
 				INFOPLIST_FILE = "Widget Zoo/Widget Zoo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9D770E2B-D769-4304-9D4A-FF326BE4DD42";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -681,6 +947,7 @@
 				9CB02F76187DE1D40063B78A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CB02F77187DE1D40063B78A /* Build configuration list for PBXNativeTarget "Widget ZooTests" */ = {
 			isa = XCConfigurationList;
@@ -689,6 +956,7 @@
 				9CB02F79187DE1D40063B78A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

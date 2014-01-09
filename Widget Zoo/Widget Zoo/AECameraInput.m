@@ -8,7 +8,6 @@
 
 #import <AVFoundation/AVFoundation.h>
 #import "AECameraInput.h"
-#import "Flurry.h"
 #import "UIColor+Utilities.h"
 
 @interface AECameraInput ()
@@ -163,7 +162,6 @@ const CGFloat kThresholdX = 50;
         if (videoConnection) {
             [self.imageOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
                 if (error) {
-                    [Flurry logError:@"Error taking picture in [AECameraInput -takePicture]" message:@"" error:error];
                     NSLog(@"ERROR taking picture: %@", [error localizedDescription]);
                 }
                 else {

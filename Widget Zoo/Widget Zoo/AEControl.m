@@ -7,7 +7,6 @@
 //
 
 #import "AEControl.h"
-#import "Flurry.h"
 
 @implementation AEControl
 
@@ -90,7 +89,6 @@
             return @"AEHorizontalRightSprungWeightID";
             break;
         default:
-            [Flurry logError:@"Unknown controlID in [AEControlLibrary -stringForControlID:]" message:@"" error:nil];
             return [NSString stringWithFormat:@"UNKNOWN CONTROL ID: %d", controlID];
             break;
     }
