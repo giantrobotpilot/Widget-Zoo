@@ -44,6 +44,10 @@
 		9C0CBBAF187F3BF900A81301 /* Leveler-Bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBBA8187F3BF900A81301 /* Leveler-Bubble.png */; };
 		9C0CBBB0187F3BF900A81301 /* Leveler-Marks.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBBA9187F3BF900A81301 /* Leveler-Marks.png */; };
 		9C0CBBB1187F3BF900A81301 /* Leveler-Marks.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBBA9187F3BF900A81301 /* Leveler-Marks.png */; };
+		9CA86D2F187F5D30004FB0A7 /* NumberOutputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA86D2E187F5D30004FB0A7 /* NumberOutputViewController.m */; };
+		9CA86D30187F5D30004FB0A7 /* NumberOutputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA86D2E187F5D30004FB0A7 /* NumberOutputViewController.m */; };
+		9CA86D33187F5D52004FB0A7 /* AENumericalDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA86D32187F5D52004FB0A7 /* AENumericalDisplay.m */; };
+		9CA86D34187F5D52004FB0A7 /* AENumericalDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA86D32187F5D52004FB0A7 /* AENumericalDisplay.m */; };
 		9CB02F40187DE1D40063B78A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB02F3F187DE1D40063B78A /* Foundation.framework */; };
 		9CB02F42187DE1D40063B78A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB02F41187DE1D40063B78A /* CoreGraphics.framework */; };
 		9CB02F44187DE1D40063B78A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB02F43187DE1D40063B78A /* UIKit.framework */; };
@@ -180,6 +184,10 @@
 		9C0CBBA7187F3BF900A81301 /* Leveler-Base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leveler-Base.png"; sourceTree = "<group>"; };
 		9C0CBBA8187F3BF900A81301 /* Leveler-Bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leveler-Bubble.png"; sourceTree = "<group>"; };
 		9C0CBBA9187F3BF900A81301 /* Leveler-Marks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leveler-Marks.png"; sourceTree = "<group>"; };
+		9CA86D2D187F5D30004FB0A7 /* NumberOutputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberOutputViewController.h; sourceTree = "<group>"; };
+		9CA86D2E187F5D30004FB0A7 /* NumberOutputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberOutputViewController.m; sourceTree = "<group>"; };
+		9CA86D31187F5D52004FB0A7 /* AENumericalDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AENumericalDisplay.h; sourceTree = "<group>"; };
+		9CA86D32187F5D52004FB0A7 /* AENumericalDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AENumericalDisplay.m; sourceTree = "<group>"; };
 		9CB02F3C187DE1D40063B78A /* Widget Zoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Widget Zoo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB02F3F187DE1D40063B78A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9CB02F41187DE1D40063B78A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -303,6 +311,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9CA86D2C187F5D09004FB0A7 /* Numerical Counter */ = {
+			isa = PBXGroup;
+			children = (
+				9CA86D31187F5D52004FB0A7 /* AENumericalDisplay.h */,
+				9CA86D32187F5D52004FB0A7 /* AENumericalDisplay.m */,
+				9CA86D2D187F5D30004FB0A7 /* NumberOutputViewController.h */,
+				9CA86D2E187F5D30004FB0A7 /* NumberOutputViewController.m */,
+			);
+			name = "Numerical Counter";
+			sourceTree = "<group>";
+		};
 		9CB02F33187DE1D40063B78A = {
 			isa = PBXGroup;
 			children = (
@@ -434,6 +453,7 @@
 				9CB03002187DF4020063B78A /* Levelers */,
 				9CB03001187DF3E80063B78A /* Gamepad */,
 				9CB03000187DF3D10063B78A /* Button */,
+				9CA86D2C187F5D09004FB0A7 /* Numerical Counter */,
 				9CB02FFF187DF3A20063B78A /* 2D Leveler */,
 			);
 			name = "View Controllers";
@@ -751,6 +771,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CB02FCF187DE31E0063B78A /* AENoiseMeter.m in Sources */,
+				9CA86D2F187F5D30004FB0A7 /* NumberOutputViewController.m in Sources */,
 				9CB02FD5187DE31E0063B78A /* AEToggle.m in Sources */,
 				9C0CBB7A187F1ECA00A81301 /* VerticalWeightViewController.m in Sources */,
 				9CB02F8F187DE2D10063B78A /* AEMusicInput.m in Sources */,
@@ -760,6 +781,7 @@
 				9C0CBB7D187F235600A81301 /* SmartSliderViewController.m in Sources */,
 				9CB02FE1187DE51F0063B78A /* AEControlTheme.m in Sources */,
 				9CB02F95187DE2D10063B78A /* AEVolumeInput.m in Sources */,
+				9CA86D33187F5D52004FB0A7 /* AENumericalDisplay.m in Sources */,
 				9CB02FF9187DEA260063B78A /* ControlMenuViewController.m in Sources */,
 				9CB0303F187E25E50063B78A /* CameraViewController.m in Sources */,
 				9CB02FD3187DE31E0063B78A /* AESprungWeight.m in Sources */,
@@ -817,10 +839,12 @@
 				9CB03017187DFEE10063B78A /* DialViewController.m in Sources */,
 				9CB03038187E1D3F0063B78A /* PitchControlViewController.m in Sources */,
 				9CB02FCE187DE31E0063B78A /* AELeveler.m in Sources */,
+				9CA86D30187F5D30004FB0A7 /* NumberOutputViewController.m in Sources */,
 				9CB02FFA187DEA260063B78A /* ControlMenuViewController.m in Sources */,
 				9CB02FCC187DE31E0063B78A /* AEHorizontalSprungWeight.m in Sources */,
 				9CB03025187E0CFC0063B78A /* ToggleSwitchViewController.m in Sources */,
 				9CB02F71187DE1D40063B78A /* Widget_ZooTests.m in Sources */,
+				9CA86D34187F5D52004FB0A7 /* AENumericalDisplay.m in Sources */,
 				9C0CBBA5187F3A7200A81301 /* TwoDLevelerViewController.m in Sources */,
 				9CB03021187E03EE0063B78A /* BarMeterViewController.m in Sources */,
 				9CB0302C187E13490063B78A /* SliderViewController.m in Sources */,
@@ -976,8 +1000,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Widget Zoo/Widget Zoo-Prefix.pch";
 				INFOPLIST_FILE = "Widget Zoo/Widget Zoo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9D770E2B-D769-4304-9D4A-FF326BE4DD42";
+				PROVISIONING_PROFILE = "D6A6CC92-C45F-446D-B0FD-5BA82B3A5FF0";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -987,11 +1012,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Toy Seamless Company Inc (U2EWU83PSD)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Widget Zoo/Widget Zoo-Prefix.pch";
 				INFOPLIST_FILE = "Widget Zoo/Widget Zoo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9D770E2B-D769-4304-9D4A-FF326BE4DD42";
+				PROVISIONING_PROFILE = "D6A6CC92-C45F-446D-B0FD-5BA82B3A5FF0";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -16,6 +16,7 @@
 #import "HorizontalWeightViewController.h"
 #import "LevelerViewController.h"
 #import "NoiseMeterViewController.h"
+#import "NumberOutputViewController.h"
 #import "PitchControlViewController.h"
 #import "PlayPauseViewController.h"
 #import "SliderViewController.h"
@@ -44,7 +45,7 @@
 {
     [super viewDidLoad];
 
-    NSArray *array = @[@"Bar Meter", @"Camera", @"Music", @"Pitch Shift", @"Dial", @"Volume"];
+    NSArray *array = @[@"Bar Meter", @"Camera", @"Music", @"Pitch Shift", @"Dial", @"Volume", @"Number Display"];
     _action = [array sortedArrayUsingSelector:@selector(compare:)];
     
     array = @[@"Button", @"Noise Meter", @"Sliders", @"H. Sprung Weights", @"V. Sprung Weights", @"Toggle", ];
@@ -168,6 +169,10 @@
     else if ([widgetName isEqual:@"2D Leveler"]) {
         [self.navigationController pushViewController:[[TwoDLevelerViewController alloc] init] animated:YES];
     }
+    else if ([widgetName isEqual:@"Number Display"]) {
+        [self.navigationController pushViewController:[[NumberOutputViewController alloc] init] animated:YES];
+    }
+    
 }
 
 
