@@ -44,10 +44,22 @@
 		9C0CBBAF187F3BF900A81301 /* Leveler-Bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBBA8187F3BF900A81301 /* Leveler-Bubble.png */; };
 		9C0CBBB0187F3BF900A81301 /* Leveler-Marks.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBBA9187F3BF900A81301 /* Leveler-Marks.png */; };
 		9C0CBBB1187F3BF900A81301 /* Leveler-Marks.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBBA9187F3BF900A81301 /* Leveler-Marks.png */; };
+		9C837AD21880678200C65054 /* collapse_toggle_alt_basic-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C837AD01880678200C65054 /* collapse_toggle_alt_basic-512.png */; };
+		9C837AD31880678200C65054 /* collapse_toggle_alt_basic-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C837AD01880678200C65054 /* collapse_toggle_alt_basic-512.png */; };
+		9C837AD41880678200C65054 /* window_fullscreen_2-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C837AD11880678200C65054 /* window_fullscreen_2-512.png */; };
+		9C837AD51880678200C65054 /* window_fullscreen_2-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C837AD11880678200C65054 /* window_fullscreen_2-512.png */; };
+		9C837AD81880846600C65054 /* TestControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C837AD71880846600C65054 /* TestControlViewController.m */; };
+		9C837AD91880846600C65054 /* TestControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C837AD71880846600C65054 /* TestControlViewController.m */; };
+		9C837ADC1880849200C65054 /* TestControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C837ADB1880849200C65054 /* TestControl.m */; };
+		9C837ADD1880849200C65054 /* TestControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C837ADB1880849200C65054 /* TestControl.m */; };
 		9CA86D2F187F5D30004FB0A7 /* NumberOutputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA86D2E187F5D30004FB0A7 /* NumberOutputViewController.m */; };
 		9CA86D30187F5D30004FB0A7 /* NumberOutputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA86D2E187F5D30004FB0A7 /* NumberOutputViewController.m */; };
 		9CA86D33187F5D52004FB0A7 /* AENumericalDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA86D32187F5D52004FB0A7 /* AENumericalDisplay.m */; };
 		9CA86D34187F5D52004FB0A7 /* AENumericalDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA86D32187F5D52004FB0A7 /* AENumericalDisplay.m */; };
+		9CA86D37187F6BC0004FB0A7 /* National-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9CA86D35187F6BC0004FB0A7 /* National-Bold.otf */; };
+		9CA86D38187F6BC0004FB0A7 /* National-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9CA86D35187F6BC0004FB0A7 /* National-Bold.otf */; };
+		9CA86D39187F6BC0004FB0A7 /* National-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9CA86D36187F6BC0004FB0A7 /* National-Book.otf */; };
+		9CA86D3A187F6BC0004FB0A7 /* National-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9CA86D36187F6BC0004FB0A7 /* National-Book.otf */; };
 		9CB02F40187DE1D40063B78A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB02F3F187DE1D40063B78A /* Foundation.framework */; };
 		9CB02F42187DE1D40063B78A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB02F41187DE1D40063B78A /* CoreGraphics.framework */; };
 		9CB02F44187DE1D40063B78A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB02F43187DE1D40063B78A /* UIKit.framework */; };
@@ -184,10 +196,18 @@
 		9C0CBBA7187F3BF900A81301 /* Leveler-Base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leveler-Base.png"; sourceTree = "<group>"; };
 		9C0CBBA8187F3BF900A81301 /* Leveler-Bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leveler-Bubble.png"; sourceTree = "<group>"; };
 		9C0CBBA9187F3BF900A81301 /* Leveler-Marks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leveler-Marks.png"; sourceTree = "<group>"; };
+		9C837AD01880678200C65054 /* collapse_toggle_alt_basic-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "collapse_toggle_alt_basic-512.png"; sourceTree = "<group>"; };
+		9C837AD11880678200C65054 /* window_fullscreen_2-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "window_fullscreen_2-512.png"; sourceTree = "<group>"; };
+		9C837AD61880846600C65054 /* TestControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestControlViewController.h; sourceTree = "<group>"; };
+		9C837AD71880846600C65054 /* TestControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestControlViewController.m; sourceTree = "<group>"; };
+		9C837ADA1880849200C65054 /* TestControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestControl.h; sourceTree = "<group>"; };
+		9C837ADB1880849200C65054 /* TestControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestControl.m; sourceTree = "<group>"; };
 		9CA86D2D187F5D30004FB0A7 /* NumberOutputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberOutputViewController.h; sourceTree = "<group>"; };
 		9CA86D2E187F5D30004FB0A7 /* NumberOutputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberOutputViewController.m; sourceTree = "<group>"; };
 		9CA86D31187F5D52004FB0A7 /* AENumericalDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AENumericalDisplay.h; sourceTree = "<group>"; };
 		9CA86D32187F5D52004FB0A7 /* AENumericalDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AENumericalDisplay.m; sourceTree = "<group>"; };
+		9CA86D35187F6BC0004FB0A7 /* National-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "National-Bold.otf"; sourceTree = "<group>"; };
+		9CA86D36187F6BC0004FB0A7 /* National-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "National-Book.otf"; sourceTree = "<group>"; };
 		9CB02F3C187DE1D40063B78A /* Widget Zoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Widget Zoo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB02F3F187DE1D40063B78A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9CB02F41187DE1D40063B78A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -311,6 +331,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C837ADE1880849900C65054 /* Test Control */ = {
+			isa = PBXGroup;
+			children = (
+				9C837ADA1880849200C65054 /* TestControl.h */,
+				9C837ADB1880849200C65054 /* TestControl.m */,
+				9C837AD61880846600C65054 /* TestControlViewController.h */,
+				9C837AD71880846600C65054 /* TestControlViewController.m */,
+			);
+			name = "Test Control";
+			sourceTree = "<group>";
+		};
 		9CA86D2C187F5D09004FB0A7 /* Numerical Counter */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,6 +351,37 @@
 				9CA86D2E187F5D30004FB0A7 /* NumberOutputViewController.m */,
 			);
 			name = "Numerical Counter";
+			sourceTree = "<group>";
+		};
+		9CA86D3B187F6BE0004FB0A7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9C837AD01880678200C65054 /* collapse_toggle_alt_basic-512.png */,
+				9C837AD11880678200C65054 /* window_fullscreen_2-512.png */,
+				9C0CBBA6187F3BF900A81301 /* info_bttn.png */,
+				9C0CBBA7187F3BF900A81301 /* Leveler-Base.png */,
+				9C0CBBA8187F3BF900A81301 /* Leveler-Bubble.png */,
+				9C0CBBA9187F3BF900A81301 /* Leveler-Marks.png */,
+				9C0CBB87187F2D0200A81301 /* Down-D-Pad.png */,
+				9C0CBB88187F2D0200A81301 /* DownLeft-D-Pad.png */,
+				9C0CBB89187F2D0200A81301 /* DownRight-D-Pad.png */,
+				9C0CBB8A187F2D0200A81301 /* Left-D-Pad.png */,
+				9C0CBB8B187F2D0200A81301 /* Normal-D-Pad.png */,
+				9C0CBB8C187F2D0200A81301 /* Right-D-Pad.png */,
+				9C0CBB8D187F2D0200A81301 /* Up-D-Pad.png */,
+				9C0CBB8E187F2D0200A81301 /* UpLeft-D-Pad.png */,
+				9C0CBB8F187F2D0200A81301 /* UpRight-D-Pad.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		9CA86D3C187F6BE9004FB0A7 /* National Typeface */ = {
+			isa = PBXGroup;
+			children = (
+				9CA86D35187F6BC0004FB0A7 /* National-Bold.otf */,
+				9CA86D36187F6BC0004FB0A7 /* National-Book.otf */,
+			);
+			name = "National Typeface";
 			sourceTree = "<group>";
 		};
 		9CB02F33187DE1D40063B78A = {
@@ -378,19 +440,8 @@
 		9CB02F46187DE1D40063B78A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9C0CBBA6187F3BF900A81301 /* info_bttn.png */,
-				9C0CBBA7187F3BF900A81301 /* Leveler-Base.png */,
-				9C0CBBA8187F3BF900A81301 /* Leveler-Bubble.png */,
-				9C0CBBA9187F3BF900A81301 /* Leveler-Marks.png */,
-				9C0CBB87187F2D0200A81301 /* Down-D-Pad.png */,
-				9C0CBB88187F2D0200A81301 /* DownLeft-D-Pad.png */,
-				9C0CBB89187F2D0200A81301 /* DownRight-D-Pad.png */,
-				9C0CBB8A187F2D0200A81301 /* Left-D-Pad.png */,
-				9C0CBB8B187F2D0200A81301 /* Normal-D-Pad.png */,
-				9C0CBB8C187F2D0200A81301 /* Right-D-Pad.png */,
-				9C0CBB8D187F2D0200A81301 /* Up-D-Pad.png */,
-				9C0CBB8E187F2D0200A81301 /* UpLeft-D-Pad.png */,
-				9C0CBB8F187F2D0200A81301 /* UpRight-D-Pad.png */,
+				9CA86D3C187F6BE9004FB0A7 /* National Typeface */,
+				9CA86D3B187F6BE0004FB0A7 /* Images */,
 				9CB02F47187DE1D40063B78A /* Widget Zoo-Info.plist */,
 				9CB02F48187DE1D40063B78A /* InfoPlist.strings */,
 				9CB02F4B187DE1D40063B78A /* main.m */,
@@ -440,6 +491,7 @@
 				9CB02FF8187DEA260063B78A /* ControlMenuViewController.m */,
 				9CB03010187DF83E0063B78A /* ControlDetailViewController.h */,
 				9CB03011187DF83E0063B78A /* ControlDetailViewController.m */,
+				9C837ADE1880849900C65054 /* Test Control */,
 				9CB0300C187DF4CA0063B78A /* Volume Input */,
 				9CB0300B187DF4BF0063B78A /* Dial Input */,
 				9CB0300A187DF4B20063B78A /* Pitch Shift Input */,
@@ -724,8 +776,10 @@
 				9CB03019187E02080063B78A /* ControlImages.xcassets in Resources */,
 				9C0CBBAA187F3BF900A81301 /* info_bttn.png in Resources */,
 				9C0CBB9A187F2D0200A81301 /* Right-D-Pad.png in Resources */,
+				9C837AD21880678200C65054 /* collapse_toggle_alt_basic-512.png in Resources */,
 				9C0CBB9E187F2D0200A81301 /* UpLeft-D-Pad.png in Resources */,
 				9C0CBB94187F2D0200A81301 /* DownRight-D-Pad.png in Resources */,
+				9CA86D37187F6BC0004FB0A7 /* National-Bold.otf in Resources */,
 				9CB03027187E10870063B78A /* Back.png in Resources */,
 				9C0CBB98187F2D0200A81301 /* Normal-D-Pad.png in Resources */,
 				9CB0301C187E02280063B78A /* ColorCodedWidgets.xcassets in Resources */,
@@ -733,8 +787,10 @@
 				9C0CBB90187F2D0200A81301 /* Down-D-Pad.png in Resources */,
 				9CB02F4A187DE1D40063B78A /* InfoPlist.strings in Resources */,
 				9C0CBB9C187F2D0200A81301 /* Up-D-Pad.png in Resources */,
+				9CA86D39187F6BC0004FB0A7 /* National-Book.otf in Resources */,
 				9C0CBBA0187F2D0200A81301 /* UpRight-D-Pad.png in Resources */,
 				9C0CBB96187F2D0200A81301 /* Left-D-Pad.png in Resources */,
+				9C837AD41880678200C65054 /* window_fullscreen_2-512.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,6 +800,7 @@
 			files = (
 				9C0CBBB1187F3BF900A81301 /* Leveler-Marks.png in Resources */,
 				9CB0301A187E02080063B78A /* ControlImages.xcassets in Resources */,
+				9C837AD51880678200C65054 /* window_fullscreen_2-512.png in Resources */,
 				9CB0300F187DF6AF0063B78A /* Control Panel Measurements in Resources */,
 				9C0CBB9B187F2D0200A81301 /* Right-D-Pad.png in Resources */,
 				9CB03028187E10870063B78A /* Back.png in Resources */,
@@ -752,13 +809,16 @@
 				9C0CBB99187F2D0200A81301 /* Normal-D-Pad.png in Resources */,
 				9C0CBB9D187F2D0200A81301 /* Up-D-Pad.png in Resources */,
 				9C0CBBAB187F3BF900A81301 /* info_bttn.png in Resources */,
+				9CA86D3A187F6BC0004FB0A7 /* National-Book.otf in Resources */,
 				9C0CBBA1187F2D0200A81301 /* UpRight-D-Pad.png in Resources */,
 				9C0CBBAF187F3BF900A81301 /* Leveler-Bubble.png in Resources */,
 				9C0CBBAD187F3BF900A81301 /* Leveler-Base.png in Resources */,
 				9C0CBB97187F2D0200A81301 /* Left-D-Pad.png in Resources */,
 				9C0CBB9F187F2D0200A81301 /* UpLeft-D-Pad.png in Resources */,
+				9CA86D38187F6BC0004FB0A7 /* National-Bold.otf in Resources */,
 				9CB0301D187E02280063B78A /* ColorCodedWidgets.xcassets in Resources */,
 				9C0CBB93187F2D0200A81301 /* DownLeft-D-Pad.png in Resources */,
+				9C837AD31880678200C65054 /* collapse_toggle_alt_basic-512.png in Resources */,
 				9C0CBB95187F2D0200A81301 /* DownRight-D-Pad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -770,6 +830,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C837AD81880846600C65054 /* TestControlViewController.m in Sources */,
 				9CB02FCF187DE31E0063B78A /* AENoiseMeter.m in Sources */,
 				9CA86D2F187F5D30004FB0A7 /* NumberOutputViewController.m in Sources */,
 				9CB02FD5187DE31E0063B78A /* AEToggle.m in Sources */,
@@ -800,6 +861,7 @@
 				9CB02FF5187DE6DC0063B78A /* UIColor+Utilities.m in Sources */,
 				9CB03024187E0CFC0063B78A /* ToggleSwitchViewController.m in Sources */,
 				9CB02F4C187DE1D40063B78A /* main.m in Sources */,
+				9C837ADC1880849200C65054 /* TestControl.m in Sources */,
 				9C0CBB74187F147900A81301 /* NoiseMeterViewController.m in Sources */,
 				9CB02FC5187DE31E0063B78A /* AEButton.m in Sources */,
 				9CB0302F187E171B0063B78A /* ButtonViewController.m in Sources */,
@@ -844,6 +906,7 @@
 				9CB02FCC187DE31E0063B78A /* AEHorizontalSprungWeight.m in Sources */,
 				9CB03025187E0CFC0063B78A /* ToggleSwitchViewController.m in Sources */,
 				9CB02F71187DE1D40063B78A /* Widget_ZooTests.m in Sources */,
+				9C837AD91880846600C65054 /* TestControlViewController.m in Sources */,
 				9CA86D34187F5D52004FB0A7 /* AENumericalDisplay.m in Sources */,
 				9C0CBBA5187F3A7200A81301 /* TwoDLevelerViewController.m in Sources */,
 				9CB03021187E03EE0063B78A /* BarMeterViewController.m in Sources */,
@@ -859,6 +922,7 @@
 				9CB03013187DF83E0063B78A /* ControlDetailViewController.m in Sources */,
 				9CB02FCA187DE31E0063B78A /* AEHorizontalLeveler.m in Sources */,
 				9CB03034187E1B390063B78A /* VolumeViewController.m in Sources */,
+				9C837ADD1880849200C65054 /* TestControl.m in Sources */,
 				9CB03030187E171B0063B78A /* ButtonViewController.m in Sources */,
 				9CB02FFE187DEB070063B78A /* PageDescriptor.m in Sources */,
 				9CB02F8C187DE2D10063B78A /* AEBarMeterInput.m in Sources */,

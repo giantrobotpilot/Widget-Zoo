@@ -38,4 +38,9 @@
 @property (nonatomic, strong) UILabel *portLabel6;
 @property (nonatomic, strong) UILabel *portLabel7;
 
+@property (nonatomic, strong) UIButton *configButton;
+@property (nonatomic, assign) BOOL dashboardEditMode;
+
+- (void)configPressed:(id)sender;
+
 @end

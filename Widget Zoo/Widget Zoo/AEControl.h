@@ -61,6 +61,10 @@ typedef enum {
 @property (nonatomic, copy) NSString *description;
 @property (nonatomic, assign) NSInteger portsRequired;
 
+@property (nonatomic, strong) UIButton *editButton;
+@property (nonatomic, assign) BOOL controlEditMode;
+@property (nonatomic, assign) BOOL expanded;
+
 // Control Values
 @property (nonatomic, assign) UInt16 atomValue;
 @property (nonatomic, assign) UInt16 lastAtomValue;
@@ -76,5 +80,8 @@ typedef enum {
 @property (nonatomic, strong) NSTimer *throttledOutputTimer;
 
 + (NSString *)stringForControlID:(AEControlID)controlID;
+- (void)editPressed:(id)sender;
+- (void)expandControl;
+- (void)shrinkControl;
 
 @end

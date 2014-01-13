@@ -10,6 +10,26 @@
 
 @implementation AEAtomsControlTheme
 
+- (UIColor *)actionAtomColor {
+    return [UIColor colorWithRed:0 green:158.0f/255.0f blue:212.0f/255.0f alpha:1];
+}
+
+- (UIColor *)sensorAtomColor {
+    return [UIColor colorWithRed:1.0f green:215.0f/255.0f blue:30.0f/255.0f alpha:1];
+}
+
+- (UIColor *)logicAtomColor {
+    return [UIColor colorWithRed:95.0f/255.0f green:195.0f/255.0f blue:59.0f/255.0f alpha:1];
+}
+
+- (UIImage *)expandButtonImage {
+    return [UIImage imageNamed:@"window_fullscreen_2-512"];
+}
+
+- (UIImage *)contractButtonImage {
+    return [UIImage imageNamed:@"collapse_toggle_alt_basic-512"];
+}
+
 #pragma mark - Button
 
 - (UIImage *)buttonBackground {

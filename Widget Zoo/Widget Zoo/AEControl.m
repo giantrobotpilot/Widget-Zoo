@@ -7,7 +7,7 @@
 //
 
 #import "AEControl.h"
-
+#import "AEControlTheme.h"
 @implementation AEControl
 
 - (id)initWithFrame:(CGRect)frame
@@ -18,6 +18,15 @@
         _differenceThreshold = 1;
         UInt32 zero = 0x00000000;
         _smartValue = [NSData dataWithBytes:&zero length:4];
+        
+        _editButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_editButton setImage:[[AEControlTheme currentTheme] expandButtonImage] forState:UIControlStateNormal];
+        [_editButton setImage:[[AEControlTheme currentTheme] contractButtonImage] forState:UIControlStateSelected];
+        [_editButton setFrame:CGRectMake(0, 0, 30, 30)];
+        [_editButton addTarget:self
+                        action:@selector(editPressed:)
+              forControlEvents:UIControlEventTouchUpInside];
+        [_editButton setHidden:YES];
     }
     return self;
 }
@@ -92,6 +101,35 @@
             return [NSString stringWithFormat:@"UNKNOWN CONTROL ID: %d", controlID];
             break;
     }
+}
+
+- (void)setControlEditMode:(BOOL)controlEditMode {
+    if (controlEditMode == NO && self.expanded) {
+        [self shrinkControl];
+    }
+    [self.editButton setHidden:(!controlEditMode)];
+    _controlEditMode = controlEditMode;
+}
+
+- (void)editPressed:(id)sender {
+    if (self.expanded) {
+        [self shrinkControl];
+    }
+    else {
+        [self expandControl];
+    }
+}
+
+- (void)expandControl {
+    [self.editButton setSelected:YES];
+    self.expanded = YES;
+    //self.enabled = NO;
+}
+
+- (void)shrinkControl {
+    [self.editButton setSelected:NO];
+    self.expanded = NO;
+    //self.enabled = YES;
 }
 
 @end

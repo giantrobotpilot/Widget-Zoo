@@ -78,4 +78,10 @@
     self.portLabel4.text = text;
 }
 
+- (void)configPressed:(id)sender {
+    [super configPressed:sender];
+    
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+}
+
 @end

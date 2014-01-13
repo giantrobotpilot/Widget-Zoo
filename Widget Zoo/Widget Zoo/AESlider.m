@@ -115,8 +115,6 @@ static const CGFloat kAnimationDuration = 0.25;
         if (self.enabled) {
             [self sendActionsForControlEvents:UIControlEventValueChanged];
         }
-        
-    
         return YES;
     }
     else {

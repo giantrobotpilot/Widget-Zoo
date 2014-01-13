@@ -53,5 +53,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>National-Bold.otf</string>
+		<string>National-Book.otf</string>
+	</array>
 </dict>
 </plist>

@@ -63,6 +63,20 @@ static const CGFloat kAEDashboardLowerPortTop = 274;
     [backButton setFrame:CGRectMake(10, 10, 35, 35)];
     [backButton addTarget:self action:@selector(backPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:backButton];
+    
+    self.configButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    [self.configButton setTitle:@"Edit" forState:UIControlStateNormal];
+    [self.configButton addTarget:self
+                          action:@selector(configPressed:)
+                forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    [self.configButton setFrame:CGRectMake(self.view.frame.size.width - 80, 0, 60, 44)];
+    [self.view addSubview:self.configButton];
+    [self.configButton setHidden:YES];
 }
 
 - (BOOL)prefersStatusBarHidden {
@@ -71,6 +85,17 @@ static const CGFloat kAEDashboardLowerPortTop = 274;
 
 - (void)backPressed:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)configPressed:(id)sender {
+    if (self.dashboardEditMode) {
+        self.dashboardEditMode = NO;
+        [self.configButton setTitle:@"Edit" forState:UIControlStateNormal];
+    }
+    else {
+        self.dashboardEditMode = YES;
+        [self.configButton setTitle:@"Done" forState:UIControlStateNormal];
+    }
 }
 
 @end

@@ -40,4 +40,9 @@
     self.portLabel0.text = [NSString stringWithFormat:@"%d", atomValue];
 }
 
+- (void)configPressed:(id)sender {
+    [super configPressed:sender];
+    [self.numberDisplay setControlEditMode:self.dashboardEditMode];
+}
+
 @end

@@ -21,6 +21,7 @@
 #import "PlayPauseViewController.h"
 #import "SliderViewController.h"
 #import "SmartSliderViewController.h"
+#import "TestControlViewController.h"
 #import "ToggleSwitchViewController.h"
 #import "TwoDLevelerViewController.h"
 #import "VerticalWeightViewController.h"
@@ -51,7 +52,7 @@
     array = @[@"Button", @"Noise Meter", @"Sliders", @"H. Sprung Weights", @"V. Sprung Weights", @"Toggle", ];
     _sensor = [array sortedArrayUsingSelector:@selector(compare:)];
     
-    array = @[@"2D Leveler", @"Gamepad", @"Levelers", @"Smart Slider"];
+    array = @[@"2D Leveler", @"Gamepad", @"Levelers", @"Smart Slider", @"Edit Test Control"];
     _smart = [array sortedArrayUsingSelector:@selector(compare:)];
 }
 
@@ -171,6 +172,9 @@
     }
     else if ([widgetName isEqual:@"Number Display"]) {
         [self.navigationController pushViewController:[[NumberOutputViewController alloc] init] animated:YES];
+    }
+    else if ([widgetName isEqual:@"Edit Test Control"]) {
+        [self.navigationController pushViewController:[[TestControlViewController alloc] init] animated:YES];
     }
     
 }
