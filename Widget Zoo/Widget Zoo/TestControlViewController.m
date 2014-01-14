@@ -8,11 +8,12 @@
 
 #import "TestControlViewController.h"
 #import "TestControl.h"
+#import "OverlayDial.h"
 
 @interface TestControlViewController () <TestControlDelegate>
 
 @property (nonatomic, strong) TestControl *testControl;
-@property (nonatomic, strong) TestControl *testControl2;
+@property (nonatomic, strong) OverlayDial *overlayControl;
 @property (nonatomic, strong) UIView *smokeyView;
 
 @end
@@ -31,9 +32,10 @@
     self.testControl.delegate = self;
     [self.view addSubview:self.testControl];
     
-    self.testControl2 = [[TestControl alloc] initWithFrame:self.actionRect1];
-    self.testControl2.delegate = self;
-    [self.view addSubview:self.testControl2];
+    self.overlayControl = [[OverlayDial alloc] initWithFrame:self.actionRect1];
+    self.overlayControl.delegate = self;
+    [self.view addSubview:self.overlayControl];
+    [self.overlayControl setAtomValue:0];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -63,11 +65,11 @@
     [super configPressed:sender];
     if (self.dashboardEditMode) {
         [self.testControl setEditMode:YES];
-        [self.testControl2 setEditMode:YES];
+        [self.overlayControl setEditMode:YES];
     }
     else {
         [self.testControl setEditMode:NO];
-        [self.testControl2 setEditMode:NO];
+        [self.overlayControl setEditMode:NO];
     }
 }
 

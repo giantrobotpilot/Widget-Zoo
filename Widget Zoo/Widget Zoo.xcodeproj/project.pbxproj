@@ -156,6 +156,8 @@
 		9CB0303C187E1F940063B78A /* PlayPauseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB0303A187E1F940063B78A /* PlayPauseViewController.m */; };
 		9CB0303F187E25E50063B78A /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB0303E187E25E50063B78A /* CameraViewController.m */; };
 		9CB03040187E25E50063B78A /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB0303E187E25E50063B78A /* CameraViewController.m */; };
+		9CE5747C1885F74500BC82FD /* OverlayDial.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE5747B1885F74500BC82FD /* OverlayDial.m */; };
+		9CE5747D1885F74500BC82FD /* OverlayDial.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE5747B1885F74500BC82FD /* OverlayDial.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -305,6 +307,8 @@
 		9CB0303A187E1F940063B78A /* PlayPauseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayPauseViewController.m; sourceTree = "<group>"; };
 		9CB0303D187E25E50063B78A /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
 		9CB0303E187E25E50063B78A /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		9CE5747A1885F74500BC82FD /* OverlayDial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayDial.h; sourceTree = "<group>"; };
+		9CE5747B1885F74500BC82FD /* OverlayDial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayDial.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,6 +340,8 @@
 			children = (
 				9C837ADA1880849200C65054 /* TestControl.h */,
 				9C837ADB1880849200C65054 /* TestControl.m */,
+				9CE5747A1885F74500BC82FD /* OverlayDial.h */,
+				9CE5747B1885F74500BC82FD /* OverlayDial.m */,
 				9C837AD61880846600C65054 /* TestControlViewController.h */,
 				9C837AD71880846600C65054 /* TestControlViewController.m */,
 			);
@@ -867,6 +873,7 @@
 				9CB0302F187E171B0063B78A /* ButtonViewController.m in Sources */,
 				9CB02FC7187DE31E0063B78A /* AEGamepad.m in Sources */,
 				9CB02FE5187DE51F0063B78A /* AEColorCodedControlTheme.m in Sources */,
+				9CE5747C1885F74500BC82FD /* OverlayDial.m in Sources */,
 				9CB02FE3187DE51F0063B78A /* AEAtomsControlTheme.m in Sources */,
 				9CB02FFD187DEB070063B78A /* PageDescriptor.m in Sources */,
 				9CB02F7D187DE2B70063B78A /* AEControl.m in Sources */,
@@ -899,6 +906,7 @@
 				9CB02FDA187DE31E0063B78A /* AEVerticalSprungWeight.m in Sources */,
 				9CB02FC8187DE31E0063B78A /* AEGamepad.m in Sources */,
 				9CB03017187DFEE10063B78A /* DialViewController.m in Sources */,
+				9CE5747D1885F74500BC82FD /* OverlayDial.m in Sources */,
 				9CB03038187E1D3F0063B78A /* PitchControlViewController.m in Sources */,
 				9CB02FCE187DE31E0063B78A /* AELeveler.m in Sources */,
 				9CA86D30187F5D30004FB0A7 /* NumberOutputViewController.m in Sources */,
@@ -1067,6 +1075,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "D6A6CC92-C45F-446D-B0FD-5BA82B3A5FF0";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1083,6 +1092,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "D6A6CC92-C45F-446D-B0FD-5BA82B3A5FF0";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

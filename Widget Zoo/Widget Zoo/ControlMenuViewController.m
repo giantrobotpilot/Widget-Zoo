@@ -52,7 +52,7 @@
     array = @[@"Button", @"Noise Meter", @"Sliders", @"H. Sprung Weights", @"V. Sprung Weights", @"Toggle", ];
     _sensor = [array sortedArrayUsingSelector:@selector(compare:)];
     
-    array = @[@"2D Leveler", @"Gamepad", @"Levelers", @"Smart Slider", @"Edit Test Control"];
+    array = @[@"2D Leveler", @"Gamepad", @"Levelers", @"Smart Slider", @"Edit Control Test"];
     _smart = [array sortedArrayUsingSelector:@selector(compare:)];
 }
 
@@ -61,10 +61,10 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     switch (section) {
         case SMART_SECTION:
-            return @"Smart Widgets";
+            return @"Smart Control Widgets";
             break;
         case SENSOR_SECTION:
-            return @"Sensor Widgets";
+            return @"Control Widgets";
             break;
         case ACTION_SECTION:
             return @"Action Widgets";
@@ -173,7 +173,7 @@
     else if ([widgetName isEqual:@"Number Display"]) {
         [self.navigationController pushViewController:[[NumberOutputViewController alloc] init] animated:YES];
     }
-    else if ([widgetName isEqual:@"Edit Test Control"]) {
+    else if ([widgetName isEqual:@"Edit Control Test"]) {
         [self.navigationController pushViewController:[[TestControlViewController alloc] init] animated:YES];
     }
     

@@ -11,7 +11,7 @@
 static const CGFloat kMinThumbY = 0.172;
 static const CGFloat kMaxThumbY = 0.806; //223
 static const CGFloat kStandardThumbWidth = 0.535;
-static const CGFloat kStandardThumbHeight = 0.2187;
+static const CGFloat kStandardThumbHeight = 0.3; //0.2187;
 static const CGFloat kAnimationDuration = 0.25;
 
 @interface AESlider ()
@@ -73,8 +73,11 @@ static const CGFloat kAnimationDuration = 0.25;
         CGRect thumbRect = CGRectMake(0, 0, CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds) * kStandardThumbHeight);
         self.thumbView = [[UIView alloc] initWithFrame:thumbRect];
         self.thumbView.userInteractionEnabled = NO;
+        //[self.thumbView setBackgroundColor:[UIColor purpleColor]];
         
-        CGRect imageRect = CGRectMake(CGRectGetWidth(thumbRect) * 0.225, 0, CGRectGetWidth(thumbRect) * kStandardThumbWidth, CGRectGetHeight(thumbRect));
+        CGFloat imageHeight = CGRectGetHeight(self.bounds) * 0.2187;
+        CGFloat imageY = (CGRectGetHeight(self.bounds) * kStandardThumbHeight - imageHeight) / 2;
+        CGRect imageRect = CGRectMake(CGRectGetWidth(thumbRect) * 0.225,imageY, CGRectGetWidth(thumbRect) * kStandardThumbWidth, imageHeight);
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:imageRect];
         imageView.image = [[AEControlTheme currentTheme] sliderThumb];
         [self.thumbView addSubview:imageView];
