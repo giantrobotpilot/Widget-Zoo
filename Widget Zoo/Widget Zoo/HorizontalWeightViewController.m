@@ -25,7 +25,7 @@
 {
     [super viewDidLoad];
     
-    self.leftSprungWeight = [[AEHorizontalSprungWeight alloc] initWithType:AEHorizontalWeightTypeSprungLeft];
+    self.leftSprungWeight = [[AEHorizontalSprungWeight alloc] initWithFrame:self.sensorRect4 type:AEHorizontalWeightTypeSprungLeft];
     [self.leftSprungWeight setFrame:self.sensorRect4];
     [self.leftSprungWeight addTarget:self
                               action:@selector(leftSprungWeightValueChanged:)
@@ -36,8 +36,7 @@
     [self.leftSprungSlider setUserInteractionEnabled:NO];
     [self.view addSubview:self.leftSprungSlider];
         
-    self.rightSprungWeight = [[AEHorizontalSprungWeight alloc] initWithType:AEHorizontalWeightTypeSprungRight];
-    [self.rightSprungWeight setFrame:self.sensorRect6];
+    self.rightSprungWeight = [[AEHorizontalSprungWeight alloc] initWithFrame:self.sensorRect6 type:AEHorizontalWeightTypeSprungRight];
     [self.rightSprungWeight addTarget:self
                                action:@selector(rightSprungWeightValueChanged:)
                      forControlEvents:UIControlEventValueChanged];

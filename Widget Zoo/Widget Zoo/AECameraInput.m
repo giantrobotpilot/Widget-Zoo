@@ -36,7 +36,7 @@ const CGFloat kThresholdX = 50;
 
 - (id)initWithFrame:(CGRect)frame
 {
-    self = [super initWithFrame:CGRectMake(0, 0, kSingleWidgetHeight, kSingleInputHeight)];
+    self = [super initWithFrame:frame];
     if (self) {
         self.clipsToBounds = YES;
         self.controlID = AEControlIDCameraInput;

@@ -10,6 +10,5 @@
 
 @interface AEVerticalLeveler : AELeveler
 
-- (id)init;
 
 @end

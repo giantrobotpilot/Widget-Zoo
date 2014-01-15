@@ -31,9 +31,11 @@ NSInteger kNumZigs = 8;
 
 @implementation AEHorizontalSprungWeight
 
-- (id)initWithType:(AEHorizontalWeightType)type
+- (id)initWithFrame:(CGRect)frame type:(AEHorizontalWeightType)type
 {
-    self = [super initWithFrame:CGRectMake(0, 0, kSingleWidgetWidth, kSingleWidgetHeight)];
+    CGFloat height = .625 * frame.size.height;
+    CGFloat yOffset = (frame.size.height - height) / 2;
+    self = [super initWithFrame:CGRectMake(frame.origin.x, frame.origin.y + yOffset, frame.size.width, height)];
     if (self) {
         self.controlType = AEControlTypeOutput;
         self.throttleOutput = YES;

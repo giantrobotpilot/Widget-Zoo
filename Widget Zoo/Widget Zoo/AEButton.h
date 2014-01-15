@@ -10,7 +10,6 @@
 
 @interface AEButton : AEControl
 
-- (id)init;
 - (void)configureForGamepad;
 
 @end

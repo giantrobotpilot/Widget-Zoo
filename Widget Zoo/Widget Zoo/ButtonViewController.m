@@ -22,8 +22,7 @@
 {
     [super viewDidLoad];
 	
-    self.button = [[AEButton alloc] init];
-    [self.button setFrame:self.sensorRect4];
+    self.button = [[AEButton alloc] initWithFrame:self.sensorRect4];
     [self.button addTarget:self
                     action:@selector(buttonPressed:)
           forControlEvents:UIControlEventValueChanged];

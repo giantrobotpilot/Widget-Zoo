@@ -16,6 +16,4 @@ typedef enum {
 
 @interface AEHorizontalLeveler : AELeveler
 
-- (id)init;
-
 @end

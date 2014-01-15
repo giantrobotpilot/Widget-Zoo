@@ -20,7 +20,7 @@
 
 - (id)initWithFrame:(CGRect)frame
 {
-    self = [super initWithFrame:CGRectMake(0, 0, kSingleWidgetHeight, kSingleInputHeight)];
+    self = [super initWithFrame:frame];
     if (self) {
         
         self.controlID = AEControlIDVolumeInput;

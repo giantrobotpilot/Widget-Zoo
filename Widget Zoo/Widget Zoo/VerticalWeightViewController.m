@@ -25,7 +25,7 @@
 {
     [super viewDidLoad];
 	
-    self.topSprungWeight = [[AEVerticalSprungWeight alloc] initWithType:AEVerticalWeightSprungTop];
+    self.topSprungWeight = [[AEVerticalSprungWeight alloc] initWithFrame:self.sensorRect4 type:AEVerticalWeightSprungTop];
     [self.topSprungWeight setFrame:self.sensorRect4];
     [self.topSprungWeight addTarget:self
                              action:@selector(topSprungWeightValueChanged:)
@@ -36,7 +36,7 @@
     [self.topSprungSlider setUserInteractionEnabled:NO];
     [self.view addSubview:self.topSprungSlider];
 	
-    self.bottomSprungWeight = [[AEVerticalSprungWeight alloc] initWithType:AEVerticalWeightSprungBottom];
+    self.bottomSprungWeight = [[AEVerticalSprungWeight alloc] initWithFrame:self.sensorRect6 type:AEVerticalWeightSprungBottom];
     [self.bottomSprungWeight setFrame:self.sensorRect6];
     [self.bottomSprungWeight addTarget:self
                                 action:@selector(bottomSprungWeightValueChanged:)

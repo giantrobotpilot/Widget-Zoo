@@ -15,6 +15,6 @@ typedef enum {
 
 @interface AEHorizontalSprungWeight : AESprungWeight
 
-- (id)initWithType:(AEHorizontalWeightType)type;
+- (id)initWithFrame:(CGRect)frame type:(AEHorizontalWeightType)type;
 
 @end

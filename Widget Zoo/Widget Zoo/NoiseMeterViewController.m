@@ -27,8 +27,7 @@
     self.audioManager = [AESharedAudioManager sharedInstance];
     [self.audioManager startAppAudioSession];
 	
-    self.noiseMeter = [[AENoiseMeter alloc] init];
-    [self.noiseMeter setFrame:self.sensorRect4];
+    self.noiseMeter = [[AENoiseMeter alloc] initWithFrame:self.sensorRect4];
     [self.noiseMeter addTarget:self
                         action:@selector(noiseMeterValueChanged:)
               forControlEvents:UIControlEventValueChanged];

@@ -34,9 +34,9 @@ CGFloat kVerticalZigWidth = 10;
 
 @implementation AEVerticalSprungWeight
 
-- (id)initWithType:(AEVerticalWeightType)type
+- (id)initWithFrame:(CGRect)frame type:(AEVerticalWeightType)type
 {
-    self = [super initWithFrame:CGRectMake(0, 0, kSingleWidgetWidth, kDoubleWidgetHeight)];
+    self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor clearColor];
         self.controlType = AEControlTypeOutput;

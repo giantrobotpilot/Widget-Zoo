@@ -21,8 +21,8 @@ static const CGFloat kMaxYRatio = 0.915; //293
 
 @implementation AEVerticalLeveler
 
-- (id)init {
-    self = [super initWithFrame:CGRectMake(0, 0, kSingleWidgetWidth, kDoubleWidgetHeight)];
+- (id)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
     if (self) {
         self.controlID = AEControlIDVerticalLeveler;
         self.restPoint = CGPointMake( CGRectGetMidX(self.bounds), CGRectGetMidY(self.bounds) );

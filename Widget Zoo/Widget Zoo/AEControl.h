@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "AEControlTheme.h"
 
-static const CGFloat kSingleWidgetWidth = 100;
-static const CGFloat kSingleWidgetHeight = 102;
-static const CGFloat kSingleInputHeight = 59;
-static const CGFloat kDoubleWidgetWidth = 200;
-static const CGFloat kDoubleWidgetHeight = 160;
+//static const CGFloat kSingleWidgetWidth = 100;
+//static const CGFloat kSingleWidgetHeight = 102;
+//static const CGFloat kSingleInputHeight = 59;
+//static const CGFloat kDoubleWidgetWidth = 200;
+//static const CGFloat kDoubleWidgetHeight = 160;
 
 typedef enum {
     AEControlIDSliderUnsprung = 1,

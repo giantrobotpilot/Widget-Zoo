@@ -16,6 +16,6 @@ typedef enum {
 
 @interface AESlider : AEControl
 
-- (id)initWithType:(AESliderType)type;
+- (id)initWithFrame:(CGRect)frame type:(AESliderType)type;
 
 @end

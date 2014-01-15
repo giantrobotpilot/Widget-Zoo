@@ -21,8 +21,7 @@
 {
     [super viewDidLoad];
 	
-    self.smartSlider = [[AESlider alloc] initWithType:AESliderTypeCenterSprung];
-    [self.smartSlider setFrame:self.sensorRect4];
+    self.smartSlider = [[AESlider alloc] initWithFrame:self.sensorRect4 type:AESliderTypeCenterSprung];
     [self.smartSlider addTarget:self
                          action:@selector(smartSliderValueChanged:)
                forControlEvents:UIControlEventValueChanged];

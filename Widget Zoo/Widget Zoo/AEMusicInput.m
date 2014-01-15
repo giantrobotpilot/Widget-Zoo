@@ -29,7 +29,7 @@ static const CGFloat kAEMusicPlayerPlayThreshold = 51.0f;
 
 - (id)initWithFrame:(CGRect)frame
 {
-    self = [super initWithFrame:CGRectMake(0, 0, kSingleWidgetHeight, kSingleInputHeight)];
+    self = [super initWithFrame:frame];
     if (self) {
         self.controlType = AEControlTypeInput;
         self.controlID = AEControlIDMusicInput;

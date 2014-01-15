@@ -24,14 +24,13 @@
 {
     [super viewDidLoad];
 	
-    self.sprungSlider = [[AESlider alloc] initWithType:AESliderTypeBottomSprung];
-    [self.sprungSlider setFrame:self.sensorRect4];
+    self.sprungSlider = [[AESlider alloc] initWithFrame:self.sensorRect4 type:AESliderTypeBottomSprung];
     [self.sprungSlider addTarget:self
                           action:@selector(sprungSliderChanged:)
                 forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:self.sprungSlider];
     
-    self.unsprungSlider = [[AESlider alloc] initWithType:AESliderTypeNormal];
+    self.unsprungSlider = [[AESlider alloc] initWithFrame:self.sensorRect5 type:AESliderTypeNormal];
     [self.unsprungSlider setFrame:self.sensorRect5];
     [self.unsprungSlider addTarget:self
                             action:@selector(unsprungSliderChanged:)

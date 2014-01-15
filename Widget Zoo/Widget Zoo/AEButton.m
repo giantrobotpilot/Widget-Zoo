@@ -18,8 +18,10 @@
 
 @implementation AEButton
 
-- (id)init {
-    self = [super initWithFrame:CGRectMake(0, 0, kSingleWidgetWidth, kSingleWidgetHeight)];
+- (id)initWithFrame:(CGRect)frame {
+    CGFloat height = .625 * frame.size.height;
+    CGFloat yOffset = (frame.size.height - height) / 2;
+    self = [super initWithFrame:CGRectMake(frame.origin.x, frame.origin.y + yOffset, frame.size.width, height)];
     if (self) {
         self.controlType = AEControlTypeOutput;
         UIImage *backgroundImage;

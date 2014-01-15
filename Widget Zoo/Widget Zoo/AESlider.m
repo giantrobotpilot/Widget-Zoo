@@ -30,8 +30,8 @@ static const CGFloat kAnimationDuration = 0.25;
 
 @implementation AESlider
 
-- (id)initWithType:(AESliderType)type {
-    self = [super initWithFrame:CGRectMake(0, 0, kSingleWidgetWidth, kDoubleWidgetHeight)];
+- (id)initWithFrame:(CGRect)frame type:(AESliderType)type {
+    self = [super initWithFrame:frame];
     if (self) {
         self.throttleOutput = YES;
         

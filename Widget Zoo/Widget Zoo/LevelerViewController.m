@@ -24,15 +24,13 @@
 {
     [super viewDidLoad];
 	
-    self.verticalLeveler = [[AEVerticalLeveler alloc] init];
-    [self.verticalLeveler setFrame:self.sensorRect4];
+    self.verticalLeveler = [[AEVerticalLeveler alloc] initWithFrame:self.sensorRect4];
     [self.verticalLeveler addTarget:self
                              action:@selector(verticalLevelerValueChanged:)
                    forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:self.verticalLeveler];
     
-    self.horizontalLeveler = [[AEHorizontalLeveler alloc] init];
-    [self.horizontalLeveler setFrame:self.sensorRect6];
+    self.horizontalLeveler = [[AEHorizontalLeveler alloc] initWithFrame:self.sensorRect6];
     [self.horizontalLeveler addTarget:self
                                action:@selector(horizontalLevelerValueChanged:)
                      forControlEvents:UIControlEventValueChanged];

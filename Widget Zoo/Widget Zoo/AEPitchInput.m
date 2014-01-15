@@ -30,7 +30,7 @@ CGFloat pitch_baseHeight = 117;
 
 - (id)initWithFrame:(CGRect)frame
 {
-    self = [super initWithFrame:CGRectMake(0, 0, kSingleWidgetWidth, kSingleInputHeight)];
+    self = [super initWithFrame:frame];
     if (self) {
         self.controlType = AEControlTypeInput;
         self.controlID = AEControlIDPitchShiftInput;

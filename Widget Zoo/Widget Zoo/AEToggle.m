@@ -17,11 +17,19 @@
 
 @end
 
+//static const CGFloat kSingleWidgetWidth = 100;
+//static const CGFloat kSingleWidgetHeight = 102;
+//static const CGFloat kSingleInputHeight = 59;
+//static const CGFloat kDoubleWidgetWidth = 200;
+//static const CGFloat kDoubleWidgetHeight = 160;
+
 @implementation AEToggle
 
 - (id)initWithFrame:(CGRect)frame
 {
-    self = [super initWithFrame:CGRectMake(0, 0, kSingleWidgetWidth, kSingleWidgetWidth)];
+    CGFloat height = .625 * frame.size.height;
+    CGFloat yOffset = (frame.size.height - height) / 2;
+    self = [super initWithFrame:CGRectMake(frame.origin.x, frame.origin.y + yOffset, frame.size.width, height)];
     if (self) {
         self.controlID = AEControlIDToggleSwitch;
         self.onPoint = CGPointMake(100.0f/200 * CGRectGetWidth(self.bounds),

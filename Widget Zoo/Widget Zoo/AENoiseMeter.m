@@ -25,8 +25,8 @@ const CGFloat AE_NOISE_OUTPUT_METER_SOUND_LEVEL_SAMPLE_PERIOD_SECONDS = 0.05;
 
 @implementation AENoiseMeter
 
-- (id)init {
-    self = [super initWithFrame:CGRectMake(0, 0, kSingleWidgetWidth, kDoubleWidgetHeight)];
+- (id)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
     if (self) {
         self.clipsToBounds = YES;
         self.controlType = AEControlTypeOutput;
