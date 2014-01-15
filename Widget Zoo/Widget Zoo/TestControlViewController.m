@@ -65,11 +65,11 @@
     [super configPressed:sender];
     if (self.dashboardEditMode) {
         [self.testControl setEditMode:YES];
-        [self.overlayControl setEditMode:YES];
+        [self.overlayControl setControlEditMode:YES];
     }
     else {
         [self.testControl setEditMode:NO];
-        [self.overlayControl setEditMode:NO];
+        [self.overlayControl setControlEditMode:NO];
     }
 }
 

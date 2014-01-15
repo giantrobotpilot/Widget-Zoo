@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "AEControlTheme.h"
 
-static const CGFloat kSingleWidgetWidth = 100;
-static const CGFloat kSingleWidgetHeight = 102;
-static const CGFloat kSingleInputHeight = 59;
-static const CGFloat kDoubleWidgetWidth = 200;
-static const CGFloat kDoubleWidgetHeight = 160;
+//static const CGFloat kSingleWidgetWidth = 100;
+//static const CGFloat kSingleWidgetHeight = 102;
+//static const CGFloat kSingleInputHeight = 59;
+//static const CGFloat kDoubleWidgetWidth = 200;
+//static const CGFloat kDoubleWidgetHeight = 160;
 
 typedef enum {
     AEControlIDSliderUnsprung = 1,
@@ -54,19 +54,18 @@ typedef enum {
     AEControlTypeLogic
 } AEControlType;
 
-@interface AEControl : UIControl
+@interface AEExpandableControl : UIControl
+
+@property (nonatomic, strong) UIView *configView;
 
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *behavior;
 @property (nonatomic, copy) NSString *description;
 @property (nonatomic, assign) NSInteger portsRequired;
 
-@property (nonatomic, assign) BOOL editable;
-@property (nonatomic, strong) UIView *configView;
 @property (nonatomic, strong) UIButton *editButton;
 @property (nonatomic, assign) BOOL controlEditMode;
 @property (nonatomic, assign) BOOL expanded;
-@property (nonatomic, assign) CGFloat expandScale;
 
 // Control Values
 @property (nonatomic, assign) UInt16 atomValue;

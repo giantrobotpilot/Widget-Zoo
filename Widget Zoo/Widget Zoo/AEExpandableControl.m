@@ -6,22 +6,23 @@
 //  Copyright (c) 2013 Atoms-Express. All rights reserved.
 //
 
-#import "AEControl.h"
+#import "AEExpandableControl.h"
 #import "AEControlTheme.h"
 
-@interface AEControl ()
-
-
+@interface AEExpandableControl () {
+    CGFloat expandScale;
+}
 
 @end
 
-
-@implementation AEControl
+@implementation AEExpandableControl
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
+        
+        expandScale = 3.3;
         _portsRequired = 1;
         _differenceThreshold = 1;
         UInt32 zero = 0x00000000;
@@ -33,6 +34,7 @@
         [self.editButton addTarget:self
                             action:@selector(editPressed:)
                   forControlEvents:UIControlEventTouchUpInside];
+        //[self.editButton setBackgroundColor:[UIColor orangeColor]];
         [self addSubview:self.editButton];
         [self.editButton setHidden:YES];
     }
@@ -40,7 +42,7 @@
 }
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"%@ - %d", [AEControl stringForControlID:self.controlID], self.atomValue];
+    return [NSString stringWithFormat:@"%@ - %d", [AEExpandableControl stringForControlID:self.controlID], self.atomValue];
 }
 
 + (NSString *)stringForControlID:(AEControlID)controlID
@@ -112,14 +114,11 @@
 }
 
 - (void)setControlEditMode:(BOOL)editing {
-    if (self.editable) {
-        if (editing) {
-            [self.editButton setHidden:NO];
-        }
-        else {
-            [self.editButton setHidden:YES];
-        }
-        _controlEditMode = editing;
+    if (editing) {
+        [self.editButton setHidden:NO];
+    }
+    else {
+        [self.editButton setHidden:YES];
     }
 }
 
@@ -137,13 +136,13 @@
     [self.editButton setSelected:YES];
     [UIView animateWithDuration:0.25 animations:^{
         // Main View
-        self.transform = CGAffineTransformMakeScale(self.expandScale, self.expandScale);
+        self.transform = CGAffineTransformMakeScale(expandScale, expandScale);
         [self.editButton setImage:[[AEControlTheme currentTheme] contractButtonImage] forState:UIControlStateNormal];
         
         // config view
     } completion:^(BOOL finished) {
-        self.configView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width * self.expandScale, self.bounds.size.height * self.expandScale)];
-        self.configView.transform = CGAffineTransformMakeScale(1.0f/self.expandScale, 1.0f/self.expandScale);
+        self.configView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width * expandScale, self.bounds.size.height * expandScale)];
+        self.configView.transform = CGAffineTransformMakeScale(1.0f/expandScale, 1.0f/expandScale);
         self.configView.backgroundColor = [UIColor clearColor];
         [self addSubview:self.configView];
         [self bringSubviewToFront:self.editButton];

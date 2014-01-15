@@ -44,6 +44,8 @@
 		9C0CBBAF187F3BF900A81301 /* Leveler-Bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBBA8187F3BF900A81301 /* Leveler-Bubble.png */; };
 		9C0CBBB0187F3BF900A81301 /* Leveler-Marks.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBBA9187F3BF900A81301 /* Leveler-Marks.png */; };
 		9C0CBBB1187F3BF900A81301 /* Leveler-Marks.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBBA9187F3BF900A81301 /* Leveler-Marks.png */; };
+		9C44767E1886F2D200693184 /* AEExpandableControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C44767D1886F2D200693184 /* AEExpandableControl.m */; };
+		9C44767F1886F2D200693184 /* AEExpandableControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C44767D1886F2D200693184 /* AEExpandableControl.m */; };
 		9C837AD21880678200C65054 /* collapse_toggle_alt_basic-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C837AD01880678200C65054 /* collapse_toggle_alt_basic-512.png */; };
 		9C837AD31880678200C65054 /* collapse_toggle_alt_basic-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C837AD01880678200C65054 /* collapse_toggle_alt_basic-512.png */; };
 		9C837AD41880678200C65054 /* window_fullscreen_2-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C837AD11880678200C65054 /* window_fullscreen_2-512.png */; };
@@ -198,6 +200,8 @@
 		9C0CBBA7187F3BF900A81301 /* Leveler-Base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leveler-Base.png"; sourceTree = "<group>"; };
 		9C0CBBA8187F3BF900A81301 /* Leveler-Bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leveler-Bubble.png"; sourceTree = "<group>"; };
 		9C0CBBA9187F3BF900A81301 /* Leveler-Marks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leveler-Marks.png"; sourceTree = "<group>"; };
+		9C44767C1886F2D200693184 /* AEExpandableControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEExpandableControl.h; sourceTree = "<group>"; };
+		9C44767D1886F2D200693184 /* AEExpandableControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEExpandableControl.m; sourceTree = "<group>"; };
 		9C837AD01880678200C65054 /* collapse_toggle_alt_basic-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "collapse_toggle_alt_basic-512.png"; sourceTree = "<group>"; };
 		9C837AD11880678200C65054 /* window_fullscreen_2-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "window_fullscreen_2-512.png"; sourceTree = "<group>"; };
 		9C837AD61880846600C65054 /* TestControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestControlViewController.h; sourceTree = "<group>"; };
@@ -344,6 +348,8 @@
 				9CE5747B1885F74500BC82FD /* OverlayDial.m */,
 				9C837AD61880846600C65054 /* TestControlViewController.h */,
 				9C837AD71880846600C65054 /* TestControlViewController.m */,
+				9C44767C1886F2D200693184 /* AEExpandableControl.h */,
+				9C44767D1886F2D200693184 /* AEExpandableControl.m */,
 			);
 			name = "Test Control";
 			sourceTree = "<group>";
@@ -887,6 +893,7 @@
 				9CB03037187E1D3F0063B78A /* PitchControlViewController.m in Sources */,
 				9CB03016187DFEE10063B78A /* DialViewController.m in Sources */,
 				9CB0303B187E1F940063B78A /* PlayPauseViewController.m in Sources */,
+				9C44767E1886F2D200693184 /* AEExpandableControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -921,6 +928,7 @@
 				9CB0302C187E13490063B78A /* SliderViewController.m in Sources */,
 				9CB02FD4187DE31E0063B78A /* AESprungWeight.m in Sources */,
 				9CB02FE6187DE51F0063B78A /* AEColorCodedControlTheme.m in Sources */,
+				9C44767F1886F2D200693184 /* AEExpandableControl.m in Sources */,
 				9CB02FF1187DE6A50063B78A /* AEToneUnit.m in Sources */,
 				9CB02FD0187DE31E0063B78A /* AENoiseMeter.m in Sources */,
 				9CB02FD8187DE31E0063B78A /* AEVerticalLeveler.m in Sources */,

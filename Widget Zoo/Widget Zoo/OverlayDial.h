@@ -12,9 +12,6 @@
 @interface OverlayDial : AEControl
 
 @property (nonatomic, assign) BOOL expanded;
-@property (nonatomic, strong) UIButton *editButton;
 @property (nonatomic, weak) id<TestControlDelegate> delegate;
-
-- (void)setEditMode:(BOOL)editing;
 
 @end
