@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class TestControl;
+@class OldTestControl;
 
 @protocol TestControlDelegate <NSObject>
 
@@ -16,11 +16,10 @@
 
 @end
 
-@interface TestControl : UIControl
+@interface OldTestControl : UIControl
 
 @property (nonatomic, assign) BOOL expanded;
 @property (nonatomic, strong) UIButton *editButton;
-@property (nonatomic, weak) id<TestControlDelegate> delegate;
 
 - (void)setEditMode:(BOOL)editing;
 

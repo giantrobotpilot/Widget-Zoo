@@ -22,6 +22,7 @@
 #import "SliderViewController.h"
 #import "SmartSliderViewController.h"
 #import "TestControlViewController.h"
+#import "TimeDelayViewController.h"
 #import "ToggleSwitchViewController.h"
 #import "TwoDLevelerViewController.h"
 #import "VerticalWeightViewController.h"
@@ -34,7 +35,7 @@
 @interface ControlMenuViewController ()
 
 @property (nonatomic, copy) NSArray *action;
-@property (nonatomic, copy) NSArray *sensor;
+@property (nonatomic, copy) NSArray *control;
 @property (nonatomic, copy) NSArray *smart;
 
 @end
@@ -45,12 +46,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self.navigationController pushViewController:[[TestControlViewController alloc] init] animated:YES];
 
     NSArray *array = @[@"Bar Meter", @"Camera", @"Music", @"Pitch Shift", @"Dial", @"Volume", @"Number Display"];
     _action = [array sortedArrayUsingSelector:@selector(compare:)];
     
-    array = @[@"Button", @"Noise Meter", @"Sliders", @"H. Sprung Weights", @"V. Sprung Weights", @"Toggle", ];
-    _sensor = [array sortedArrayUsingSelector:@selector(compare:)];
+    array = @[@"Button", @"Noise Meter", @"Sliders", @"H. Sprung Weights", @"V. Sprung Weights", @"Toggle", @"Time Delay"];
+    _control = [array sortedArrayUsingSelector:@selector(compare:)];
     
     array = @[@"2D Leveler", @"Gamepad", @"Levelers", @"Smart Slider", @"Edit Control Test"];
     _smart = [array sortedArrayUsingSelector:@selector(compare:)];
@@ -92,7 +95,7 @@
             array = self.smart;
             break;
         case SENSOR_SECTION:
-            array = self.sensor;
+            array = self.control;
             break;
         case ACTION_SECTION:
             array = self.action;
@@ -175,8 +178,9 @@
     }
     else if ([widgetName isEqual:@"Edit Control Test"]) {
         [self.navigationController pushViewController:[[TestControlViewController alloc] init] animated:YES];
+    } else if ([widgetName isEqual:@"Time Delay"]) {
+        [self.navigationController pushViewController:[[TimeDelayViewController alloc] init] animated:YES];
     }
-    
 }
 
 

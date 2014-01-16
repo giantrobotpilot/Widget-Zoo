@@ -7,7 +7,18 @@
 //
 
 #import "AEControl.h"
+#import <MediaPlayer/MediaPlayer.h>
+
+@protocol MusicInputDelegate <NSObject>
+
+- (void)musicInputShouldShowMusicPicker;
+
+@end
 
 @interface AEMusicInput : AEControl
+
+@property (nonatomic, weak) id<MusicInputDelegate> musicInputDelegate;
+
+- (void)setMedia:(MPMediaItemCollection *)mediaCollection;
 
 @end

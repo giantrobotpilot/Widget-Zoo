@@ -25,6 +25,7 @@
 @property (nonatomic, strong) AVCaptureDeviceInput *backCameraInput;
 @property (nonatomic, strong) AVCaptureDeviceInput *frontCameraInput;
 @property (nonatomic, assign) BOOL imageTaken;
+@property (nonatomic, strong) UIButton *changeCameraButton;
 
 @end
 
@@ -38,7 +39,8 @@ const CGFloat kThresholdX = 50;
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.clipsToBounds = YES;
+        self.editable = YES;
+        self.clipsToBounds = NO;
         self.controlID = AEControlIDCameraInput;
         
         // Image Output
@@ -77,9 +79,9 @@ const CGFloat kThresholdX = 50;
         }
         
         // Base
-//        UIImageView *baseImageView = [[UIImageView alloc] initWithFrame:self.bounds];
-//        baseImageView.image = [[AEControlTheme currentTheme] cameraBase];
-//        [self addSubview:baseImageView];
+        UIImageView *baseImageView = [[UIImageView alloc] initWithFrame:self.bounds];
+        baseImageView.image = [[AEControlTheme currentTheme] cameraBase];
+        [self addSubview:baseImageView];
         
         // Preview layer
         AVCaptureVideoPreviewLayer *previewLayer = [AVCaptureVideoPreviewLayer layerWithSession:self.session];
@@ -90,7 +92,7 @@ const CGFloat kThresholdX = 50;
         
         self.controlType = AEControlTypeInput;
         
-        UIView *previewView = [[UIView alloc] initWithFrame:self.bounds];
+        UIView *previewView = [[UIView alloc] initWithFrame:CGRectMake(1, 1, self.bounds.size.width - 3, self.bounds.size.height - 3)];
 //        CGRectMake(1, 1, 102, 55)
         previewView.exclusiveTouch = NO;
         previewLayer.frame = previewView.bounds;
@@ -122,14 +124,23 @@ const CGFloat kThresholdX = 50;
         
         [self addSubview:self.cameraView];
         
-        UIView *touchView = [[UIView alloc] initWithFrame:self.bounds];
-        [touchView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(controlTapped:)]];
-        [self addSubview:touchView];
+//        UIView *touchView = [[UIView alloc] initWithFrame:self.bounds];
+//        [touchView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(controlTapped:)]];
+//        [self addSubview:touchView];
+        _changeCameraButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_changeCameraButton setImage:[UIImage imageNamed:@"original"] forState:UIControlStateNormal];
+        [_changeCameraButton setBackgroundColor:[UIColor greenColor]];
+        [_changeCameraButton addTarget:self
+                                action:@selector(changeCameraPressed:)
+                      forControlEvents:UIControlEventTouchUpInside];
+        [self.configView addSubview:_changeCameraButton];
+        
+        [self bringSubviewToFront:self.editButton];
     }
     return self;
 }
 
-- (void)controlTapped:(UITapGestureRecognizer *)recognizer
+- (void)changeCameraPressed:(id)sender
 {
     if (self.enabled) {
         if ([self.captureDevices count] > 1) {
@@ -197,6 +208,20 @@ const CGFloat kThresholdX = 50;
         self.cameraView.image = self.cameraOffImage;
         self.imageTaken = NO;
     }
+}
+
+- (void)expandControlWithCompletion:(void (^)(void))completion {
+    [super expandControlWithCompletion:^{
+        self.configView.frame = CGRectMake(0, 0, self.configView.frame.size.width, self.configView.frame.size.height);
+        [self.changeCameraButton setFrame:CGRectMake(0, 0, 30, 30)];
+        [self bringSubviewToFront:self.changeCameraButton];
+    }];
+}
+
+- (void)shrinkControlWithCompletion:(void (^)(void))completion {
+    [super shrinkControlWithCompletion:^{
+        
+    }];
 }
 
 @end

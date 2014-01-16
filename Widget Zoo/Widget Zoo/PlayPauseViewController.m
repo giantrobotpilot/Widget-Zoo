@@ -8,8 +8,9 @@
 
 #import "PlayPauseViewController.h"
 #import "AEMusicInput.h"
+#import <MediaPlayer/MediaPlayer.h>
 
-@interface PlayPauseViewController ()
+@interface PlayPauseViewController () <MPMediaPickerControllerDelegate, MusicInputDelegate>
 
 @property (nonatomic, strong) AEMusicInput *playPauseInput;
 @property (nonatomic, strong) UISlider *slider;
@@ -24,7 +25,10 @@
 	
     self.playPauseInput = [[AEMusicInput alloc] initWithFrame:self.actionRect0];
     self.playPauseInput.frame = self.actionRect0;
+    self.playPauseInput.delegate = self;
+    self.playPauseInput.musicInputDelegate = self;
     [self.view addSubview:self.playPauseInput];
+    [self.controlSet addObject:self.playPauseInput];
     
     self.slider = [[UISlider alloc] initWithFrame:self.sensorRect4];
     [self.slider addTarget:self
@@ -39,6 +43,23 @@
     UInt16 atomValue = self.slider.value * UINT16_MAX;
     [self.playPauseInput setAtomValue:atomValue];
     self.portLabel0.text = [NSString stringWithFormat:@"%d", atomValue];
+}
+
+- (void)musicInputShouldShowMusicPicker {
+    MPMediaPickerController *picker = [[MPMediaPickerController alloc] initWithMediaTypes: MPMediaTypeAnyAudio];
+    [picker setDelegate:self];
+    picker.prompt = NSLocalizedString (@"Add songs to play", "Prompt in media item picker");
+    [self presentViewController:picker animated:YES completion:NULL];
+}
+
+- (void)mediaPicker: (MPMediaPickerController *)mediaPicker didPickMediaItems:(MPMediaItemCollection *)mediaItemCollection {
+    NSLog(@"media chosen: %@", [[mediaItemCollection.items objectAtIndex:0] valueForProperty:MPMediaItemPropertyTitle]);
+    [self.playPauseInput setMedia:mediaItemCollection];
+    [mediaPicker dismissViewControllerAnimated:YES completion:NULL];
+}
+
+- (void)mediaPickerDidCancel:(MPMediaPickerController *)mediaPicker {
+    [mediaPicker dismissViewControllerAnimated:YES completion:NULL];
 }
 
 @end

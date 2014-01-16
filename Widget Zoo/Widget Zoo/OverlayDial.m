@@ -23,7 +23,6 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.editable = YES;
-        self.expandScale = 3.3;
         [self.layer setAnchorPoint:CGPointMake(0, 1)];
         CGRect frame1 = self.frame;
         [self setFrame:CGRectMake(frame1.origin.x - frame1.size.width / 2, frame1.origin.y + frame1.size.height / 2, frame1.size.width, frame1.size.height)];

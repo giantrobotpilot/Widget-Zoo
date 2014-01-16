@@ -7,13 +7,15 @@
 //
 
 #import "ControlDetailViewController.h"
-
+#import "AEControl.h"
 
 static const CGFloat kAEDashboardPortIconHeight = 45;
 static const CGFloat kAEDashboardPortIconWidth = 100;
 static const CGFloat kAEDashboardLowerPortTop = 274;
 
 @interface ControlDetailViewController ()
+
+@property (nonatomic, strong) UIView *smokeyView;
 
 @end
 
@@ -24,6 +26,12 @@ static const CGFloat kAEDashboardLowerPortTop = 274;
     [super viewDidLoad];
     
     [self.navigationController setNavigationBarHidden:YES];
+    
+    self.controlSet = [[NSMutableSet alloc] init];
+    
+    self.smokeyView = [[UIView alloc] initWithFrame:self.view.bounds];
+    self.smokeyView.backgroundColor = [UIColor blackColor];
+    self.smokeyView.alpha = 0.7;
     
     [self.view setBackgroundColor:[UIColor colorWithRed:(CGFloat)229/255
                                                   green:(CGFloat)245/255
@@ -77,6 +85,9 @@ static const CGFloat kAEDashboardLowerPortTop = 274;
     [self.configButton setFrame:CGRectMake(self.view.frame.size.width - 80, 0, 60, 44)];
     [self.view addSubview:self.configButton];
     [self.configButton setHidden:YES];
+    
+    self.smokeyView.frame = self.view.bounds;
+    [self.configButton setHidden:NO];
 }
 
 - (BOOL)prefersStatusBarHidden {
@@ -87,15 +98,41 @@ static const CGFloat kAEDashboardLowerPortTop = 274;
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (void)configPressed:(id)sender {
+- (void)configPressed:(id)sender
+{
     if (self.dashboardEditMode) {
-        self.dashboardEditMode = NO;
+        [self setDashboardEditMode:NO];
         [self.configButton setTitle:@"Edit" forState:UIControlStateNormal];
+        for (AEControl *control in self.controlSet) {
+            [control setControlEditMode:NO];
+        }
     }
     else {
-        self.dashboardEditMode = YES;
+        [self setDashboardEditMode:YES];
         [self.configButton setTitle:@"Done" forState:UIControlStateNormal];
+        for (AEControl *control in self.controlSet) {
+            [control setControlEditMode:YES];
+        }
     }
+}
+
+- (void)controlExpanded:(AEControl *)control
+{
+    [self.view bringSubviewToFront:control];
+    [self.smokeyView setAlpha:0.0];
+    [self.view insertSubview:self.smokeyView belowSubview:control];
+    [self.view bringSubviewToFront:self.configButton];
+    [UIView animateWithDuration:0.25 animations:^{
+        [self.smokeyView setAlpha:0.7];
+    }];
+}
+
+- (void)controlContracted:(AEControl *)control {
+    [UIView animateWithDuration:0.25 animations:^{
+        [self.smokeyView setAlpha:0.0];
+    }completion:^(BOOL finished) {
+        [self.smokeyView removeFromSuperview];
+    }];
 }
 
 @end

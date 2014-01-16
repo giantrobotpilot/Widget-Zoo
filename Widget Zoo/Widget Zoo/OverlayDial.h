@@ -7,7 +7,7 @@
 //
 
 #import "AEControl.h"
-#import "TestControl.h"
+#import "OldTestControl.h"
 
 @interface OverlayDial : AEControl
 

@@ -14,7 +14,7 @@
     return [UIColor colorWithRed:0 green:158.0f/255.0f blue:212.0f/255.0f alpha:1];
 }
 
-- (UIColor *)sensorAtomColor {
+- (UIColor *)controlAtomColor {
     return [UIColor colorWithRed:1.0f green:215.0f/255.0f blue:30.0f/255.0f alpha:1];
 }
 

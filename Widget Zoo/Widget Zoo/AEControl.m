@@ -11,10 +11,9 @@
 
 @interface AEControl ()
 
-
+@property (nonatomic, assign) CGFloat expandScale;
 
 @end
-
 
 @implementation AEControl
 
@@ -22,13 +21,14 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        _expandScale = 2;
         _portsRequired = 1;
         _differenceThreshold = 1;
         UInt32 zero = 0x00000000;
         _smartValue = [NSData dataWithBytes:&zero length:4];
         
         self.editButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [self.editButton setFrame:CGRectMake(self.bounds.size.width - 20, 0, 20, 20)];
+        
         [self.editButton setImage:[[AEControlTheme currentTheme] expandButtonImage] forState:UIControlStateNormal];
         [self.editButton addTarget:self
                             action:@selector(editPressed:)
@@ -37,6 +37,45 @@
         [self.editButton setHidden:YES];
     }
     return self;
+}
+
+- (void)setExpansionDirection:(AEControlExpandDirection)direction {
+    if (self.controlType == AEControlTypeInput) {
+        [self.editButton setFrame:CGRectMake(self.bounds.size.width - 35, -5, 40, 40)];
+    } else {
+        [self.editButton setFrame:CGRectMake(self.bounds.size.width - 35, -5, 40, 40)];
+        NSLog(@"editbutton frame: %@", [NSValue valueWithCGRect:self.editButton.frame]);
+    }
+    
+    CGFloat xAnchorPoint = 0;
+    CGFloat yAnchorPoint = 0;
+    if (self.controlType == AEControlTypeInput) {
+        self.expandScale = 3.3;
+        yAnchorPoint = 1;
+    } else {
+        self.expandScale = 1.5;
+    }
+    if (direction == AEControlExpandDirectionLeft) {
+        xAnchorPoint = 1;
+    }
+    self.layer.anchorPoint = CGPointMake(xAnchorPoint, yAnchorPoint);
+    
+    CGPoint position = self.layer.position;
+    CGFloat xPosition;
+    CGFloat yPosition;
+    
+    if (self.layer.anchorPoint.x == 0) {
+        xPosition = position.x - self.bounds.size.width / 2;
+    } else {
+        xPosition = position.x + self.bounds.size.width / 2;
+    }
+    
+    if (self.layer.anchorPoint.y == 0) {
+        yPosition = position.y - self.bounds.size.height / 2;
+    } else {
+        yPosition = position.y + self.bounds.size.height / 2;
+    }
+    self.layer.position = CGPointMake(xPosition, yPosition);
 }
 
 - (NSString *)description {
@@ -134,30 +173,44 @@
 }
 
 - (void)expandControlWithCompletion:(void (^)(void))completion {
+    [self.delegate controlExpanded:self];
     [self.editButton setSelected:YES];
     [UIView animateWithDuration:0.25 animations:^{
         // Main View
         self.transform = CGAffineTransformMakeScale(self.expandScale, self.expandScale);
-        [self.editButton setImage:[[AEControlTheme currentTheme] contractButtonImage] forState:UIControlStateNormal];
         
-        // config view
+        // Edit button
+        CGRect bFrame = self.editButton.frame;
+        self.editButton.frame = CGRectMake(75, -15, bFrame.size.width, bFrame.size.height);
+        [self.editButton setImage:[[AEControlTheme currentTheme] contractButtonImage] forState:UIControlStateNormal];
+        self.editButton.transform = CGAffineTransformMakeScale(1.0f/self.expandScale, 1.0f/self.expandScale);
     } completion:^(BOOL finished) {
         self.configView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width * self.expandScale, self.bounds.size.height * self.expandScale)];
         self.configView.transform = CGAffineTransformMakeScale(1.0f/self.expandScale, 1.0f/self.expandScale);
         self.configView.backgroundColor = [UIColor clearColor];
         [self addSubview:self.configView];
         [self bringSubviewToFront:self.editButton];
-        completion();
+        if (completion != NULL) {
+            completion();
+        }
     }];
 }
 
 - (void)shrinkControlWithCompletion:(void (^)(void))completion {
+    [self.delegate controlContracted:self];
     [self.configView removeFromSuperview];
     [UIView animateWithDuration:0.25 animations:^{
         // Main View
         self.transform = CGAffineTransformMakeScale(1, 1);
+        
+        // Edit button
+        self.editButton.transform = CGAffineTransformMakeScale(1, 1);
+        self.editButton.frame = CGRectMake(self.bounds.size.width - 35, -5, 40, 40);
         [self.editButton setImage:[[AEControlTheme currentTheme] expandButtonImage] forState:UIControlStateNormal];
-        completion();
+    } completion:^(BOOL finished) {
+        if (completion != NULL) {
+            completion();
+        }
     }];
 }
 

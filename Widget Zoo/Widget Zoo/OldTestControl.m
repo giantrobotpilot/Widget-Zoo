@@ -6,12 +6,12 @@
 //  Copyright (c) 2014 Seamless Toy Co. All rights reserved.
 //
 
-#import "TestControl.h"
+#import "OldTestControl.h"
 #import "AEControlTheme.h"
 
 CGFloat expandScale = 3.3;
 
-@interface TestControl ()
+@interface OldTestControl ()
 
 @property (nonatomic, strong) UIView *configView;
 
@@ -24,7 +24,7 @@ CGFloat expandScale = 3.3;
 
 @end
 
-@implementation TestControl
+@implementation OldTestControl
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -120,7 +120,7 @@ CGFloat expandScale = 3.3;
         NSLog(@"expanded frame: %@", [NSValue valueWithCGRect:self.frame]);
         NSLog(@"transform: %@", [NSValue valueWithCGAffineTransform:self.transform]);
     }];
-    [self.delegate testControlExpanded:self];
+    //[self.delegate testControlExpanded:self];
 
 }
 
@@ -138,7 +138,7 @@ CGFloat expandScale = 3.3;
     } completion:^(BOOL finished) {
         
     }];
-    [self.delegate testControlContracted:self];
+    //[self.delegate testControlContracted:self];
 }
 
 @end

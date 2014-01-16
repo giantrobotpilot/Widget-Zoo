@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AEControl.h"
 
-@interface ControlDetailViewController : UIViewController
+@interface ControlDetailViewController : UIViewController <AEEditableControlDelegate>
 
 @property (nonatomic, assign) CGRect actionRect0;
 @property (nonatomic, assign) CGRect actionRect1;
@@ -40,6 +41,7 @@
 
 @property (nonatomic, strong) UIButton *configButton;
 @property (nonatomic, assign) BOOL dashboardEditMode;
+@property (nonatomic, strong) NSMutableSet *controlSet;
 
 - (void)configPressed:(id)sender;
 

@@ -13,7 +13,7 @@
 @protocol AEControlThemeDelegate <NSObject>
 
 - (UIColor *)actionAtomColor;
-- (UIColor *)sensorAtomColor;
+- (UIColor *)controlAtomColor;
 - (UIColor *)logicAtomColor;
 
 - (UIImage *)expandButtonImage;

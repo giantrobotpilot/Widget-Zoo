@@ -9,11 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "AEControlTheme.h"
 
-//static const CGFloat kSingleWidgetWidth = 100;
-//static const CGFloat kSingleWidgetHeight = 102;
-//static const CGFloat kSingleInputHeight = 59;
-//static const CGFloat kDoubleWidgetWidth = 200;
-//static const CGFloat kDoubleWidgetHeight = 160;
+@protocol AEEditableControlDelegate <NSObject>
+
+- (void)controlExpanded:(id)control;
+- (void)controlContracted:(id)control;
+
+@end
 
 typedef enum {
     AEControlIDSliderUnsprung = 1,
@@ -54,8 +55,14 @@ typedef enum {
     AEControlTypeLogic
 } AEControlType;
 
+typedef enum {
+    AEControlExpandDirectionLeft,
+    AEControlExpandDirectionRight
+} AEControlExpandDirection;
+
 @interface AEControl : UIControl
 
+@property (nonatomic, weak) id<AEEditableControlDelegate> delegate;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *behavior;
 @property (nonatomic, copy) NSString *description;
@@ -63,10 +70,9 @@ typedef enum {
 
 @property (nonatomic, assign) BOOL editable;
 @property (nonatomic, strong) UIView *configView;
-@property (nonatomic, strong) UIButton *editButton;
 @property (nonatomic, assign) BOOL controlEditMode;
 @property (nonatomic, assign) BOOL expanded;
-@property (nonatomic, assign) CGFloat expandScale;
+@property (nonatomic, strong) UIButton *editButton;
 
 // Control Values
 @property (nonatomic, assign) UInt16 atomValue;
@@ -86,5 +92,6 @@ typedef enum {
 - (void)editPressed:(id)sender;
 - (void)expandControlWithCompletion:(void (^)(void))completion;
 - (void)shrinkControlWithCompletion:(void (^)(void))completion;
+- (void)setExpansionDirection:(AEControlExpandDirection)direction;
 
 @end
