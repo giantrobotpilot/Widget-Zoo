@@ -39,42 +39,32 @@
     return self;
 }
 
-- (void)setExpansionDirection:(AEControlExpandDirection)direction {
-    if (self.controlType == AEControlTypeInput) {
-        [self.editButton setFrame:CGRectMake(self.bounds.size.width - 35, -5, 40, 40)];
-    } else {
-        [self.editButton setFrame:CGRectMake(self.bounds.size.width - 35, -5, 40, 40)];
-        NSLog(@"editbutton frame: %@", [NSValue valueWithCGRect:self.editButton.frame]);
-    }
+- (void)setExpansionDirection:(AEControlExpandDirection)direction
+{
+    [self.editButton setFrame:CGRectMake(self.bounds.size.width - 35, -5, 40, 40)];
     
     CGFloat xAnchorPoint = 0;
     CGFloat yAnchorPoint = 0;
-    if (self.controlType == AEControlTypeInput) {
-        self.expandScale = 3.3;
-        yAnchorPoint = 1;
-    } else {
-        self.expandScale = 1.5;
-    }
-    if (direction == AEControlExpandDirectionLeft) {
-        xAnchorPoint = 1;
-    }
-    self.layer.anchorPoint = CGPointMake(xAnchorPoint, yAnchorPoint);
-    
     CGPoint position = self.layer.position;
     CGFloat xPosition;
     CGFloat yPosition;
     
-    if (self.layer.anchorPoint.x == 0) {
-        xPosition = position.x - self.bounds.size.width / 2;
+    if (self.controlType == AEControlTypeInput) {
+        self.expandScale = 3.3;
+        yAnchorPoint = 1;
+        yPosition = position.y + self.bounds.size.height / 2;
     } else {
-        xPosition = position.x + self.bounds.size.width / 2;
+        self.expandScale = 1.5;
+        yPosition = position.y - self.bounds.size.height / 2;
     }
     
-    if (self.layer.anchorPoint.y == 0) {
-        yPosition = position.y - self.bounds.size.height / 2;
+    if (direction == AEControlExpandDirectionLeft) {
+        xAnchorPoint = 1;
+        xPosition = position.x + self.bounds.size.width / 2;
     } else {
-        yPosition = position.y + self.bounds.size.height / 2;
+        xPosition = position.x - self.bounds.size.width / 2;
     }
+    self.layer.anchorPoint = CGPointMake(xAnchorPoint, yAnchorPoint);
     self.layer.position = CGPointMake(xPosition, yPosition);
 }
 
@@ -157,6 +147,9 @@
         }
         else {
             [self.editButton setHidden:YES];
+            if (self.expanded) {
+                [self shrinkControlWithCompletion:NULL];
+            }
         }
         _controlEditMode = editing;
     }

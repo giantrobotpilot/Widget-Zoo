@@ -22,30 +22,6 @@
 {
     [super viewDidLoad];
     
-    UIView *testView1 = [[UIView alloc] initWithFrame:self.actionRect0];
-    [testView1 setBackgroundColor:[UIColor greenColor]];
-    [self.view addSubview:testView1];
-    
-    UIView *testView2 = [[UIView alloc] initWithFrame:self.actionRect1];
-    [testView2 setBackgroundColor:[UIColor greenColor]];
-    [self.view addSubview:testView2];
-    
-    UIView *testView4 = [[UIView alloc] initWithFrame:self.sensorRect4];
-    [testView4 setBackgroundColor:[UIColor greenColor]];
-    [self.view addSubview:testView4];
-    
-    UIView *testView5 = [[UIView alloc] initWithFrame:self.sensorRect5];
-    [testView5 setBackgroundColor:[UIColor greenColor]];
-    [self.view addSubview:testView5];
-    
-    UIView *testView6 = [[UIView alloc] initWithFrame:self.sensorRect6];
-    [testView6 setBackgroundColor:[UIColor greenColor]];
-    [self.view addSubview:testView6];
-    
-    UIView *testView7 = [[UIView alloc] initWithFrame:self.sensorRect7];
-    [testView7 setBackgroundColor:[UIColor greenColor]];
-    [self.view addSubview:testView7];
-    
     self.smokeyView = [[UIView alloc] initWithFrame:self.view.bounds];
     self.smokeyView.backgroundColor = [UIColor blackColor];
     self.smokeyView.alpha = 0.7;
@@ -86,8 +62,32 @@
     [self.controlSet addObject:control4];
     [self.controlSet addObject:action1];
     [self.controlSet addObject:action2];
-    
+}
 
+- (void)showTestViews {
+    UIView *testView1 = [[UIView alloc] initWithFrame:self.actionRect0];
+    [testView1 setBackgroundColor:[UIColor greenColor]];
+    [self.view addSubview:testView1];
+    
+    UIView *testView2 = [[UIView alloc] initWithFrame:self.actionRect1];
+    [testView2 setBackgroundColor:[UIColor greenColor]];
+    [self.view addSubview:testView2];
+    
+    UIView *testView4 = [[UIView alloc] initWithFrame:self.sensorRect4];
+    [testView4 setBackgroundColor:[UIColor greenColor]];
+    [self.view addSubview:testView4];
+    
+    UIView *testView5 = [[UIView alloc] initWithFrame:self.sensorRect5];
+    [testView5 setBackgroundColor:[UIColor greenColor]];
+    [self.view addSubview:testView5];
+    
+    UIView *testView6 = [[UIView alloc] initWithFrame:self.sensorRect6];
+    [testView6 setBackgroundColor:[UIColor greenColor]];
+    [self.view addSubview:testView6];
+    
+    UIView *testView7 = [[UIView alloc] initWithFrame:self.sensorRect7];
+    [testView7 setBackgroundColor:[UIColor greenColor]];
+    [self.view addSubview:testView7];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -95,7 +95,5 @@
     self.smokeyView.frame = self.view.bounds;
     [self.configButton setHidden:NO];
 }
-
-
 
 @end
