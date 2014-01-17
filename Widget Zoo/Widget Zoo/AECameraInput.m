@@ -127,9 +127,11 @@ const CGFloat kThresholdX = 50;
 //        UIView *touchView = [[UIView alloc] initWithFrame:self.bounds];
 //        [touchView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(controlTapped:)]];
 //        [self addSubview:touchView];
+        
         _changeCameraButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_changeCameraButton setImage:[UIImage imageNamed:@"original"] forState:UIControlStateNormal];
-        [_changeCameraButton setBackgroundColor:[UIColor greenColor]];
+        [_changeCameraButton setFrame:CGRectMake(5, 50, 60, 60)];
+        [_changeCameraButton setImage:[UIImage imageNamed:@"original.jpg"] forState:UIControlStateNormal];
+        //[_changeCameraButton setBackgroundColor:[UIColor greenColor]];
         [_changeCameraButton addTarget:self
                                 action:@selector(changeCameraPressed:)
                       forControlEvents:UIControlEventTouchUpInside];
@@ -158,6 +160,7 @@ const CGFloat kThresholdX = 50;
                 self.position = AVCaptureDevicePositionBack;
             }
         }
+        [self.cameraView setImage:self.cameraOffImage];
     }
 }
 
@@ -184,12 +187,13 @@ const CGFloat kThresholdX = 50;
                     } else {
                         UIImageWriteToSavedPhotosAlbum([UIImage imageWithCGImage:image.CGImage scale:image.scale orientation:UIImageOrientationDown], nil, nil, nil);
                     }
-                    
                 }
             }];
         }
     }
 }
+
+
 
 - (void)setAtomValue:(UInt16)atomValue
 {
@@ -210,11 +214,18 @@ const CGFloat kThresholdX = 50;
     }
 }
 
+#pragma mark - Editing
+
+- (void)setControlEditMode:(BOOL)editing {
+    [super setControlEditMode:editing];
+    NSLog(@"edit frame: %@", [NSValue valueWithCGRect:self.editButton.frame]);
+}
+
 - (void)expandControlWithCompletion:(void (^)(void))completion {
     [super expandControlWithCompletion:^{
         self.configView.frame = CGRectMake(0, 0, self.configView.frame.size.width, self.configView.frame.size.height);
-        [self.changeCameraButton setFrame:CGRectMake(0, 0, 30, 30)];
         [self bringSubviewToFront:self.changeCameraButton];
+        NSLog(@"edit frame 2: %@", [NSValue valueWithCGRect:self.editButton.frame]);
     }];
 }
 

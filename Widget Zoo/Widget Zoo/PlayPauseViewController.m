@@ -27,6 +27,8 @@
     self.playPauseInput.frame = self.actionRect0;
     self.playPauseInput.delegate = self;
     self.playPauseInput.musicInputDelegate = self;
+    [self.playPauseInput setDelegate:self];
+    [self.playPauseInput setExpansionDirection:AEControlExpandDirectionRight];
     [self.view addSubview:self.playPauseInput];
     [self.controlSet addObject:self.playPauseInput];
     

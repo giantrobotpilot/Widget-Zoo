@@ -21,6 +21,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        //self.clipsToBounds = YES;
         _expandScale = 2;
         _portsRequired = 1;
         _differenceThreshold = 1;
@@ -35,6 +36,7 @@
                   forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.editButton];
         [self.editButton setHidden:YES];
+        self.configView = [[UIView alloc] initWithFrame:CGRectZero];
     }
     return self;
 }
@@ -140,6 +142,8 @@
     }
 }
 
+#pragma mark - Editing
+
 - (void)setControlEditMode:(BOOL)editing {
     if (self.editable) {
         if (editing) {
@@ -165,6 +169,8 @@
     self.expanded = !self.expanded;
 }
 
+#pragma mark - Shrink / Expand
+
 - (void)expandControlWithCompletion:(void (^)(void))completion {
     [self.delegate controlExpanded:self];
     [self.editButton setSelected:YES];
@@ -174,12 +180,17 @@
         
         // Edit button
         CGRect bFrame = self.editButton.frame;
-        self.editButton.frame = CGRectMake(75, -15, bFrame.size.width, bFrame.size.height);
+        if (self.controlType == AEControlTypeOutput) {
+            self.editButton.frame = CGRectMake(65, -5, bFrame.size.width, bFrame.size.height);
+        } else {
+            self.editButton.frame = CGRectMake(72, -12, bFrame.size.width, bFrame.size.height);
+        }
+        
         [self.editButton setImage:[[AEControlTheme currentTheme] contractButtonImage] forState:UIControlStateNormal];
         self.editButton.transform = CGAffineTransformMakeScale(1.0f/self.expandScale, 1.0f/self.expandScale);
     } completion:^(BOOL finished) {
-        self.configView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width * self.expandScale, self.bounds.size.height * self.expandScale)];
         self.configView.transform = CGAffineTransformMakeScale(1.0f/self.expandScale, 1.0f/self.expandScale);
+        [self.configView setFrame:CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height)];
         self.configView.backgroundColor = [UIColor clearColor];
         [self addSubview:self.configView];
         [self bringSubviewToFront:self.editButton];

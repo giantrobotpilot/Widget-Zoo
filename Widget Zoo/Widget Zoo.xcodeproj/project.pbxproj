@@ -46,8 +46,8 @@
 		9C0CBBB1187F3BF900A81301 /* Leveler-Marks.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CBBA9187F3BF900A81301 /* Leveler-Marks.png */; };
 		9C44767E1886F2D200693184 /* AEExpandableControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C44767D1886F2D200693184 /* AEExpandableControl.m */; };
 		9C44767F1886F2D200693184 /* AEExpandableControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C44767D1886F2D200693184 /* AEExpandableControl.m */; };
-		9C447681188744B700693184 /* original.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9C447680188744B700693184 /* original.jpeg */; };
-		9C447682188744B700693184 /* original.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9C447680188744B700693184 /* original.jpeg */; };
+		9C447681188744B700693184 /* original.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C447680188744B700693184 /* original.jpg */; };
+		9C447682188744B700693184 /* original.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C447680188744B700693184 /* original.jpg */; };
 		9C4476861888610700693184 /* AETimeDelayControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4476851888610700693184 /* AETimeDelayControl.m */; };
 		9C4476871888610700693184 /* AETimeDelayControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4476851888610700693184 /* AETimeDelayControl.m */; };
 		9C44768A1888611600693184 /* TimeDelayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4476891888611600693184 /* TimeDelayViewController.m */; };
@@ -212,7 +212,7 @@
 		9C0CBBA9187F3BF900A81301 /* Leveler-Marks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leveler-Marks.png"; sourceTree = "<group>"; };
 		9C44767C1886F2D200693184 /* AEExpandableControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEExpandableControl.h; sourceTree = "<group>"; };
 		9C44767D1886F2D200693184 /* AEExpandableControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEExpandableControl.m; sourceTree = "<group>"; };
-		9C447680188744B700693184 /* original.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = original.jpeg; sourceTree = "<group>"; };
+		9C447680188744B700693184 /* original.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = original.jpg; sourceTree = "<group>"; };
 		9C4476841888610700693184 /* AETimeDelayControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AETimeDelayControl.h; sourceTree = "<group>"; };
 		9C4476851888610700693184 /* AETimeDelayControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AETimeDelayControl.m; sourceTree = "<group>"; };
 		9C4476881888611600693184 /* TimeDelayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeDelayViewController.h; sourceTree = "<group>"; };
@@ -410,7 +410,7 @@
 		9CA86D3B187F6BE0004FB0A7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				9C447680188744B700693184 /* original.jpeg */,
+				9C447680188744B700693184 /* original.jpg */,
 				9C837AD01880678200C65054 /* collapse_toggle_alt_basic-512.png */,
 				9C837AD11880678200C65054 /* window_fullscreen_2-512.png */,
 				9C0CBBA6187F3BF900A81301 /* info_bttn.png */,
@@ -838,7 +838,7 @@
 				9CA86D37187F6BC0004FB0A7 /* National-Bold.otf in Resources */,
 				9CB03027187E10870063B78A /* Back.png in Resources */,
 				9C0CBB98187F2D0200A81301 /* Normal-D-Pad.png in Resources */,
-				9C447681188744B700693184 /* original.jpeg in Resources */,
+				9C447681188744B700693184 /* original.jpg in Resources */,
 				9CB0301C187E02280063B78A /* ColorCodedWidgets.xcassets in Resources */,
 				9CB02F53187DE1D40063B78A /* Main_iPhone.storyboard in Resources */,
 				9C0CBB90187F2D0200A81301 /* Down-D-Pad.png in Resources */,
@@ -869,7 +869,7 @@
 				9CA86D3A187F6BC0004FB0A7 /* National-Book.otf in Resources */,
 				9C0CBBA1187F2D0200A81301 /* UpRight-D-Pad.png in Resources */,
 				9C0CBBAF187F3BF900A81301 /* Leveler-Bubble.png in Resources */,
-				9C447682188744B700693184 /* original.jpeg in Resources */,
+				9C447682188744B700693184 /* original.jpg in Resources */,
 				9C0CBBAD187F3BF900A81301 /* Leveler-Base.png in Resources */,
 				9C0CBB97187F2D0200A81301 /* Left-D-Pad.png in Resources */,
 				9C0CBB9F187F2D0200A81301 /* UpLeft-D-Pad.png in Resources */,

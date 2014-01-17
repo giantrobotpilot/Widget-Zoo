@@ -25,9 +25,10 @@
 	
     self.camera = [[AECameraInput alloc] initWithFrame:self.actionRect0];
     [self.camera setFrame:self.actionRect0];
+    [self.camera setDelegate:self];
     [self.view addSubview:self.camera];
     [self.controlSet addObject:self.camera];
-    self.camera.delegate = self;
+    [self.camera setExpansionDirection:AEControlExpandDirectionRight];
     
     self.slider = [[UISlider alloc] initWithFrame:self.sensorRect4];
     [self.slider addTarget:self

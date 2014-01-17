@@ -47,7 +47,7 @@
 {
     [super viewDidLoad];
     
-    [self.navigationController pushViewController:[[TestControlViewController alloc] init] animated:YES];
+    [self.navigationController pushViewController:[[CameraViewController alloc] init] animated:YES];
 
     NSArray *array = @[@"Bar Meter", @"Camera", @"Music", @"Pitch Shift", @"Dial", @"Volume", @"Number Display"];
     _action = [array sortedArrayUsingSelector:@selector(compare:)];
@@ -119,7 +119,15 @@
     
     NSArray *array = [self arrayForSection:indexPath.section];
     
-    cell.textLabel.text = [array objectAtIndex:indexPath.row];
+    NSString *widget = [array objectAtIndex:indexPath.row];
+    cell.textLabel.text = widget;
+    if ([widget isEqual:@"Time Delay"] || [widget isEqual:@"Edit Control Test"] || [widget isEqual:@"Number Display"] || [widget isEqual:@"Music"]) {
+        cell.detailTextLabel.text = @"NEW!";
+        cell.detailTextLabel.textColor = [UIColor redColor];
+    }
+    else {
+        cell.detailTextLabel.text = @"";
+    }
     return cell;
 }
 
@@ -178,7 +186,8 @@
     }
     else if ([widgetName isEqual:@"Edit Control Test"]) {
         [self.navigationController pushViewController:[[TestControlViewController alloc] init] animated:YES];
-    } else if ([widgetName isEqual:@"Time Delay"]) {
+    }
+    else if ([widgetName isEqual:@"Time Delay"]) {
         [self.navigationController pushViewController:[[TimeDelayViewController alloc] init] animated:YES];
     }
 }

@@ -7,6 +7,7 @@
 //
 
 #import "AEControl.h"
+@class AETimeDelayControl;
 
 typedef enum {
     AETimeDelayControlStateStopped,
@@ -14,8 +15,18 @@ typedef enum {
     AETimeDelayControlStateFiring
 } AETimeDelayControlState;
 
+@protocol TimeDelayDelegate <NSObject>
+
+- (void)timeDelaySetPressed:(AETimeDelayControl *)control;
+
+@end
+
+
 @interface AETimeDelayControl : AEControl
 
 @property (nonatomic, assign) AETimeDelayControlState controlState;
+@property (nonatomic, weak) id<TimeDelayDelegate> timeDelayDelegate;
+
+- (void)setTimeInterval:(NSTimeInterval)timeInterval;
 
 @end

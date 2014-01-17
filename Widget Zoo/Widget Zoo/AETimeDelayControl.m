@@ -9,7 +9,7 @@
 #import "AETimeDelayControl.h"
 #import "AEControlTheme.h"
 
-@interface AETimeDelayControl ()
+@interface AETimeDelayControl () <UIPickerViewDataSource, UIPickerViewDelegate>
 
 @property (nonatomic, strong) UILabel *timerLabel;
 @property (nonatomic, strong) UILabel *buttonLabel;
@@ -17,6 +17,7 @@
 @property (nonatomic, strong) NSTimer *timer;
 @property (nonatomic, assign) NSTimeInterval timeInterval;
 @property (nonatomic, strong) NSDate *fireDate;
+@property (nonatomic, strong) UIPickerView *timePicker;
 
 @end
 
@@ -34,7 +35,7 @@
         [backgroundLayer setBackgroundColor:[[[AEControlTheme currentTheme] controlAtomColor] CGColor]];
         [self.layer addSublayer:backgroundLayer];
         
-        _timeInterval = 12.0;
+        _timeInterval = 5.0;
         _controlState = AETimeDelayControlStateStopped;
         
         // Button
@@ -59,7 +60,7 @@
         [self addSubview:_buttonLabel];
         
         // Timer Label
-        labelY = self.bounds.size.height / 18;
+        labelY = self.bounds.size.height / 12;
         labelHeight = self.bounds.size.height / 3;
         _timerLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, labelY, self.frame.size.width, labelHeight)];
         [_timerLabel setFont:[UIFont fontWithName:@"CourierNewPS-BoldMT" size:30]];
@@ -70,6 +71,10 @@
         [self bringSubviewToFront:self.editButton];
     }
     return self;
+}
+
+- (void)setTimePressed:(id)sender {
+    [self.timeDelayDelegate timeDelaySetPressed:self];
 }
 
 - (void)configureTimeLabelWithInterval:(NSTimeInterval)timeInterval {
@@ -124,6 +129,9 @@
 }
 
 - (void)buttonPressed:(id)sender {
+    if (self.controlEditMode) {
+        [self setControlEditMode:NO];
+    }
     switch (self.controlState) {
         case AETimeDelayControlStateStopped:
             [self setControlState:AETimeDelayControlStateTiming];
@@ -158,7 +166,6 @@
         [self fireTimer];
         [self.timer invalidate];
         [self setControlState:AETimeDelayControlStateFiring];
-        
     }
     [self configureTimeLabelWithInterval:fabs(timeInterval)];
 }
@@ -166,6 +173,81 @@
 - (void)fireTimer {
     self.atomValue = UINT16_MAX;
     [self sendActionsForControlEvents:UIControlEventValueChanged];
+}
+
+- (void)timerSetPressed:(id)sender {
+    NSInteger sec = [self.timePicker selectedRowInComponent:1];
+    NSInteger min = [self.timePicker selectedRowInComponent:0];
+    self.timeInterval = (NSTimeInterval)min * 60 + sec;
+    [self configureTimeLabelWithInterval:self.timeInterval];
+    [self shrinkControlWithCompletion:NULL];
+}
+
+#pragma mark - EditMode
+
+- (void)expandControlWithCompletion:(void (^)(void))completion {
+    [super expandControlWithCompletion:^{
+        [self.timerLabel setHidden:YES];
+        
+        [self.configView.layer setCornerRadius:8];
+        [self.configView.layer setBackgroundColor:[[UIColor whiteColor] CGColor]];
+        [self.configView setAlpha:0.90];
+        
+        // Time Picker
+        CGRect bounds = self.configView.bounds;
+        CGFloat width = bounds.size.width * 0.8;
+        self.timePicker = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 20, width, bounds.size.height / 8)];
+        [self.timePicker selectRow:6 inComponent:0 animated:YES];
+        [self.timePicker setDelegate:self];
+        [self.timePicker setDataSource:self];
+        [self.configView addSubview:self.timePicker];
+        
+        UILabel *min = [[UILabel alloc] initWithFrame:CGRectMake(47, 67, 30, 30)];
+        [min setText:@"min"];
+        [self.timePicker addSubview:min];
+        
+        UILabel *sec = [[UILabel alloc] initWithFrame:CGRectMake(110, 67, 30, 30)];
+        [sec setText:@"sec"];
+        [self.timePicker addSubview:sec];
+        
+        // Set Button
+        UIButton *timeButton = [UIButton buttonWithType:UIButtonTypeSystem];
+        [timeButton setFrame:CGRectMake(0, bounds.size.height / 1.3, bounds.size.width, 44)];
+        [timeButton setTitle:@"Set" forState:UIControlStateNormal];
+        [self.configView addSubview:timeButton];
+        [timeButton addTarget:self
+                       action:@selector(timerSetPressed:)
+             forControlEvents:UIControlEventTouchUpInside];
+    }];
+}
+
+- (void)shrinkControlWithCompletion:(void (^)(void))completion {
+    [super shrinkControlWithCompletion:^{
+        [self.timePicker removeFromSuperview];
+        [self.timerLabel setHidden:NO];
+    }];
+}
+
+#pragma mark - Picker View data source
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return 2;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    if (component == 0) {
+        return 100;
+    } else {
+        return 60;
+    }
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    if (component == 0) {
+        return [NSString stringWithFormat:@"%d", row];
+    } else {
+        return [NSString stringWithFormat:@"%d   ", row];
+    }
 }
 
 @end

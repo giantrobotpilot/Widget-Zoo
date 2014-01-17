@@ -27,4 +27,19 @@
     return self;
 }
 
+#pragma mark - Editing
+
+- (void)expandControlWithCompletion:(void (^)(void))completion {
+    [super expandControlWithCompletion:^{
+        [self.configView setAlpha:0.5];
+        [self.configView setBackgroundColor:[UIColor greenColor]];
+    }];
+}
+
+- (void)shrinkControlWithCompletion:(void (^)(void))completion {
+    [super shrinkControlWithCompletion:^{
+        
+    }];
+}
+
 @end
