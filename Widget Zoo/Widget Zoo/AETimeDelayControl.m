@@ -57,6 +57,7 @@
         [_buttonLabel setFont:[UIFont fontWithName:@"National-Book" size:15]];
         [_buttonLabel setText:@"Start"];
         [_buttonLabel setTextAlignment:NSTextAlignmentCenter];
+        [_buttonLabel setBackgroundColor:[UIColor clearColor]];
         [self addSubview:_buttonLabel];
         
         // Timer Label
@@ -65,6 +66,7 @@
         _timerLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, labelY, self.frame.size.width, labelHeight)];
         [_timerLabel setFont:[UIFont fontWithName:@"CourierNewPS-BoldMT" size:30]];
         [_timerLabel setTextAlignment:NSTextAlignmentCenter];
+        [_timerLabel setBackgroundColor:[UIColor clearColor]];
         [self addSubview:_timerLabel];
         
         [self configureTimeLabelWithInterval:_timeInterval];

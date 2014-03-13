@@ -47,7 +47,7 @@
 {
     [super viewDidLoad];
     
-    [self.navigationController pushViewController:[[CameraViewController alloc] init] animated:YES];
+    //[self.navigationController pushViewController:[[PlayPauseViewController alloc] init] animated:YES];
 
     NSArray *array = @[@"Bar Meter", @"Camera", @"Music", @"Pitch Shift", @"Dial", @"Volume", @"Number Display"];
     _action = [array sortedArrayUsingSelector:@selector(compare:)];
@@ -76,7 +76,6 @@
             return 0;
             break;
     }
-
 }
 
 - (BOOL)prefersStatusBarHidden {
@@ -121,8 +120,11 @@
     
     NSString *widget = [array objectAtIndex:indexPath.row];
     cell.textLabel.text = widget;
-    if ([widget isEqual:@"Time Delay"] || [widget isEqual:@"Edit Control Test"] || [widget isEqual:@"Number Display"] || [widget isEqual:@"Music"]) {
+    if ([widget isEqual:@"Time Delay"] || [widget isEqual:@"Edit Control Test"] || [widget isEqual:@"Number Display"]) {
         cell.detailTextLabel.text = @"NEW!";
+        cell.detailTextLabel.textColor = [UIColor redColor];
+    } else if ([widget isEqual:@"Music"] || [widget isEqual:@"Camera"]) {
+        cell.detailTextLabel.text = @"Configurable!";
         cell.detailTextLabel.textColor = [UIColor redColor];
     }
     else {

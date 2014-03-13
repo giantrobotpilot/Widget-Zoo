@@ -49,13 +49,21 @@ static const CGFloat kAEDashboardLowerPortTop = 274;
     self.sensorRect7 = (CGRect){  416, 45, 100, 160 };
     
     self.portLabel0 = [[UILabel alloc] initWithFrame:CGRectMake( 87, kAEDashboardLowerPortTop, kAEDashboardPortIconWidth, kAEDashboardPortIconHeight)];
+    [self.portLabel0 setBackgroundColor:[UIColor clearColor]];
     self.portLabel1 = [[UILabel alloc] initWithFrame:CGRectMake(197, kAEDashboardLowerPortTop, kAEDashboardPortIconWidth, kAEDashboardPortIconHeight)];
+    [self.portLabel1 setBackgroundColor:[UIColor clearColor]];
     self.portLabel2 = [[UILabel alloc] initWithFrame:CGRectMake(306, kAEDashboardLowerPortTop, kAEDashboardPortIconWidth, kAEDashboardPortIconHeight)];
+    [self.portLabel2 setBackgroundColor:[UIColor clearColor]];
     self.portLabel3 = [[UILabel alloc] initWithFrame:CGRectMake(416, kAEDashboardLowerPortTop, kAEDashboardPortIconWidth, kAEDashboardPortIconHeight)];
+    [self.portLabel3 setBackgroundColor:[UIColor clearColor]];
     self.portLabel4 = [[UILabel alloc] initWithFrame:CGRectMake( 87, 0, kAEDashboardPortIconWidth, kAEDashboardPortIconHeight)];
+    [self.portLabel4 setBackgroundColor:[UIColor clearColor]];
     self.portLabel5 = [[UILabel alloc] initWithFrame:CGRectMake(197, 0, kAEDashboardPortIconWidth, kAEDashboardPortIconHeight)];
+    [self.portLabel5 setBackgroundColor:[UIColor clearColor]];
     self.portLabel6 = [[UILabel alloc] initWithFrame:CGRectMake(306, 0, kAEDashboardPortIconWidth, kAEDashboardPortIconHeight)];
+    [self.portLabel6 setBackgroundColor:[UIColor clearColor]];
     self.portLabel7 = [[UILabel alloc] initWithFrame:CGRectMake(416, 0, kAEDashboardPortIconWidth, kAEDashboardPortIconHeight)];
+    [self.portLabel7 setBackgroundColor:[UIColor clearColor]];
     
     [self.view addSubview:self.portLabel0];
     [self.view addSubview:self.portLabel1];
@@ -77,6 +85,7 @@ static const CGFloat kAEDashboardLowerPortTop = 274;
     [self.configButton addTarget:self
                           action:@selector(configPressed:)
                 forControlEvents:UIControlEventTouchUpInside];
+    [_configButton setHidden:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -87,7 +96,6 @@ static const CGFloat kAEDashboardLowerPortTop = 274;
     [self.configButton setHidden:YES];
     
     self.smokeyView.frame = self.view.bounds;
-    [self.configButton setHidden:NO];
 }
 
 - (BOOL)prefersStatusBarHidden {

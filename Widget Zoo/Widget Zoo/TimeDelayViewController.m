@@ -41,6 +41,11 @@
     [self.portLabel4 setText:@"0"];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.configButton setHidden:NO];
+}
+
 - (void)timeDelayValueChanged:(id)sender {
     UInt16 atomValue = self.timeDelayControl.atomValue;
     [self.slider setValue:(float)atomValue/UINT16_MAX animated:NO];

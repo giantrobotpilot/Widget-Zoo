@@ -39,6 +39,11 @@
     self.portLabel0.text = @"0";
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.configButton setHidden:NO];
+}
+
 - (void)sliderValueChanged:(id)sender {
     UInt16 atomValue = self.slider.value * UINT16_MAX;
     [self.camera setAtomValue:atomValue];

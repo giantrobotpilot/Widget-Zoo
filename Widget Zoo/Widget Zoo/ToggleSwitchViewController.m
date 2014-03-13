@@ -21,10 +21,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    UIView *testView = [[UIView alloc] initWithFrame:self.sensorRect4];
-    testView.backgroundColor = [UIColor purpleColor];
-    [self.view addSubview:testView];
 	
     self.toggle = [[AEToggle alloc] initWithFrame:self.sensorRect4];
     [self.toggle addTarget:self action:@selector(togglePressed:) forControlEvents:UIControlEventValueChanged];

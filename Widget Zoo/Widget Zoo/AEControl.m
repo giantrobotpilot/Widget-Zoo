@@ -21,7 +21,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        //self.clipsToBounds = YES;
+        self.clipsToBounds = YES;
         _expandScale = 2;
         _portsRequired = 1;
         _differenceThreshold = 1;

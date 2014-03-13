@@ -31,6 +31,7 @@
         self.label.text = @"0";
         self.label.font = [UIFont fontWithName:@"AvenirNext-Bold" size:36];
         self.label.textColor = [UIColor whiteColor];
+        [_label setBackgroundColor:[UIColor clearColor]];
         [self.layer addSublayer:self.label.layer];
         
         [self addSubview:self.editButton];

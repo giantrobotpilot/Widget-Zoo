@@ -16,10 +16,10 @@ static const CGFloat kAEMusicPlayerPlayThreshold = 51.0f;
 @property (nonatomic, strong) UIImageView *buttonView;
 @property (nonatomic, strong) UIImage *pauseImage;
 @property (nonatomic, strong) UIImage *playImage;
-@property (nonatomic, weak) MPMusicPlayerController *musicPlayerController;
+@property (nonatomic, strong) MPMusicPlayerController *musicPlayerController;
 @property (nonatomic, assign) CGFloat threshold;
 @property (nonatomic, strong) UIButton *chooseSongButton;
-
+@property (nonatomic, strong) UILabel *nowPlayingLabel;
 @property (nonatomic, assign) BOOL playing;
 
 @end
@@ -32,16 +32,8 @@ static const CGFloat kAEMusicPlayerPlayThreshold = 51.0f;
     if (self) {
         self.controlType = AEControlTypeInput;
         self.controlID = AEControlIDMusicInput;
-        //self.clipsToBounds = YES;
         self.pauseImage = [[AEControlTheme currentTheme] musicPause];
         self.playImage = [[AEControlTheme currentTheme] musicPlay];
-        
-        _chooseSongButton = [UIButton buttonWithType:UIButtonTypeSystem];
-        [_chooseSongButton setTitle:@"Choose\nSong" forState:UIControlStateNormal];
-        [_chooseSongButton addTarget:self
-                              action:@selector(chooseSongPressed:)
-                    forControlEvents:UIControlEventTouchUpInside];
-        [_chooseSongButton setBackgroundColor:[UIColor whiteColor]];
         
         _musicPlayerController = [MPMusicPlayerController applicationMusicPlayer];
         NSLog(@"now playing: %@", [[_musicPlayerController nowPlayingItem] valueForProperty:MPMediaItemPropertyTitle]);
@@ -65,10 +57,38 @@ static const CGFloat kAEMusicPlayerPlayThreshold = 51.0f;
         self.buttonView.image = self.pauseImage;
         [self addSubview:self.buttonView];
         
+        // Choose Song
+        _chooseSongButton = [UIButton buttonWithType:UIButtonTypeSystem];
+        [_chooseSongButton setTitle:@"Choose Song" forState:UIControlStateNormal];
+        [_chooseSongButton addTarget:self
+                              action:@selector(chooseSongPressed:)
+                    forControlEvents:UIControlEventTouchUpInside];
+        
         self.editable = YES;
         [self bringSubviewToFront:self.editButton];
+        
+        // Now Playing
+        UILabel *nowPlaying = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, 200, 40)];
+        [nowPlaying setBackgroundColor:[UIColor clearColor]];
+        [nowPlaying setText:@"Now Playing"];
+        [self.configView addSubview:nowPlaying];
+        
+        _nowPlayingLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 50, 200, 60)];
+        [_nowPlayingLabel setBackgroundColor:[UIColor clearColor]];
+        [self.configView addSubview:_nowPlayingLabel];
+        [self showNowPlaying:[_musicPlayerController nowPlayingItem]];
     }
     return self;
+}
+
+- (void)showNowPlaying:(MPMediaItem *)mediaItem {
+    NSString *title;
+    if (mediaItem) {
+        title = [mediaItem valueForProperty:MPMediaItemPropertyTitle];
+    } else {
+        title = @"None";
+    }
+    [self.nowPlayingLabel setText:title];
 }
 
 - (void)setEnabled:(BOOL)enabled
@@ -118,8 +138,12 @@ static const CGFloat kAEMusicPlayerPlayThreshold = 51.0f;
 
 - (void)expandControlWithCompletion:(void (^)(void))completion {
     [super expandControlWithCompletion:^{
-        self.configView.frame = CGRectMake(0, 0, self.configView.frame.size.width, self.configView.frame.size.height);
-        [self.chooseSongButton setFrame:CGRectMake(10, 120, 60, 60)];
+        //self.configView.frame = CGRectMake(0, 0, self.configView.frame.size.width, self.configView.frame.size.height);
+        [self.configView.layer setCornerRadius:8];
+        [self.configView.layer setBackgroundColor:[[UIColor whiteColor] CGColor]];
+        [self.configView setAlpha:0.9];
+        
+        [self.chooseSongButton setFrame:CGRectMake(50, 120, 100, 40)];
         [self.configView addSubview:self.chooseSongButton];
     }];
 }
@@ -133,6 +157,7 @@ static const CGFloat kAEMusicPlayerPlayThreshold = 51.0f;
 - (void)setMedia:(MPMediaItemCollection *)mediaCollection {
     [self.musicPlayerController setQueueWithItemCollection:mediaCollection];
     NSLog(@"now playing: %@", [[self.musicPlayerController nowPlayingItem] valueForProperty:MPMediaItemPropertyTitle]);
+    [self showNowPlaying:[mediaCollection.items objectAtIndex:0]];
 }
 
 @end
